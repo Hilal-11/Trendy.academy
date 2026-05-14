@@ -1,0 +1,51 @@
+
+{
+  "header_pages": [
+    {
+      "page": "Home",
+      "link": "/"
+    },
+    {
+      "page": "Courses",
+      "link": "/courses"
+    },
+    {
+      "page": "Admissions",
+      "link": "/admissions"
+    },
+    {
+      "page": "About Us",
+      "link": "/about"
+    },
+    {
+      "page": "Contact",
+      "link": "/contact"
+    },
+    {
+      "page": "Software Services",
+      "link": "/software-services"
+    }
+  ],
+   "dropdown_pages": [
+    {
+      "page": "Gallery",
+      "link": "/gallery"
+    },
+    {
+      "page": "Faculty",
+      "link": "/faculty"
+    },
+    {
+      "page": "Upcoming Courses",
+      "link": "/upcoming-courses"
+    },
+    {
+      "page": "Testimonials",
+      "link": "/testimonials"
+    },
+    {
+      "page": "Blog",
+      "link": "/blog"
+    }
+  ]
+}
