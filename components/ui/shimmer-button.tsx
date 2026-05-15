@@ -22,6 +22,7 @@ export const ShimmerButton = React.forwardRef<
       shimmerSize = "0.05em",
       shimmerDuration = "3s",
       borderRadius = "100px",
+      background = "rgba(0, 0, 0, 1)",
       className,
       children,
       ...props
@@ -37,11 +38,12 @@ export const ShimmerButton = React.forwardRef<
             "--radius": borderRadius,
             "--speed": shimmerDuration,
             "--cut": shimmerSize,
+            "--bg": background,
           } as CSSProperties
         }
         className={cn(
-          "group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden [border-radius:var(--radius)] border border-white/10 px-6 py-1 whitespace-nowrap text-white bg-linear-to-r from-[hsl(236,100%,8%)] to-[hsl(211,100%,28%)]"
-,          "transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px",
+          "group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden [border-radius:var(--radius)] border border-white/10 px-6 py-px whitespace-nowrap text-white [background:var(--bg)]",
+          "transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px",
           className
         )}
         ref={ref}
@@ -83,8 +85,7 @@ export const ShimmerButton = React.forwardRef<
         {/* backdrop */}
         <div
           className={cn(
-            "absolute inset-(--cut) -z-20 [border-radius:var(--radius)] bg-linear-to-r from-[hsl(236,100%,8%)] to-[hsl(211,100%,28%)]",
-
+            "absolute inset-(--cut) -z-20 [border-radius:var(--radius)] [background:var(--bg)]"
           )}
         />
       </button>
