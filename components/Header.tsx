@@ -12,16 +12,12 @@ import {
 import { SearchingMain } from './SearchingMain';
 import headerPagesConfig from "@/public/config/HeaderConfig.json"
 import { HiArrowNarrowRight } from "react-icons/hi";
-import NProgress from 'nprogress';
 import { ThemeToggle } from '@/components/ToggleTheme';
 function Header() {
  
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showservices, setShowServices] = useState(true)
 
-  const handleLinkClick = () => {
-    NProgress.start()
-  }
 
   return (
     <>
@@ -33,9 +29,9 @@ function Header() {
                             border-neutral-200 dark:border-neutral-800">
             <div
               className={`
-                            w-full md:w-[100%] lg:w-[90%] xl:w-[90%] mx-auto
+                            w-full md:w-[100%] lg:container mx-auto
                             flex items-center justify-between
-                            px-4 py-4
+                            pr-4 pl-2  lg:px-0 py-4
                             relative
                             transition-all duration-300 ease-in-out
                         `}
@@ -43,9 +39,8 @@ function Header() {
               <div className="relative z-10 flex items-center justify-between w-full gap-2">
                 {/* Logo Section with Navigation Links */}
                 <div className="flex items-center gap-6">
-                  <Link prefetch={true} href="/" onClick={handleLinkClick} className="flex items-center">
-                   <TrendyIcon />
-                    <span className="ml-2 block lobster-regular text-2xl text-neutral-900 dark:bg-[linear-gradient(135deg,_hsl(186,33%,94%)_0%,_hsl(187,100%,89%)_38%,_hsl(186,100%,69%)_100%)] dark:bg-clip-text dark:text-transparent">
+                  <Link prefetch={true} href="/"  className="flex items-center">
+                    <span className="ml-2 block lobster-regular text-2xl text-neutral-900 dark:text-neutral-100">
                       Trendy
                     </span>
                   </Link>
@@ -58,7 +53,7 @@ function Header() {
                             href={page.link}
                             className="font-sans font-medium text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex items-center gap-2"
                             prefetch={true}
-                            onClick={handleLinkClick}
+                            
                           >
                             {page.page}
                           </Link>
@@ -73,7 +68,7 @@ function Header() {
                           headerPagesConfig.dropdown_pages.map((page , index) => (
                             <div key={index} className="w-full hover:bg-neutral-200 hover:dark:bg-neutral-800 cursor-pointer rounded-sm py-1 pl-1 ">
                               <Link                                href={page.link}
-                              onClick={handleLinkClick}
+                              
                                 className="font-sans font-medium text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex gap-2 items-center"
                                 prefetch={true}
                               >
@@ -132,7 +127,7 @@ function Header() {
                               headerPagesConfig.header_pages.map((page , index) => (
                                 <div key={index} className="w-full hover:bg-neutral-200 hover:dark:bg-neutral-800 cursor-pointer rounded-sm py-1">
                                   <Link                                href={page.link}
-                                  onClick={handleLinkClick}
+                                  
                                     className="font-sans font-medium text-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex gap-2 items-center"
                                     prefetch={true}
                                   >
@@ -145,7 +140,7 @@ function Header() {
                               headerPagesConfig.dropdown_pages.map((page , index) => (
                                 <div key={index} className="w-full hover:bg-neutral-200 hover:dark:bg-neutral-800 cursor-pointer rounded-sm py-1">
                                   <Link                                href={page.link}
-                                  onClick={handleLinkClick}
+                                  
                                     className="font-sans font-medium text-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex gap-2 items-center"
                                     prefetch={true}
                                   >
