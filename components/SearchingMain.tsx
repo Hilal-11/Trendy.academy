@@ -86,7 +86,7 @@ export function SearchingMain() {
       </DialogTrigger>
 
       {/* ── Dialog ── */}
-      <DialogContent className="p-0 gap-0 lg:w-130 max-h-120 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-2xl bg-white dark:bg-neutral-950">
+      <DialogContent className="p-0 gap-0 max-h-120 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-2xl bg-white dark:bg-neutral-950">
 
         {/* ── Fixed search bar ── */}
         <div className={`sticky top-0 z-20 w-full bg-white dark:bg-neutral-950 border-b border-neutral-100 dark:border-neutral-800 transition-shadow duration-200 ${focused ? 'shadow-sm' : ''}`}>
@@ -124,14 +124,14 @@ export function SearchingMain() {
               )}
             </AnimatePresence>
 
-            <kbd className="hidden sm:flex items-center justify-center h-5 px-1.5 rounded border border-neutral-200 dark:border-neutral-700 text-[10px] font-mono text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-neutral-900 flex-shrink-0">
+            <kbd className="hidden sm:flex items-center justify-center h-5 px-1.5 rounded border border-neutral-200 dark:border-neutral-700 text-[10px] font-mono text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-neutral-900 shrink-0">
               ESC
             </kbd>
           </div>
 
           {/* animated focus underline */}
           <motion.div
-            className="absolute bottom-0 left-3 right-3 h-px bg-gradient-to-r from-transparent via-neutral-400 dark:via-neutral-500 to-transparent"
+            className="absolute bottom-0 left-3 right-3 h-px bg-linear-to-r from-transparent via-neutral-400 dark:via-neutral-500 to-transparent"
             initial={{ scaleX: 0, opacity: 0 }}
             animate={focused ? { scaleX: 1, opacity: 1 } : { scaleX: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
@@ -171,7 +171,7 @@ export function SearchingMain() {
                   <IoSearchSharp />
                 </motion.div>
                 <p className="text-sm font-sans font-medium text-neutral-400 dark:text-neutral-600">
-                  No results for <span className="text-neutral-600 dark:text-neutral-400">"{searchQuery}"</span>
+                  No results for <span className="text-neutral-600 dark:text-neutral-400">{searchQuery}</span>
                 </p>
               </motion.div>
             ) : (
