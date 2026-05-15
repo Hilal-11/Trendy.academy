@@ -2,10 +2,6 @@
 {
   "header_pages": [
     {
-      "page": "Home",
-      "link": "/"
-    },
-    {
       "page": "Courses",
       "link": "/courses"
     },
@@ -22,15 +18,12 @@
       "link": "/contact"
     },
     {
-      "page": "Software Services",
-      "link": "/software-services"
+      "page": "Gallery",
+      "link": "/gallery"
     }
   ],
    "dropdown_pages": [
-    {
-      "page": "Gallery",
-      "link": "/gallery"
-    },
+
     {
       "page": "Faculty",
       "link": "/faculty"
