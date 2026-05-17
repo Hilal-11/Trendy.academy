@@ -15,18 +15,6 @@ function Footer() {
     />
       <div className='relative container mx-auto !important border-dashed z-30 !important bg-neutral-100 dark:bg-neutral-950
        h-auto lg:border-l lg:border-r border-neutral-400 dark:border-neutral-700 py-20 px-10'>
-        <div className='lg:w-2/3 w-full'>
-            <div className='flex items-center'>
-              <span className="block font-sans font-bold text-xl">
-                HILAL-11
-              </span>
-            </div>
-          </div>
-
-        
-
-
-
         {/*  start footer boxes */}
 
         <div className='pt-4 lg:pt-10 grid lg:grid-cols-5 md:grid-cols-4 gap-4 justify-between grid-cols-2'>
@@ -43,7 +31,7 @@ function Footer() {
                       transition={{ duration: 0.26, ease: "easeInOut" }}
                       whileHover={{ scale: 1.03, }}
                       whileTap={{ scale: 1.03 }}
-                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm lg:text-[15px] font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
+                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
                   </div>
                 ))
               }
@@ -63,7 +51,7 @@ function Footer() {
                       transition={{ duration: 0.26, ease: "easeInOut" }}
                       whileHover={{ scale: 1.03, }}
                       whileTap={{ scale: 1.03 }}
-                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm lg:text-[15px] font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
+                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
                   </div>
                 ))
               }
@@ -85,7 +73,7 @@ function Footer() {
                       transition={{ duration: 0.26, ease: "easeInOut" }}
                       whileHover={{ scale: 1.03, }}
                       whileTap={{ scale: 1.03 }}
-                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm lg:text-[15px] font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
+                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
                   </div>
                 ))
               }
@@ -105,7 +93,7 @@ function Footer() {
                       transition={{ duration: 0.26, ease: "easeInOut" }}
                       whileHover={{ scale: 1.03, }}
                       whileTap={{ scale: 1.03 }}
-                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm lg:text-[15px] font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
+                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
                   </div>
                 ))
               }
@@ -126,7 +114,7 @@ function Footer() {
                         transition={{ duration: 0.26, ease: "easeInOut" }}
                         whileHover={{ scale: 1.03, }}
                         whileTap={{ scale: 1.03 }}
-                        className='cursor-pointer flex items-center gap-2 py-1 text-neutral-500 dark:text-neutral-500 text-sm lg:text-[15px] font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><span><Icon /></span>{social_name}</motion.p>
+                        className='cursor-pointer flex items-center gap-2 py-1 text-neutral-500 dark:text-neutral-500 text-sm font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><span><Icon /></span>{social_name}</motion.p>
                       </Link>
                       
                   </div>
@@ -140,8 +128,8 @@ function Footer() {
 
 
         </div>
-        <div className='border-t border-b border-neutral-300 dark:border-neutral-800 w-full h-full flex justify-center items-center mask-l-from-60% mask-r-from-60% top-90%'>
-          <h1 className='font-mono text-[7rem] md:text-[10rem] whitespace-nowrap lg:text-[14rem] font-bold text-neutral-400 dark:text-neutral-700 flex'>TRENDY</h1>
+        <div className='mx-auto border-t border-b border-neutral-300 dark:border-neutral-800 w-full h-full flex justify-center items-center mask-l-from-60% mask-r-from-60% top-90%'>
+          <h1 className='font-mono text-[5rem] md:text-[10rem] whitespace-nowrap lg:text-[14rem] font-bold text-orange-400 dark:text-orange-700 flex'>TRENDY</h1>
       </div>
       </div>
     </div>
