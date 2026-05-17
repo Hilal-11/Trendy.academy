@@ -25,7 +25,7 @@ const ReviewCard = ({
     to?: string
 }) => {
   return (
-    <img alt="Error" src={image} className="w-auto lg:h-[178px] object-cover object-center rounded-sm border" />
+    <img alt="Error" src={image} className="lg:w-[140] w-[100px] h-[70px] lg:h-[80px] object-cover object-center rounded-sm border" />
   )
 }
 
@@ -36,12 +36,12 @@ export function MarqueeTemplates() {
 
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <Marquee pauseOnHover  className="[--duration:40s]">
+      <Marquee  className="[--duration:40s]">
         {firstRow.map((template, index) => (
           <ReviewCard key={index} {...template} />
         ))}
       </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:30s]">
+      <Marquee reverse className="[--duration:30s]">
         {secondRow.map((template, index) => (
           <ReviewCard key={index} {...template} />
         ))}
