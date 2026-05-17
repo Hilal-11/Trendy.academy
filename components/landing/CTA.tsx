@@ -1,19 +1,23 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import Link from "next/link";
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 22 },
+import { type MotionProps } from "motion/react";
+
+const fadeUp = (delay: number): MotionProps => ({
+  initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] },
+  transition: { delay, duration: 0.35, ease: "easeOut" },
 });
 
 
 
 
-function PrimaryButton({ children }: { children: React.ReactNode }) {
+function PrimaryButton({ children, buttonLink }: { children: React.ReactNode; buttonLink: string }) {
   return (
-    <button
+    <Link
+      href={buttonLink}
       className="relative overflow-hidden inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-sm font-medium cursor-pointer border-none"
       style={{
         background: "linear-gradient(135deg,#ea6c10,#f97316 55%,#fb923c)",
@@ -21,12 +25,14 @@ function PrimaryButton({ children }: { children: React.ReactNode }) {
         fontFamily: "inherit",
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.05) translateY(-1px)";
-        (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 8px 28px rgba(249,115,22,0.5)";
+        const a = e.currentTarget as HTMLAnchorElement;
+        a.style.transform = "scale(1.05) translateY(-1px)";
+        a.style.boxShadow = "0 8px 28px rgba(249,115,22,0.5)";
       }}
       onMouseLeave={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.transform = "";
-        (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 18px rgba(249,115,22,0.35)";
+        const a = e.currentTarget as HTMLAnchorElement;
+        a.style.transform = "";
+        a.style.boxShadow = "0 4px 18px rgba(249,115,22,0.35)";
       }}
     >
       <span
@@ -37,32 +43,31 @@ function PrimaryButton({ children }: { children: React.ReactNode }) {
         }}
       />
       {children}
-    </button>
+    </Link>
   );
 }
 
-function OutlineButton({ children }: { children: React.ReactNode }) {
+function OutlineButton({ children, buttonLink }: { children: React.ReactNode; buttonLink: string }) {
   return (
-    <button
+    <Link
+      href={buttonLink}
       className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium cursor-pointer text-neutral-800 dark:text-white"
-      style={{
-        transition: "all 0.2s ease",
-      }}
+      style={{ transition: "all 0.2s ease" }}
       onMouseEnter={(e) => {
-        const b = e.currentTarget as HTMLButtonElement;
-        b.style.background = "rgba(255,255,255,0.1)";
-        b.style.borderColor = "rgba(255,255,255,0.28)";
-        b.style.transform = "scale(1.03)";
+        const a = e.currentTarget as HTMLAnchorElement;
+        a.style.background = "rgba(255,255,255,0.1)";
+        a.style.borderColor = "rgba(255,255,255,0.28)";
+        a.style.transform = "scale(1.03)";
       }}
       onMouseLeave={(e) => {
-        const b = e.currentTarget as HTMLButtonElement;
-        b.style.background = "rgba(255,255,255,0.05)";
-        b.style.borderColor = "rgba(255,255,255,0.14)";
-        b.style.transform = "";
+        const a = e.currentTarget as HTMLAnchorElement;
+        a.style.background = "rgba(255,255,255,0.05)";
+        a.style.borderColor = "rgba(255,255,255,0.14)";
+        a.style.transform = "";
       }}
     >
       {children}
-    </button>
+    </Link>
   );
 }
 
@@ -127,13 +132,13 @@ export default function CTA() {
         </motion.p>
 
         <motion.div className="flex gap-3 flex-wrap" {...fadeUp(0.35)}>
-          <PrimaryButton>
+          <PrimaryButton buttonLink="/admission">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-            register in course
+            Register in course
           </PrimaryButton>
-          <OutlineButton>
+          <OutlineButton buttonLink="/courses">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-            explore courses
+            Explore courses
           </OutlineButton>
         </motion.div>
 
