@@ -24,11 +24,7 @@ export const GENERAL_QUESTIONS = [
     answer:
       "Students can learn web development, programming, Python, AI basics, data analytics, MS Office, graphic design, and other modern digital skills.",
   },
-  {
-    question: "Do you provide career or mentorship support?",
-    answer:
-      "Yes, Trendy provides mentorship, guidance, portfolio support, and career-focused learning for students and beginners.",
-  },
+
 ];
 export const ABOUT_TRENDY_QUESTIONS = [
   {
@@ -57,3 +53,4 @@ export const ABOUT_TRENDY_QUESTIONS = [
       "Yes, Trendy helps students gain practical experience through projects, guided learning, assignments, and industry-relevant training.",
   },
 ];
+
