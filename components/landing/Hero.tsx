@@ -8,7 +8,7 @@ import { PiStudentFill } from "react-icons/pi";
 import { FAQ } from './FAQ';
 import CTA from './CTA';
 import Image from 'next/image';
-import ContactForm from "./ContactForm.tsx"
+import ContactForm from "./ContactForm"
 
 const highlights = [
   "Recognized Certificate from Politechnique University",

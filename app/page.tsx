@@ -1,5 +1,4 @@
 import React from 'react'
-import { ThemeToggle } from '@/components/ToggleTheme';
 import Hero from '@/components/landing/Hero';
 function Home() {
   return (

@@ -17,7 +17,7 @@ import { Toaster } from "@/components/ui/sonner";
 import {
   FiUser, FiMail, FiPhone, FiMapPin, FiCalendar,
   FiBook, FiCode, FiShield, FiGlobe, FiTarget,
-  FiStar, FiSun, FiMoon, FiSend,
+  FiStar, FiSend,
   FiLoader,
 } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa6";
@@ -151,7 +151,6 @@ function TermsCheckbox({
 // ──────────────────────────────────────────────────
 export default function AdmissionPage() {
   const { toast } = useToast();
-  const [dark, setDark] = useState(false);
   const [photo, setPhoto] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
@@ -236,7 +235,7 @@ export default function AdmissionPage() {
 
   // ── Main render ───────────────────────────────
   return (
-    <div className={cn(dark && "dark")}>
+    <div>
       <div className="min-h-screen bg-background text-foreground font-sans">
         <Toaster />
         <HeroSection />
