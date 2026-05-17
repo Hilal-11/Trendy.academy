@@ -55,11 +55,11 @@ export const FAQ_B = () => {
 
 export const FAQ = () => {
     return (
-        <div className='w-full lg:pt-20 pb-20 px-2 lg:px-8'>
-            <div className='mx-auto flex flex-col items-center justify-center pt-16 lg:pb-10'>
+        <div className='w-full lg:pt-20 px-2 lg:px-8'>
+            <div className='mx-auto flex flex-col items-center justify-center lg:pb-10'>
                 <h1 className='text-center font-sans font-bold text-3xl lg:text-4xl text-neutral-800 dark:text-neutral-200'>Ask me anything.</h1>
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 pt-10 px-6 gap-6 lg:gap-16'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-2 grid-cols-1 px-3 gap-6 lg:gap-16'>
                 <div>
                     <FAQ_A />
                 </div>
