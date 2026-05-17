@@ -109,15 +109,15 @@ export default function TemplatesShowcaseBento() {
             </div>
 
 
-            <div className="lg:row-span-2 relative h-auto w-full grid grid-cols-1 p-2 overflow-hidden gap-5 lg:gap-1 bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg border">
-              <div className='flex flex-col justify-sttart overflow-hidden px-2 pt-3'>
+            <div className="lg:row-span-2 relative lg:h-auto h-[600px] w-full grid grid-cols-1 justify-start items-start p-2 overflow-hidden gap-5 lg:gap-1 bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg border">
+              <div className='flex flex-col justify-start overflow-hidden px-2 pt-3'>
                 <h1 className='text-left font-sans text-xl lg:text-2xl font-bold text-neutral-800 dark:text-neutral-200'>Build Real Technical Skills Through Practical Projects and Hands-On Learning</h1>
                 <p className='text-left font-sans font-medium text-sm text-neutral-600 dark:text-neutral-400 lg:px-2'>Trendy Academy provides beginner-friendly courses in Excel, Word, Tally, programming, web development, DSA, and modern technologies with practical learning.</p>
               </div>
-              <div className='flex justify-end items-center relative overflow-hidden lg:bottom-20'>
+              <div className='flex justify-end items-center relative overflow-hidden lg:bottom-28 bottom-20'>
                 <TemplatesList />
               </div>
-              <div className='hidden lg:flex justify-center items-center relative top-8'>
+              <div className=' lg:flex justify-center items-center relative lg:-bottom-20'>
                   <TechEcosystemOrbit />
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function TemplatesShowcaseBento() {
                 <p className='text-left font-sans font-medium text-sm text-neutral-600 dark:text-neutral-400 lg:px-2'>Explore our classrooms, practical sessions, workshops, and student experiences that create a modern and inspiring learning environment.</p>
               </div>
               <div>
-                <ComponentsMarquee/>
+                <MarqueeTemplates/>
               </div>
             </div>
         </div> 
@@ -166,12 +166,6 @@ export default function TemplatesShowcaseBento() {
   )
 }
 
-
-
-
-
-
-
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { PiTerminalFill } from "react-icons/pi";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -179,7 +173,7 @@ import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { OrbitingCircles } from '@/components/ui/orbiting-circles';
 import { FaSquareJs } from "react-icons/fa6";
-import { TemplatesList, ComponentsMarquee } from '@/components/landing/scrollingEffects';
+import { TemplatesList, MarqueeTemplates } from '@/components/landing/scrollingEffects';
 import Link from 'next/dist/client/link';
 import { PiMicrosoftWordLogoFill } from "react-icons/pi";
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
@@ -202,9 +196,17 @@ function TechEcosystemOrbit() {
           <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><RiNextjsFill className='text-3xl'/></span>
           <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><PiMicrosoftExcelLogoFill className='text-3xl'/></span>
           <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><PiMicrosoftPowerpointLogoFill className='text-3xl'/></span>
+      
 
       </OrbitingCircles>
-        <div className="flex justify-center items-center"><h1 className="text-3xl font-sans font-bold">Trendy</h1></div>
+      <OrbitingCircles iconSize={20} radius={90} reverse>
+          <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><VscPython className='text-3xl'/></span>
+          <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><TbTallymark4 className='text-3xl'/></span>
+          <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><RiTailwindCssFill className='text-3xl'/></span>
+          <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><GrAnalytics className='text-3xl'/></span>
+          <span className='p-2 rounded-full border shadow-sm bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center'><PiMicrosoftExcelLogoFill className='text-3xl'/></span>
+      </OrbitingCircles>
+        <div className="mask-l-from-60% mask-r-from-60% top-90% flex justify-center items-center"><h1 className="text-3xl font-sans font-bold font-bold text-orange-400 dark:text-orange-700">Trendy</h1></div>
     </div>
   )
 }
