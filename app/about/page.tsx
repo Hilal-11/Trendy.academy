@@ -5,6 +5,7 @@ import {
   Target, Cpu, Shield, Globe, Heart, Layers,
   Quote, ArrowRight, Zap, CheckCircle2,
 } from "lucide-react";
+import Link from "next/link"
 
 /* ─── DATA ─────────────────────────────────────────────── */
 
@@ -57,10 +58,10 @@ function Img({
 }) {
   return (
     <div
-      className={`relative bg-neutral-100 border-2 border-dashed border-neutral-300
+      className={`relative bg-neutral-100 dark:bg-neutral-950 border-1 border-dashed border-orange-700
         flex flex-col items-center justify-center gap-2 overflow-hidden group ${className}`}
     >
-      <div className="w-12 h-12 rounded-full bg-neutral-200 group-hover:bg-neutral-300 transition flex items-center justify-center">
+      <div className="w-12 h-12 rounded-full bg-neutral-100 dark:bg-neutral-950 group-hover:bg-neutral-300 transition flex items-center justify-center">
         <svg
           width="22" height="22" viewBox="0 0 24 24"
           fill="none" stroke="#a3a3a3" strokeWidth="1.5"
@@ -71,7 +72,6 @@ function Img({
           <path d="m21 15-5-5L5 21" />
         </svg>
       </div>
-      <span className="text-neutral-400 text-xs font-medium tracking-wide">{label}</span>
     </div>
   );
 }
@@ -82,7 +82,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="px-5 sm:px-10 lg:px-20 pt-20 pb-14">
+      <section className="px-5 sm:px-10 lg:px-20 pt-8 lg:pt-20 pb-14">
         <div className="container mx-auto grid lg:grid-cols-[1fr_1.1fr] gap-10 items-center">
 
           {/* Left */}
@@ -113,18 +113,18 @@ export default function AboutPage() {
             </ul>
 
             <div className="flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/courses"
                 className="inline-flex items-center gap-2 bg-[#E8480A] text-white px-6 py-3 rounded-full font-medium text-sm hover:opacity-90 transition"
               >
                 Explore Courses <ArrowRight size={15} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-white border border-neutral-300 px-6 py-3 rounded-full font-medium text-sm hover:border-neutral-400 transition"
+                className="inline-flex items-center gap-2 bg-white border border-neutral-300 px-6 py-3 rounded-full font-medium text-sm hover:border-neutral-400 transition text-black"
               >
                 Talk to Us
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 <Trophy size={18} />
               </div>
               <div>
-                <div className="font-semibold text-sm leading-tight">Top Rated Institute</div>
+                <div className="font-semibold text-sm leading-tight text-neutral-600">Top Rated Institute</div>
                 <div className="text-xs text-neutral-400">J&K — 2024</div>
               </div>
             </div>
@@ -151,13 +151,13 @@ export default function AboutPage() {
           {stats.map(({ n, label, icon: Icon }) => (
             <div
               key={label}
-              className="bg-white rounded-2xl p-5 sm:p-6 flex flex-col items-start gap-3 border border-neutral-100"
+              className="bg-neutral-100 dark:bg-neutral-950 rounded-2xl p-5 sm:p-6 flex flex-col items-start gap-3 border border-neutral-100 dark:border-neutral-700"
             >
               <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center">
                 <Icon size={20} className="text-orange-500" />
               </div>
               <div>
-                <div className="sora text-3xl sm:text-4xl font-bold text-[#0D1120]">{n}</div>
+                <div className="sora text-3xl sm:text-4xl font-bold text-[#0D1120] dark:text-neutral-300">{n}</div>
                 <div className="text-sm text-neutral-500 mt-0.5">{label}</div>
               </div>
             </div>
@@ -285,11 +285,11 @@ export default function AboutPage() {
 
       {/* ── WHAT WE OFFER (mini highlight band) ─────────── */}
       <section className="px-5 sm:px-10 lg:px-20 pb-14">
-        <div className="container mx-auto bg-[#0D1120] rounded-3xl p-8 sm:p-10 lg:p-12">
+        <div className="container mx-auto bg-neutral-100 dark:bg-neutral-900 border rounded-3xl p-8 sm:p-10 lg:p-12">
           <div className="grid md:grid-cols-[1fr_auto] gap-8 items-center mb-10">
             <div>
               <div className="text-orange-500 text-sm font-semibold uppercase tracking-widest mb-2">Who We Are</div>
-              <h2 className="sora text-3xl sm:text-4xl font-bold text-white">
+              <h2 className="sora text-3xl sm:text-4xl font-bold text-black dark:text-white ">
                 More Than an Institute.<br />A Launch Pad.
               </h2>
             </div>
@@ -310,7 +310,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-xl bg-orange-500/15 flex items-center justify-center mb-4">
                   <Icon size={20} className="text-orange-400" />
                 </div>
-                <h3 className="sora text-white font-semibold text-base mb-1.5">{title}</h3>
+                <h3 className="sora text-orange-400 font-semibold text-base mb-1.5">{title}</h3>
                 <p className="text-neutral-400 text-sm leading-relaxed">{body}</p>
               </div>
             ))}
@@ -329,8 +329,8 @@ export default function AboutPage() {
             {values.map(({ icon: Icon, title, body }) => (
               <div
                 key={title}
-                className="bg-white rounded-2xl p-6 border border-neutral-100
-                           hover:border-orange-200 hover:shadow-md transition-all group"
+                className="bg-white rounded-2xl p-6 border dark: border-neutral-800 border-neutral-100 dark:bg-neutral-950
+                           hover:border-orange-500 hover:shadow-md transition-all group"
               >
                 <div className="w-11 h-11 rounded-xl bg-neutral-50 group-hover:bg-orange-50 flex items-center justify-center mb-4 transition-colors">
                   <Icon size={22} className="text-neutral-400 group-hover:text-orange-500 transition-colors" />
@@ -361,7 +361,7 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {faculty.map(({ name, role, tag }) => (
-              <div key={name} className="bg-white rounded-2xl border border-neutral-100 overflow-hidden group hover:shadow-lg transition-shadow">
+              <div key={name} className="bg-neutral-200 dark:bg-neutral-900 rounded-2xl border border-neutral-100 overflow-hidden group hover:shadow-lg transition-shadow">
                 <Img
                   className="h-52 w-full rounded-none border-0 border-b-2 border-dashed border-neutral-200"
                   label="Faculty Photo"
@@ -389,7 +389,7 @@ export default function AboutPage() {
 
           {/* Desktop: horizontal line + cards */}
           <div className="hidden md:block relative">
-            <div className="absolute left-0 right-0 top-[18px] h-px bg-neutral-200 z-0" />
+            <div className="absolute left-0 right-0 top-[18px] h-px bg-neutral-200 dark:bg-neutral-900 z-0" />
             <div className="grid grid-cols-5 gap-4 relative z-10">
               {milestones.map(({ year, title, body }, i) => {
                 const isLast = i === milestones.length - 1;
@@ -484,7 +484,7 @@ export default function AboutPage() {
               href="/admissions"
               className="bg-[#E8480A] text-white px-7 py-3.5 rounded-full font-medium text-sm text-center whitespace-nowrap hover:opacity-90 transition"
             >
-              Apply Now
+              Register Now
             </a>
             <a
               href="/courses"
