@@ -1,0 +1,3058 @@
+{
+  "institute": {
+    "name": "Your Institute Name",
+    "tagline": "Empowering Careers Through Quality Education",
+    "lastUpdated": "2026-05-16"
+  },
+  "courses": [
+    {
+      "id": "WD001",
+      "slug": "web-development",
+      "category": "Programming & Development",
+      "title": "Web Development",
+      "subtitle": "Full Stack Web Development – From Zero to Professional",
+      "badge": "Most Popular",
+      "description": "A comprehensive course covering everything you need to build modern, responsive websites and full-stack web applications. This course takes you from HTML basics to full-stack development with React, Node.js, MongoDB, Authentication, and real-time apps — preparing you for a career as a professional web developer.",
+      "shortDescription": "Learn HTML, CSS, Tailwind, JavaScript, React, Node.js, MongoDB, Auth, and Deployment to build real-world full-stack apps.",
+      "thumbnail": "/images/webdev.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner to Advanced",
+      "eligibility": {
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge", "Basic internet usage"],
+        "additionalNote": "No prior coding experience required"
+      },
+      "duration": {
+        "total": "6 Months",
+        "weeklyClasses": 5
+      },
+      "batchInfo": {
+        "batchSize": "15–20 Students",
+        "batchTimings": ["02:00 AM – 04:00 AM"],
+        "startDates": ["1st June"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 7000,
+        "registrationFee": 500,
+        "admissionFee": 500,
+        "tuitionFee": 6000,
+        "installmentOptions": [
+          {
+            "plan": "Full Payment",
+            "amount": 7000,
+            "discount": "5% off (Pay ₹6,650)"
+          },
+          {
+            "plan": "2 Installments",
+            "amount": "₹3,500 × 2",
+            "discount": "No extra charge"
+          }
+        ]
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Internet & Web Fundamentals",
+            "duration": "1 Week",
+            "topics": [
+              "How the Internet works",
+              "Domain names, Hosting, and Servers",
+              "HTTP vs HTTPS – Request & Response cycle",
+              "DNS and how browsers render pages",
+              "Web standards and best practices",
+              "Client-side vs Server-side",
+              "Introduction to VS Code and developer tools"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "HTML5 – Structure of the Web",
+            "duration": "2 Weeks",
+            "topics": [
+              "HTML document structure and DOCTYPE",
+              "Headings, Paragraphs, and Text formatting",
+              "Links, Images, and Media embeds",
+              "Lists – Ordered, Unordered, Definition",
+              "Tables – Structure and accessibility",
+              "HTML Forms – Input types, Labels, Buttons, Fieldset",
+              "Semantic HTML5 Tags (header, nav, main, section, article, aside, footer)",
+              "HTML5 Audio and Video",
+              "Meta tags and SEO basics",
+              "Accessibility in HTML (ARIA roles, alt text, tabindex)",
+              "HTML Entities and Special Characters",
+              "Emmet shortcuts in VS Code"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "CSS3 – Styling the Web",
+            "duration": "3 Weeks",
+            "topics": [
+              "CSS syntax, Selectors, and Specificity",
+              "Box Model – Margin, Padding, Border, outline",
+              "Colors, Backgrounds, and Gradients",
+              "Typography and Google Fonts",
+              "Units – px, em, rem, %, vh, vw",
+              "Flexbox – Full layout guide",
+              "CSS Grid – Full layout guide",
+              "Responsive Design and Media Queries",
+              "Mobile-first design approach",
+              "CSS Transitions and Animations (@keyframes)",
+              "CSS Variables (Custom Properties)",
+              "CSS Pseudo-classes (:hover, :focus, :nth-child) and Pseudo-elements (::before, ::after)",
+              "CSS Positioning – static, relative, absolute, fixed, sticky",
+              "CSS Filter, Clip-path, Transforms",
+              "Cross-browser compatibility",
+              "Dark mode with CSS variables"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Git & GitHub – Complete Version Control",
+            "duration": "1 Week",
+            "topics": [
+              "What is Version Control and why it matters",
+              "Installing Git and initial setup",
+              "Git workflow – Working directory, Staging area, Repository",
+              "Core commands – init, add, commit, status, log",
+              "Branching and Merging – create, switch, merge, delete branches",
+              "Handling Merge Conflicts",
+              "Git Stash, Rebase, and Cherry-pick",
+              "Remote repositories – GitHub setup",
+              "Push, Pull, Fetch, Clone",
+              "Pull Requests and Code Reviews",
+              "GitHub Issues and Project Boards",
+              "GitHub Pages for free deployment",
+              ".gitignore – What to ignore and why",
+              "SSH key setup for GitHub",
+              "Collaborative workflow – Forking and contributing to open source"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Tailwind CSS + Bootstrap 5 – Utility-First & Component Frameworks",
+            "duration": "2 Weeks",
+            "topics": [
+              "Tailwind CSS – Utility-first philosophy",
+              "Tailwind installation – CDN, CLI, and Vite setup",
+              "Core utility classes – spacing, colors, typography, sizing",
+              "Tailwind Flexbox and Grid utilities",
+              "Responsive design with Tailwind breakpoints (sm, md, lg, xl, 2xl)",
+              "Tailwind Hover, Focus, and State variants",
+              "Dark mode in Tailwind",
+              "Tailwind Custom Config – tailwind.config.js",
+              "Tailwind Components – Cards, Navbars, Modals, Forms",
+              "Bootstrap 5 Grid System",
+              "Bootstrap Components – Navbar, Cards, Modals, Carousel, Accordion",
+              "Bootstrap Utility Classes",
+              "Customizing Bootstrap with CSS and SCSS",
+              "Tailwind vs Bootstrap – When to use which",
+              "Building a complete responsive webpage with Tailwind"
+            ]
+          },
+          {
+            "moduleNo": 6,
+            "title": "JavaScript – Modern JS & ES6+",
+            "duration": "5 Weeks",
+            "topics": [
+              "Variables – var, let, const and scoping",
+              "Data Types – Primitive and Reference types",
+              "Type Conversion and Coercion",
+              "Operators – Arithmetic, Comparison, Logical, Nullish Coalescing (??)",
+              "Optional Chaining (?.)",
+              "Control Flow – if/else, switch, ternary",
+              "Loops – for, while, do-while, for...of, for...in",
+              "Functions – Declaration, Expression, Arrow Functions",
+              "Default Parameters and Rest Parameters",
+              "Closures and Lexical Scope",
+              "Higher-Order Functions – map, filter, reduce, find, every, some",
+              "Spread and Rest Operators",
+              "Destructuring – Arrays and Objects",
+              "Template Literals and Tagged Templates",
+              "Symbols and Iterators",
+              "DOM Manipulation – Query, Create, Modify, Delete elements",
+              "Event Handling – Click, Input, Submit, Keyboard, Mouse events",
+              "Event Bubbling, Capturing, and Delegation",
+              "Form Validation – Client-side",
+              "Arrays – All modern methods",
+              "Objects – Methods, Shorthand, Computed properties",
+              "JSON – Parse and Stringify",
+              "ES6 Classes – Constructor, Inheritance, Static methods",
+              "Prototypes and Prototype chain",
+              "Modules – import/export (ESM)",
+              "Promises – then/catch/finally",
+              "async/await – Clean asynchronous code",
+              "Error Handling – try/catch/finally, Custom Errors",
+              "Fetch API – GET, POST, PUT, DELETE requests",
+              "Working with REST APIs and JSON data",
+              "LocalStorage, SessionStorage, Cookies",
+              "Timers – setTimeout, setInterval, requestAnimationFrame",
+              "Regular Expressions (RegEx) basics",
+              "WeakMap, WeakSet, Map, Set",
+              "Proxy and Reflect (introduction)",
+              "Generator Functions (introduction)",
+              "Browser APIs – Geolocation, Clipboard, Notifications",
+              "Performance basics – Debounce and Throttle"
+            ]
+          },
+          {
+            "moduleNo": 7,
+            "title": "React – Frontend Framework",
+            "duration": "5 Weeks",
+            "topics": [
+              "What is React and why use it – Virtual DOM",
+              "Setting up React with Vite",
+              "JSX – Syntax and expressions",
+              "Components – Functional components",
+              "Props – Passing and receiving data",
+              "State – useState hook",
+              "Conditional Rendering – &&, ternary, early return",
+              "Lists and Keys – Rendering arrays",
+              "Event Handling in React",
+              "Forms in React – Controlled components",
+              "useEffect – Side effects, Cleanup, Dependencies",
+              "useRef – DOM access and mutable values",
+              "useContext – Context API and global state",
+              "useReducer – Complex state logic",
+              "Custom Hooks – Creating reusable logic",
+              "useMemo and useCallback – Performance optimization",
+              "React.memo – Preventing unnecessary re-renders",
+              "Component Composition and Children prop",
+              "Lifting State Up",
+              "React Router v6 – SPA routing",
+              "Routes, Nested Routes, Dynamic Routes (:id)",
+              "useNavigate, useParams, useLocation",
+              "Protected Routes – Route Guards",
+              "Lazy loading and Suspense",
+              "Error Boundaries",
+              "Fetching data with useEffect + fetch/axios",
+              "TanStack Query (React Query) – Server state management",
+              "Zustand – Lightweight global state management",
+              "React Hook Form – Form handling and validation",
+              "Zod – Schema validation",
+              "Tailwind CSS with React",
+              "Shadcn/ui – Component library",
+              "Building reusable UI components",
+              "Toast notifications and Modals",
+              "File uploads in React",
+              "Environment variables in React (.env)",
+              "React project structure and best practices",
+              "Deploying React app to Vercel/Netlify"
+            ]
+          },
+          {
+            "moduleNo": 8,
+            "title": "Node.js – Backend Development",
+            "duration": "3 Weeks",
+            "topics": [
+              "What is Node.js – Event loop, Non-blocking I/O",
+              "Installing Node.js and npm/yarn/pnpm",
+              "Node.js REPL and running .js files",
+              "Core modules – fs, path, os, events, http",
+              "File System – Read, Write, Append, Delete files",
+              "Creating a basic HTTP server",
+              "NPM – Installing, managing, and publishing packages",
+              "package.json and package-lock.json",
+              "Modules – require/module.exports vs ESM import/export",
+              "Environment variables – dotenv",
+              "Streams and Buffers (introduction)",
+              "Child Processes and Worker Threads (introduction)",
+              "Event Emitter pattern",
+              "Nodemon for development",
+              "Error handling in Node.js",
+              "Building a CLI tool with Node.js"
+            ]
+          },
+          {
+            "moduleNo": 9,
+            "title": "Express.js – Web Framework",
+            "duration": "2 Weeks",
+            "topics": [
+              "What is Express and why use it",
+              "Setting up an Express server",
+              "Routing – GET, POST, PUT, PATCH, DELETE",
+              "Route Parameters and Query Strings",
+              "Middleware – Built-in, Third-party, Custom",
+              "express.json() and express.urlencoded()",
+              "Static files serving",
+              "Express Router – Modular routing",
+              "MVC Architecture – Models, Views, Controllers",
+              "Error handling middleware",
+              "CORS setup and configuration",
+              "Rate limiting and Security headers (Helmet)",
+              "File uploads with Multer",
+              "Request validation with Joi or Zod",
+              "API versioning",
+              "Building a complete REST API",
+              "Testing API with Postman and Thunder Client"
+            ]
+          },
+          {
+            "moduleNo": 10,
+            "title": "MongoDB & Mongoose – NoSQL Database",
+            "duration": "2 Weeks",
+            "topics": [
+              "What is NoSQL – MongoDB vs SQL databases",
+              "MongoDB Atlas setup – Cloud database",
+              "MongoDB Compass – GUI for MongoDB",
+              "Collections, Documents, and BSON",
+              "MongoDB CRUD – insertOne, find, updateOne, deleteOne",
+              "MongoDB Operators – $eq, $gt, $in, $and, $or, $not",
+              "MongoDB Aggregation Pipeline – $match, $group, $project, $sort, $lookup",
+              "Indexing for performance",
+              "Mongoose ODM – Schema and Model",
+              "Mongoose – Data Types, Validators, Defaults",
+              "Mongoose – Virtual fields, Methods, Statics",
+              "Mongoose – Population (Joins / References)",
+              "Mongoose – Middleware (pre/post hooks)",
+              "Relationships – One-to-One, One-to-Many, Many-to-Many",
+              "Pagination and Filtering with Mongoose",
+              "Prisma ORM (introduction) – Type-safe database access",
+              "Prisma schema, Migrations, and Queries",
+              "When to use Mongoose vs Prisma"
+            ]
+          },
+          {
+            "moduleNo": 11,
+            "title": "Authentication & Security",
+            "duration": "2 Weeks",
+            "topics": [
+              "Authentication vs Authorization",
+              "Session-based Authentication",
+              "JWT – JSON Web Tokens (Access & Refresh tokens)",
+              "Storing tokens – Cookies vs localStorage",
+              "Password hashing with bcrypt",
+              "Role-based Access Control (RBAC)",
+              "OAuth 2.0 – How it works",
+              "Social Logins – Google, GitHub, Facebook OAuth",
+              "Clerk – Authentication platform setup, UI components, webhooks",
+              "Better-Auth – Modern auth library for Node.js/Next.js",
+              "Passport.js – Strategy-based auth",
+              "Email verification and OTP flows",
+              "Forgot password and Reset password flow",
+              "Two-Factor Authentication (2FA) overview",
+              "API Key authentication",
+              "Security best practices – XSS, CSRF, SQL Injection, Rate limiting",
+              "HTTPS, SSL, and secure headers"
+            ]
+          },
+          {
+            "moduleNo": 12,
+            "title": "Socket.io – Real-Time Applications",
+            "duration": "1 Week",
+            "topics": [
+              "What are WebSockets – HTTP vs WebSocket",
+              "Socket.io – Server and Client setup",
+              "Emitting and Listening to events",
+              "Broadcasting to rooms and namespaces",
+              "Real-time notifications system",
+              "Building a real-time Chat Application",
+              "Online presence indicators",
+              "Handling disconnections and reconnections",
+              "Scaling Socket.io with Redis Adapter (intro)"
+            ]
+          },
+          {
+            "moduleNo": 13,
+            "title": "Deployment & DevOps Basics",
+            "duration": "1 Week",
+            "topics": [
+              "Environment – Development, Staging, Production",
+              "Deploying frontend to Vercel and Netlify",
+              "Deploying backend to Render, Railway, and Cyclic",
+              "MongoDB Atlas – Production database setup",
+              "Domain purchase and DNS configuration",
+              "SSL certificates and HTTPS setup",
+              "Environment variables in production",
+              "PM2 – Node.js process manager",
+              "Introduction to Docker – Containerization concepts",
+              "CI/CD basics with GitHub Actions",
+              "Monitoring and Logging – basic setup",
+              "Performance optimization and caching basics"
+            ]
+          },
+          {
+            "moduleNo": 14,
+            "title": "Full Stack Projects",
+            "duration": "3 Weeks",
+            "topics": [
+              "Project planning – Requirements, Wireframes, ERD",
+              "Full Stack Blog App – React + Node + MongoDB + Auth",
+              "Real-time Chat App – Socket.io + React + Node",
+              "E-Commerce App – Products, Cart, Orders, Payments (Razorpay/Stripe intro)",
+              "Task Management App – Drag & Drop, Kanban board",
+              "Portfolio Website – Deploy on Vercel",
+              "Code review, Refactoring, and Clean code practices",
+              "Resume and GitHub profile preparation",
+              "Interview preparation – Common questions and concepts"
+            ]
+          }
+        ]
+      },
+      "projects": [
+        "Personal Portfolio Website (HTML + CSS + Tailwind)",
+        "Responsive Landing Page with Bootstrap",
+        "JavaScript Quiz App",
+        "Weather App using Fetch API",
+        "React Movie Search App (TMDB API)",
+        "React E-Commerce UI with Zustand Cart",
+        "Full Stack Blog App (React + Node + MongoDB + JWT Auth)",
+        "Real-time Chat Application (Socket.io + React)",
+        "Task Management App with Drag & Drop",
+        "Full Stack E-Commerce with Razorpay Integration"
+      ],
+      "toolsAndTechnologies": [
+        "VS Code", "Chrome DevTools", "Git & GitHub",
+        "HTML5", "CSS3", "Tailwind CSS", "Bootstrap 5",
+        "JavaScript (ES6+)", "React", "React Router", "Zustand", "TanStack Query",
+        "Node.js", "Express.js", "MongoDB", "Mongoose", "Prisma",
+        "Clerk", "Better-Auth", "JWT", "bcrypt",
+        "Socket.io", "Postman", "Thunder Client",
+        "Vite", "npm/yarn", "dotenv", "Nodemon",
+        "Vercel", "Netlify", "Render", "Railway",
+        "MongoDB Atlas", "Compass"
+      ],
+      "instructor": [
+        {
+          "name": "Hilal Ahmad",
+          "qualification": "BCA (Computer Science)",
+          "experience": "5+ Years in Web Development",
+          "specialization": "Full Stack Web Development, JavaScript, React"
+        },
+        {
+          "name": "TBD – Instructor 2",
+          "qualification": "B.Tech / BCA",
+          "experience": "3+ Years",
+          "specialization": "Node.js, Backend Development, MongoDB"
+        }
+      ],
+      "certification": {
+        "certifiedBy": "Trendy (Affiliated with Politechnique)",
+        "certificateTitle": "Certificate in Full Stack Web Development",
+        "governmentRecognized": true
+      },
+      "learningOutcomes": [
+        "Build fully responsive websites using HTML, CSS, Tailwind, and Bootstrap",
+        "Write modern JavaScript with ES6+ features confidently",
+        "Build dynamic single-page applications with React",
+        "Develop REST APIs with Node.js and Express",
+        "Design and query MongoDB databases with Mongoose and Prisma",
+        "Implement secure authentication with JWT, Clerk, and Better-Auth",
+        "Build real-time apps with Socket.io",
+        "Deploy full-stack projects to cloud platforms",
+        "Use Git & GitHub for collaborative development",
+        "Create a professional portfolio with real-world projects"
+      ],
+      "careerOpportunities": [
+        "Junior Full Stack Developer",
+        "Frontend Developer (React)",
+        "Backend Developer (Node.js)",
+        "UI/UX Developer",
+        "Freelance Web Developer",
+        "Junior Software Engineer"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalReviews": 124
+      }
+    },
+    {
+      "id": "FE001",
+      "slug": "frontend-development",
+      "category": "Programming & Development",
+      "title": "Frontend Development",
+      "subtitle": "Complete Modern Frontend Development – React, Next.js & Beyond",
+      "badge": "New Batch",
+      "description": "A deep-dive frontend course covering everything from HTML fundamentals to production-grade Next.js applications. You will master HTML5, CSS3, Tailwind CSS, modern JavaScript (ES6+), TypeScript, React, Next.js (App Router), animations, accessibility, performance optimization, and Vercel deployment — building a real portfolio along the way.",
+      "shortDescription": "Master HTML, CSS, Tailwind, JavaScript, TypeScript, React, and Next.js to build production-grade frontend applications.",
+      "thumbnail": "/images/frontend.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner to Advanced",
+      "eligibility": {
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge", "Basic internet usage"],
+        "additionalNote": "No prior coding experience required"
+      },
+      "duration": {
+        "total": "5 Months",
+        "weeklyClasses": 6
+      },
+      "batchInfo": {
+        "batchSize": "15–20 Students",
+        "batchTimings": ["02:00 AM – 04:00 AM"],
+        "startDates": ["1st June"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 7000,
+        "registrationFee": 500,
+        "admissionFee": 500,
+        "tuitionFee": 6000,
+        "installmentOptions": [
+          {
+            "plan": "Full Payment",
+            "amount": 7000,
+            "discount": "5% off (Pay ₹6,650)"
+          },
+          {
+            "plan": "2 Installments",
+            "amount": "₹3,500 × 2",
+            "discount": "No extra charge"
+          }
+        ]
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Internet & Web Fundamentals",
+            "duration": "1 Week",
+            "topics": [
+              "How the Internet works – packets, IP, TCP",
+              "Domain names, Hosting, and Servers",
+              "HTTP vs HTTPS – Request & Response cycle",
+              "DNS resolution and how browsers render pages",
+              "Client-side vs Server-side rendering (intro)",
+              "Web standards, accessibility, and best practices",
+              "Dev environment setup – VS Code, extensions, terminal basics",
+              "Chrome DevTools – Elements, Console, Network, Performance tabs"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "HTML5 – Structure & Semantics",
+            "duration": "2 Weeks",
+            "topics": [
+              "HTML document structure and DOCTYPE",
+              "Headings, Paragraphs, Text formatting tags",
+              "Links, Images, and Media embeds (audio, video, iframe)",
+              "Lists – Ordered, Unordered, Definition",
+              "Tables – Structure, scope, and accessibility",
+              "HTML Forms – All input types, Labels, Buttons, Fieldset, Datalist",
+              "Semantic HTML5 – header, nav, main, section, article, aside, footer, figure",
+              "HTML5 APIs intro – Drag & Drop, History API",
+              "Meta tags, Open Graph, Twitter Cards",
+              "SEO fundamentals – Title, Description, Canonical",
+              "Web Accessibility (a11y) – ARIA roles, landmarks, tabindex, focus management",
+              "Emmet abbreviations for fast markup",
+              "HTML validation and best practices"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "CSS3 – Styling, Layout & Motion",
+            "duration": "4 Weeks",
+            "topics": [
+              "CSS syntax, Selectors, Specificity, Cascade",
+              "Box Model – Margin, Padding, Border, Outline",
+              "CSS Units – px, em, rem, %, vw, vh, svh, dvh, ch, clamp()",
+              "Colors – HEX, RGB, HSL, oklch (modern)",
+              "Backgrounds, Gradients (linear, radial, conic)",
+              "Typography – Google Fonts, @font-face, font-display",
+              "Flexbox – All properties, alignment, wrapping",
+              "CSS Grid – Template columns/rows, named areas, subgrid",
+              "Responsive Design – Mobile-first, Media Queries, Container Queries",
+              "CSS Positioning – static, relative, absolute, fixed, sticky",
+              "Overflow, Scroll snap, Scroll-driven animations",
+              "CSS Transitions – timing functions, transform",
+              "CSS Animations – @keyframes, animation properties",
+              "CSS Variables (Custom Properties) – theming",
+              "CSS Pseudo-classes (:hover, :focus, :is, :where, :has)",
+              "CSS Pseudo-elements (::before, ::after, ::placeholder, ::marker)",
+              "Filter, Clip-path, Mask, Mix-blend-mode",
+              "CSS Shapes and text wrapping",
+              "Dark mode with prefers-color-scheme + CSS variables",
+              "Cross-browser compatibility and vendor prefixes",
+              "Print CSS basics",
+              "CSS Architecture – BEM, SMACSS (naming conventions)"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Git & GitHub – Complete Version Control",
+            "duration": "1 Week",
+            "topics": [
+              "What is Version Control and why it matters",
+              "Installing Git and initial config (name, email, editor)",
+              "Git workflow – Working directory, Staging area, Repository",
+              "Core commands – init, add, commit, status, log, diff",
+              "Branching – create, switch, rename, delete branches",
+              "Merging strategies – fast-forward, three-way, squash",
+              "Handling Merge Conflicts step-by-step",
+              "Git Stash – save and restore uncommitted work",
+              "Git Rebase – interactive rebase, squashing commits",
+              "Git Reset and Revert – undo mistakes safely",
+              "Git Cherry-pick",
+              "Remote repos – GitHub setup, Push, Pull, Fetch, Clone",
+              "Pull Requests – creating, reviewing, merging",
+              "GitHub Issues and Project Boards",
+              "GitHub Pages for free static deployment",
+              ".gitignore – What to ignore and why",
+              "SSH key setup for GitHub",
+              "Conventional Commits – commit message standards",
+              "Forking and contributing to open source"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Tailwind CSS – Utility-First Styling",
+            "duration": "2 Weeks",
+            "topics": [
+              "Utility-first philosophy – why it works",
+              "Tailwind installation – CDN, CLI, Vite, PostCSS",
+              "Core utilities – spacing, sizing, colors, typography",
+              "Flexbox and Grid utilities",
+              "Responsive prefixes – sm, md, lg, xl, 2xl",
+              "State variants – hover, focus, active, disabled, group, peer",
+              "Dark mode – class and media strategy",
+              "tailwind.config.js – extending theme, custom colors, fonts",
+              "CSS Variables inside Tailwind",
+              "Arbitrary values – [value] syntax",
+              "@apply directive – extracting components",
+              "Tailwind plugins – typography, forms, aspect-ratio",
+              "Building a Navbar, Cards, Forms, Badges, Modals with Tailwind",
+              "Tailwind v4 changes overview",
+              "Optimizing for production – PurgeCSS / content paths"
+            ]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Bootstrap 5 – Component-First Framework",
+            "duration": "1 Week",
+            "topics": [
+              "Bootstrap Grid System – 12 columns, breakpoints",
+              "Bootstrap Components – Navbar, Cards, Modals, Carousel, Accordion, Tabs, Offcanvas",
+              "Bootstrap Utility Classes – spacing, display, flex, text",
+              "Bootstrap Forms and Validation styles",
+              "Bootstrap Icons",
+              "Customizing Bootstrap with CSS and SCSS variables",
+              "Bootstrap vs Tailwind – when to use which",
+              "Building a complete responsive webpage with Bootstrap"
+            ]
+          },
+          {
+            "moduleNo": 7,
+            "title": "JavaScript – Modern JS & ES6+",
+            "duration": "5 Weeks",
+            "topics": [
+              "Variables – var, let, const – scoping and hoisting",
+              "Data Types – Primitive vs Reference types",
+              "Type Conversion and Coercion",
+              "Operators – Arithmetic, Comparison, Logical, Nullish Coalescing (??), Optional Chaining (?.)",
+              "Control Flow – if/else, switch, ternary",
+              "Loops – for, while, do-while, for...of, for...in, forEach",
+              "Functions – Declaration, Expression, Arrow Functions",
+              "Default Parameters, Rest Parameters, Arguments object",
+              "Closures and Lexical Scope",
+              "IIFE – Immediately Invoked Function Expressions",
+              "Higher-Order Functions – map, filter, reduce, find, findIndex, every, some, flat, flatMap",
+              "Spread and Rest Operators",
+              "Destructuring – Arrays, Objects, Nested, Renaming",
+              "Template Literals and Tagged Templates",
+              "DOM Manipulation – querySelector, createElement, insertAdjacentHTML, remove",
+              "Event Handling – click, input, change, submit, keydown, mousemove",
+              "Event Bubbling, Capturing, and Delegation",
+              "Custom Events – CustomEvent, dispatchEvent",
+              "Form Validation – Constraint Validation API",
+              "Arrays – all methods (slice, splice, sort, reverse, fill, copyWithin, at)",
+              "Objects – methods, shorthand, computed keys, Object.entries/keys/values/assign/freeze",
+              "JSON – Parse, Stringify, deep clone patterns",
+              "ES6 Classes – constructor, extends, super, static, private fields (#)",
+              "Prototypes and Prototype chain",
+              "Symbols and Well-known Symbols",
+              "Iterators and Generators (function*)",
+              "ES Modules – import, export, named, default, dynamic import()",
+              "Promises – resolve, reject, .then, .catch, .finally",
+              "Promise combinators – Promise.all, race, any, allSettled",
+              "async/await – error handling, parallel execution",
+              "Fetch API – GET, POST, PUT, PATCH, DELETE with headers",
+              "Working with REST APIs and JSON responses",
+              "Axios – HTTP client as alternative to Fetch",
+              "LocalStorage, SessionStorage, IndexedDB basics, Cookies",
+              "Timers – setTimeout, setInterval, clearTimeout, requestAnimationFrame",
+              "Regular Expressions – patterns, flags, methods",
+              "WeakMap, WeakSet, Map, Set",
+              "Proxy and Reflect",
+              "Performance – Debounce, Throttle, Lazy loading",
+              "Web APIs – Intersection Observer, Resize Observer, MutationObserver",
+              "Browser APIs – Geolocation, Clipboard, Notifications, Web Storage",
+              "Service Workers and PWA basics (intro)",
+              "JavaScript Design Patterns – Module, Singleton, Observer, Factory"
+            ]
+          },
+          {
+            "moduleNo": 8,
+            "title": "TypeScript – Typed JavaScript",
+            "duration": "2 Weeks",
+            "topics": [
+              "What is TypeScript and why use it",
+              "TypeScript setup – tsconfig.json, strict mode",
+              "Basic types – string, number, boolean, null, undefined, any, unknown, never, void",
+              "Type Inference",
+              "Arrays and Tuples",
+              "Objects – type aliases and interfaces",
+              "Union types and Intersection types",
+              "Literal types and Discriminated Unions",
+              "Enums – const enums",
+              "Functions – parameter types, return types, overloads",
+              "Optional and Default parameters",
+              "Generics – functions, interfaces, classes",
+              "Utility Types – Partial, Required, Readonly, Pick, Omit, Record, ReturnType, Parameters",
+              "Type Guards and narrowing – typeof, instanceof, in, is",
+              "Non-null assertion operator (!)",
+              "TypeScript with DOM manipulation",
+              "Modules in TypeScript",
+              "Declaration files – .d.ts",
+              "TypeScript with React – typing Props, State, Events, Refs, Context",
+              "Zod integration for runtime validation",
+              "Common TypeScript patterns and best practices"
+            ]
+          },
+          {
+            "moduleNo": 9,
+            "title": "React – Complete Frontend Framework",
+            "duration": "5 Weeks",
+            "topics": [
+              "What is React – Virtual DOM, Reconciliation, Fiber",
+              "Setting up React with Vite + TypeScript",
+              "JSX – Syntax, expressions, fragments (<>)",
+              "Functional Components – creating and exporting",
+              "Props – passing, receiving, typing with TypeScript",
+              "useState – state basics, functional updates, batching",
+              "Conditional Rendering – &&, ternary, early return, switch",
+              "Lists and Keys – rendering arrays correctly",
+              "Event Handling – onClick, onChange, onSubmit",
+              "Controlled vs Uncontrolled components",
+              "useEffect – Side effects, Dependencies array, Cleanup",
+              "useRef – DOM access, mutable refs, forwarding refs",
+              "useContext – Context API, createContext, useContext",
+              "useReducer – Complex state, dispatch pattern",
+              "useMemo – Memoizing expensive computations",
+              "useCallback – Memoizing functions",
+              "React.memo – Preventing unnecessary re-renders",
+              "useId, useTransition, useDeferredValue (React 18+)",
+              "Custom Hooks – extracting and reusing logic",
+              "Component Composition – Children, Slots pattern, Compound components",
+              "Render Props pattern",
+              "Higher-Order Components (HOC)",
+              "Error Boundaries – catching render errors",
+              "Portals – Rendering outside root",
+              "Lazy loading – React.lazy + Suspense",
+              "React Router v6 – BrowserRouter, Routes, Route",
+              "Nested routes and Layout routes",
+              "Dynamic routes – useParams",
+              "Navigation – useNavigate, useLocation, Link, NavLink",
+              "Protected routes and Auth guards",
+              "Data fetching with useEffect + fetch",
+              "TanStack Query (React Query) – useQuery, useMutation, useInfiniteQuery",
+              "Zustand – store setup, actions, slices, devtools",
+              "Jotai – Atomic state management",
+              "Redux Toolkit – createSlice, createAsyncThunk (overview)",
+              "React Hook Form – register, handleSubmit, errors, watch",
+              "Zod integration with React Hook Form",
+              "File uploads in React",
+              "Drag and Drop – react-beautiful-dnd or dnd-kit",
+              "Infinite Scroll – Intersection Observer",
+              "Virtualization – react-window (large lists)",
+              "Toast notifications – react-hot-toast / sonner",
+              "Modals, Drawers, Popovers – Radix UI primitives",
+              "Shadcn/ui – component library setup and usage",
+              "Tailwind CSS with React",
+              "Framer Motion – Animations and transitions in React",
+              "React Profiler – identifying performance issues",
+              "React DevTools – debugging components",
+              "Environment variables – .env, import.meta.env",
+              "Project structure and best practices"
+            ]
+          },
+          {
+            "moduleNo": 10,
+            "title": "Next.js – Production React Framework",
+            "duration": "5 Weeks",
+            "topics": [
+              "What is Next.js – SSR, SSG, ISR, CSR explained",
+              "Next.js vs plain React – when and why",
+              "App Router vs Pages Router – understanding both",
+              "Project setup – create-next-app with TypeScript + Tailwind",
+              "File-based routing – folders as routes",
+              "Layout.tsx – Shared layouts and nested layouts",
+              "Page.tsx, Loading.tsx, Error.tsx, Not-found.tsx",
+              "Route Groups – (group) for organizing without affecting URL",
+              "Dynamic Routes – [slug], [...catchAll], [[...optional]]",
+              "Parallel Routes – @slot convention",
+              "Intercepting Routes – (.) (..) (...) patterns",
+              "Link component and programmatic navigation – useRouter",
+              "Server Components vs Client Components – 'use client'",
+              "When to use Server vs Client components",
+              "Data fetching in Server Components – async/await directly",
+              "fetch() in Next.js – caching, revalidate, no-store",
+              "generateStaticParams – static generation for dynamic routes",
+              "Streaming and Suspense with Server Components",
+              "Server Actions – 'use server', form actions, mutations",
+              "useFormState and useFormStatus (React DOM hooks)",
+              "Route Handlers – API routes (route.ts) GET, POST, PUT, DELETE",
+              "Middleware – next/middleware, request modification, redirects, auth",
+              "next/image – Image optimization, lazy loading, priority",
+              "next/font – Font optimization (Google Fonts, local)",
+              "next/link – Prefetching, scroll restoration",
+              "Metadata API – generateMetadata, static metadata, OG images",
+              "Open Graph Image generation – ImageResponse",
+              "Sitemap and robots.txt generation",
+              "Environment variables in Next.js – .env.local, server vs client",
+              "Internationalization (i18n) – next-intl setup",
+              "Authentication with NextAuth.js (Auth.js v5)",
+              "Authentication with Clerk in Next.js",
+              "Database integration – Prisma with Next.js",
+              "Edge Runtime vs Node.js Runtime",
+              "Error handling – error.tsx, global-error.tsx",
+              "Next.js Caching – full route cache, data cache, router cache",
+              "Cache invalidation – revalidatePath, revalidateTag",
+              "ISR – Incremental Static Regeneration in App Router",
+              "Performance – bundle analysis, code splitting",
+              "next.config.ts – redirects, rewrites, headers, experimental flags",
+              "Testing Next.js – Vitest, React Testing Library",
+              "Deployment to Vercel – zero config",
+              "Vercel dashboard – domains, environment variables, logs",
+              "Preview deployments on pull requests",
+              "Vercel Analytics and Speed Insights"
+            ]
+          },
+          {
+            "moduleNo": 11,
+            "title": "Animations & Micro-interactions",
+            "duration": "1 Week",
+            "topics": [
+              "CSS Animations review – @keyframes, animation shorthand",
+              "CSS Transitions – timing functions (ease, spring)",
+              "Scroll-driven animations (native CSS)",
+              "Framer Motion – motion components, variants, animate",
+              "Framer Motion – AnimatePresence, layout animations",
+              "Framer Motion – Drag, Gesture recognition",
+              "Framer Motion – useScroll, useTransform, useSpring",
+              "GSAP basics (intro) – ScrollTrigger",
+              "Three.js + React Three Fiber (overview)",
+              "Lottie animations in React",
+              "Page transitions in Next.js",
+              "Reduced motion accessibility – prefers-reduced-motion"
+            ]
+          },
+          {
+            "moduleNo": 12,
+            "title": "UI Libraries & Design Systems",
+            "duration": "1 Week",
+            "topics": [
+              "Design system concepts – tokens, components, patterns",
+              "Shadcn/ui – setup, theming, adding components",
+              "Radix UI – Headless accessible components",
+              "Headless UI",
+              "Lucide React – Icon library",
+              "React Icons – Multiple icon packs",
+              "Recharts / Chart.js – Data visualization in React",
+              "React Table (TanStack Table) – Complex data tables",
+              "React DnD / dnd-kit – Drag and drop",
+              "Storybook – Component documentation and isolated dev",
+              "Figma to Code workflow – reading design files",
+              "Design tokens – colors, spacing, typography scales"
+            ]
+          },
+          {
+            "moduleNo": 13,
+            "title": "Performance & Optimization",
+            "duration": "1 Week",
+            "topics": [
+              "Web Core Vitals – LCP, FID/INP, CLS explained",
+              "Lighthouse audit – understanding and improving scores",
+              "Image optimization – WebP, AVIF, responsive images, lazy load",
+              "Font optimization – font-display, preload, variable fonts",
+              "Code splitting – dynamic imports, route-level splitting",
+              "Tree shaking and dead code elimination",
+              "Bundle analysis – Webpack Bundle Analyzer, Next.js built-in",
+              "Caching strategies – Browser cache, HTTP cache headers",
+              "Prefetching and preloading resources",
+              "Critical CSS and above-the-fold optimization",
+              "Debounce and Throttle in practice",
+              "Virtualization for large lists",
+              "Web Workers (intro) – offloading heavy computation",
+              "Performance monitoring – Vercel Analytics, Web Vitals API"
+            ]
+          },
+          {
+            "moduleNo": 14,
+            "title": "Accessibility & SEO",
+            "duration": "1 Week",
+            "topics": [
+              "Why accessibility matters – legal and ethical context",
+              "WCAG 2.1 guidelines – A, AA, AAA levels",
+              "Semantic HTML as the foundation of a11y",
+              "Keyboard navigation – tabindex, focus management, skip links",
+              "Screen reader testing – NVDA, VoiceOver basics",
+              "ARIA – roles, properties, states (live regions)",
+              "Color contrast requirements",
+              "Accessible forms – labels, error messages, focus indicators",
+              "Accessible modals – focus trap, aria-modal",
+              "axe DevTools and Lighthouse accessibility audit",
+              "SEO in Next.js – Metadata API, sitemap, robots",
+              "Structured data – JSON-LD schema",
+              "Open Graph and Twitter Card meta tags",
+              "Performance as SEO – Core Web Vitals",
+              "Internationalization and hreflang"
+            ]
+          },
+          {
+            "moduleNo": 15,
+            "title": "Testing Frontend Applications",
+            "duration": "1 Week",
+            "topics": [
+              "Why testing matters – unit, integration, E2E",
+              "Vitest – setup, describe, it, expect",
+              "React Testing Library – render, screen, userEvent",
+              "Querying DOM – getByRole, getByText, getByTestId",
+              "Testing user interactions and form submissions",
+              "Mocking API calls – MSW (Mock Service Worker)",
+              "Snapshot testing",
+              "Testing custom hooks",
+              "Testing Next.js components",
+              "Playwright – E2E browser testing",
+              "Playwright – locators, assertions, page actions",
+              "CI integration – running tests on GitHub Actions"
+            ]
+          },
+          {
+            "moduleNo": 16,
+            "title": "Deployment & DevOps for Frontend",
+            "duration": "1 Week",
+            "topics": [
+              "Deployment options – Vercel, Netlify, GitHub Pages, Cloudflare Pages",
+              "Vercel deployment – connecting GitHub repo, zero-config",
+              "Vercel environment variables – preview vs production",
+              "Vercel domains – custom domain setup and DNS config",
+              "Vercel Preview Deployments – per-PR previews",
+              "Vercel Analytics and Speed Insights",
+              "Vercel Edge Config and Edge Middleware",
+              "Netlify deployment and redirects (_redirects file)",
+              "GitHub Actions – CI/CD pipeline for lint, test, deploy",
+              "Environment management – .env.local, .env.production",
+              "Content Security Policy headers",
+              "HTTPS and SSL setup",
+              "CDN concepts and asset delivery",
+              "Monitoring – error tracking with Sentry (intro)"
+            ]
+          },
+          {
+            "moduleNo": 17,
+            "title": "Frontend Projects",
+            "duration": "3 Weeks",
+            "topics": [
+              "Project planning – wireframes, component tree, data flow",
+              "Project 1 – Personal Portfolio (Next.js + Tailwind + Framer Motion, deployed on Vercel)",
+              "Project 2 – Blog with MDX (Next.js + Contentlayer + SSG)",
+              "Project 3 – E-Commerce Frontend (Next.js + Zustand cart + Stripe UI)",
+              "Project 4 – Dashboard UI (React + TanStack Query + Recharts)",
+              "Project 5 – Real-time Collaborative UI (React + WebSocket/Socket.io client)",
+              "Code review and refactoring sessions",
+              "GitHub portfolio – README, pinned repos, project showcase",
+              "Resume preparation for frontend roles",
+              "Frontend interview prep – common JS/React/Next.js questions",
+              "Technical assessment practice"
+            ]
+          }
+        ]
+      },
+      "projects": [
+        "Personal Portfolio (Next.js + Tailwind + Framer Motion)",
+        "Blog with MDX and SSG (Next.js + Contentlayer)",
+        "E-Commerce Frontend (Next.js + Zustand + Stripe UI)",
+        "Admin Dashboard (React + TanStack Query + Recharts)",
+        "Real-time Collaborative UI (React + Socket.io client)",
+        "Landing Page with Scroll Animations (GSAP / Framer Motion)",
+        "UI Component Library with Storybook",
+        "Weather App (TypeScript + Fetch API + OpenWeather)",
+        "GitHub Profile Finder (React + GitHub API)",
+        "Next.js SaaS Starter (Auth + Dashboard + Vercel Deploy)"
+      ],
+      "toolsAndTechnologies": [
+        "VS Code", "Chrome DevTools", "Git & GitHub",
+        "HTML5", "CSS3", "Tailwind CSS", "Bootstrap 5",
+        "JavaScript ES6+", "TypeScript",
+        "React 18", "React Router v6", "Zustand", "Jotai", "TanStack Query", "React Hook Form", "Zod",
+        "Next.js 14/15 (App Router)", "NextAuth.js / Auth.js", "Clerk",
+        "Framer Motion", "GSAP (intro)", "Lottie",
+        "Shadcn/ui", "Radix UI", "Lucide React", "Recharts",
+        "Vitest", "React Testing Library", "Playwright", "MSW",
+        "Storybook", "Figma",
+        "Vercel", "Netlify", "Cloudflare Pages",
+        "GitHub Actions", "Sentry (intro)", "Vite", "PostCSS", "npm/pnpm"
+      ],
+      "instructors": [
+        {
+          "name": "Hilal Ahmad",
+          "qualification": "BCA (Computer Science)",
+          "experience": "5+ Years in Web Development",
+          "specialization": "React, Next.js, JavaScript, Frontend Architecture"
+        },
+        {
+          "name": "Instructor 2",
+          "qualification": "B.Tech / BCA",
+          "experience": "3+ Years",
+          "specialization": "TypeScript, CSS, Tailwind CSS, UI/UX, Animations"
+        }
+      ],
+      "certification": {
+        "certifiedBy": "Trendy (Affiliated with Politechnique)",
+        "certificateTitle": "Certificate in Frontend Development",
+        "governmentRecognized": true
+      },
+      "learningOutcomes": [
+        "Build pixel-perfect, responsive UIs with HTML, CSS, and Tailwind CSS",
+        "Write modern JavaScript with full ES6+ mastery",
+        "Type your applications confidently with TypeScript",
+        "Build fast, accessible SPAs with React and its full ecosystem",
+        "Build production Next.js apps with App Router, SSR, SSG, and Server Actions",
+        "Implement authentication in Next.js with Clerk and Auth.js",
+        "Animate UIs professionally with Framer Motion and CSS",
+        "Optimize apps for Core Web Vitals and Lighthouse scores",
+        "Write tests with Vitest, React Testing Library, and Playwright",
+        "Deploy and manage apps on Vercel with CI/CD"
+      ],
+      "careerOpportunities": [
+        "Frontend Developer",
+        "React Developer",
+        "Next.js Developer",
+        "UI Engineer",
+        "Junior Full Stack Developer",
+        "Freelance Frontend Developer"
+      ],
+      "ratings": {
+        "averageRating": 4.9,
+        "totalReviews": 0
+      }
+    },
+    {
+      "id": "DA002",
+      "slug": "data-analyst",
+      "category": "Data Science & Analytics",
+      "title": "Data Analyst",
+      "subtitle": "Master Data Analysis – Excel, SQL, Python & Power BI",
+      "badge": "High Demand",
+      "description": "A job-oriented course designed to transform you into a skilled Data Analyst. You will learn to collect, clean, analyze, and visualize data using industry-standard tools like Excel, SQL, Python, and Power BI.",
+      "shortDescription": "Learn to analyze and visualize data using Excel, SQL, Python & Power BI to drive business decisions.",
+      "thumbnail": "/images/data-analyst.png",
+      "language": "Hindi & English",
+      "mode": ["Offline", "Online", "Hybrid"],
+      "level": "Beginner to Intermediate",
+      "eligibility": {
+        "minimumQualification": "12th Pass / Graduate (Any Stream)",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge", "Basic mathematics"],
+        "additionalNote": "Students from any background – Arts, Commerce, Science can join"
+      },
+      "duration": {
+        "total": "4 Months",
+        "weeklyClasses": 5,
+        "hoursPerClass": 1.5,
+        "totalHours": 120,
+        "practicalHours": 90,
+        "theoryHours": 30
+      },
+      "batchInfo": {
+        "batchSize": "15–20 Students",
+        "batchTimings": ["Morning: 9:00 AM – 10:30 AM", "Evening: 6:00 PM – 7:30 PM"],
+        "startDates": ["1st of every month"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 15000,
+        "registrationFee": 500,
+        "admissionFee": 500,
+        "tuitionFee": 14000,
+        "examFee": 300,
+        "materialFee": 500,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 15000, "discount": "10% off (Pay ₹13,500)" },
+          { "plan": "2 Installments", "amount": "₹7,700 × 2", "discount": "No extra charge" }
+        ],
+        "scholarshipAvailable": true,
+        "scholarshipDetails": "Merit-based scholarship available"
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Introduction to Data Analytics",
+            "duration": "1 Week",
+            "topics": [
+              "What is Data Analytics?",
+              "Types of Data Analytics – Descriptive, Diagnostic, Predictive, Prescriptive",
+              "Role and responsibilities of a Data Analyst",
+              "Data Analytics lifecycle",
+              "Tools overview – Excel, SQL, Python, Power BI"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Microsoft Excel for Data Analysis",
+            "duration": "2 Weeks",
+            "topics": [
+              "Excel interface, shortcuts, and formatting",
+              "Data entry, sorting, and filtering",
+              "Functions – SUM, AVERAGE, COUNT, IF, VLOOKUP, HLOOKUP, INDEX, MATCH",
+              "Conditional Formatting",
+              "Data Validation",
+              "PivotTables and PivotCharts",
+              "Charts – Bar, Line, Pie, Scatter",
+              "What-If Analysis – Goal Seek, Data Tables",
+              "Excel Data Cleaning techniques",
+              "Introduction to Power Query in Excel"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Statistics for Data Analysis",
+            "duration": "1 Week",
+            "topics": [
+              "Mean, Median, Mode",
+              "Variance and Standard Deviation",
+              "Probability basics",
+              "Normal Distribution",
+              "Correlation and Covariance",
+              "Hypothesis Testing basics"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "SQL for Data Analysts",
+            "duration": "2 Weeks",
+            "topics": [
+              "Introduction to Databases and RDBMS",
+              "SQL Basics – SELECT, FROM, WHERE",
+              "Filtering – AND, OR, NOT, BETWEEN, LIKE, IN",
+              "Sorting with ORDER BY",
+              "Aggregation – COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING",
+              "Joins – INNER, LEFT, RIGHT, FULL OUTER",
+              "Subqueries",
+              "SQL String and Date Functions",
+              "Creating and modifying Tables – DDL, DML",
+              "Views and Indexes",
+              "Practical: Analyze a real dataset using SQL"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Python for Data Analysis",
+            "duration": "3 Weeks",
+            "topics": [
+              "Python basics – Variables, Data types, Control flow",
+              "Lists, Tuples, Dictionaries",
+              "Functions and Libraries",
+              "NumPy – Arrays, Mathematical operations",
+              "Pandas – DataFrames, Reading CSV/Excel",
+              "Data Cleaning – Handling nulls, duplicates, data types",
+              "Exploratory Data Analysis (EDA)",
+              "Matplotlib – Line, Bar, Histogram, Pie charts",
+              "Seaborn – Statistical visualizations",
+              "Practical: Full EDA on a real dataset"
+            ]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Power BI – Data Visualization & Dashboards",
+            "duration": "2 Weeks",
+            "topics": [
+              "Power BI Desktop interface",
+              "Connecting to data sources – Excel, CSV, SQL",
+              "Power Query – Data Transformation",
+              "Data Modelling and Relationships",
+              "DAX Basics – Calculated Columns and Measures",
+              "Visualizations – Bar, Line, Map, Card, KPI",
+              "Building interactive Dashboards",
+              "Filters, Slicers, and Drill-through",
+              "Publishing to Power BI Service",
+              "Sharing reports and dashboards"
+            ]
+          },
+          {
+            "moduleNo": 7,
+            "title": "Capstone Project & Interview Prep",
+            "duration": "1 Week",
+            "topics": [
+              "End-to-end Data Analytics project",
+              "Data collection and cleaning",
+              "Analysis and insights generation",
+              "Dashboard presentation",
+              "Resume building for Data Analyst roles",
+              "Common Data Analyst interview questions"
+            ]
+          }
+        ]
+      },
+      "projects": [
+        "Sales Performance Dashboard (Excel)",
+        "E-Commerce Database Analysis (SQL)",
+        "COVID-19 Data Analysis (Python + Pandas)",
+        "HR Analytics Dashboard (Power BI)",
+        "Capstone Project – Full Analytical Report"
+      ],
+      "toolsAndTechnologies": [
+        "Microsoft Excel", "MySQL / SQL Server", "Python (Anaconda / Jupyter)",
+        "Power BI Desktop", "Pandas", "NumPy", "Matplotlib", "Seaborn"
+      ],
+      "instructor": {
+        "name": "Mr./Ms. [Instructor Name]",
+        "qualification": "MBA (Analytics) / M.Sc. (Statistics / Computer Science)",
+        "experience": "6+ Years in Data Analytics",
+        "specialization": "Business Intelligence, Data Visualization, Python Analytics",
+        "profilePhoto": "/assets/images/instructors/data-analyst-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name",
+        "certificateTitle": "Certificate in Data Analytics",
+        "governmentRecognized": false,
+        "industryRecognized": true,
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Perform data cleaning and preparation on real datasets",
+        "Analyze data using Excel, SQL, and Python",
+        "Build professional dashboards in Power BI",
+        "Generate meaningful business insights from data",
+        "Communicate findings through visualizations and reports"
+      ],
+      "careerOpportunities": [
+        "Data Analyst", "Business Analyst", "Reporting Analyst",
+        "BI Analyst", "MIS Executive", "SQL Developer"
+      ],
+      "averageSalary": "₹3 LPA – ₹8 LPA (Entry to Mid Level)",
+      "ratings": { "averageRating": 4.7, "totalReviews": 89 }
+    },
+    {
+  "id": "PY003",
+  "slug": "python-programming",
+  "category": "Programming & Development",
+  "title": "Python Programming",
+  "subtitle": "Complete Python Programming – Fundamentals to Advanced",
+  "badge": "Trending",
+  "description": "Master Python — the world's most popular and versatile programming language. This course takes you from absolute zero to advanced Python covering OOP, functional programming, file handling, databases, APIs, automation, web scraping, testing, and real-world projects.",
+  "shortDescription": "Learn Python from scratch to advanced — OOP, file handling, APIs, automation, databases and real-world projects.",
+  "language": "Hindi & English",
+  "thumbnail": "/images/python.png",
+  "mode": ["Offline", "Online"],
+  "level": "Beginner to Advanced",
+  "eligibility": {
+    "minimumQualification": "10th Pass",
+    "ageLimit": "No age limit",
+    "prerequisites": ["Basic computer knowledge"],
+    "additionalNote": "Absolute beginners welcome — no prior coding needed"
+  },
+  "duration": {
+    "total": "3 Months",
+    "weeklyClasses": 6,
+    "hoursPerClass": 2,
+    "totalHours": 144,
+    "practicalHours": 100,
+    "theoryHours": 44
+  },
+  "batchInfo": {
+    "batchSize": "15 Students",
+    "batchTimings": ["02:00 AM – 04:00 AM"],
+    "startDates": ["1st of every month", "15th of every month"],
+    "daysPerWeek": "Monday to Saturday"
+  },
+  "feeStructure": {
+    "currency": "INR",
+    "totalFee": 9000,
+    "registrationFee": 300,
+    "admissionFee": 500,
+    "tuitionFee": 8200,
+    "examFee": 200,
+    "materialFee": 300,
+    "installmentOptions": [
+      { "plan": "Full Payment", "amount": 9000, "discount": "5% off (Pay ₹8,550)" },
+      { "plan": "2 Installments", "amount": "₹4,600 × 2", "discount": "No extra charge" }
+    ],
+    "scholarshipAvailable": true,
+    "scholarshipDetails": "Available for students from low-income families"
+  },
+  "syllabus": {
+    "modules": [
+      {
+        "moduleNo": 1,
+        "title": "Python Fundamentals",
+        "duration": "2 Weeks",
+        "topics": [
+          "What is Python – history, applications, why Python",
+          "Python versions – Python 2 vs Python 3",
+          "Installing Python 3.x and environment setup",
+          "IDEs – VS Code, PyCharm, IDLE, Jupyter Notebook",
+          "Python REPL – interactive shell",
+          "First Python program – Hello World",
+          "Python syntax and indentation rules",
+          "Variables – naming conventions, assignment, multiple assignment",
+          "Data Types – int, float, complex, str, bool, NoneType",
+          "Type Checking – type(), isinstance()",
+          "Type Conversion – int(), float(), str(), bool()",
+          "Numeric operations – abs(), round(), pow(), divmod()",
+          "Arithmetic Operators – +, -, *, /, //, %, **",
+          "Relational Operators – ==, !=, >, <, >=, <=",
+          "Logical Operators – and, or, not",
+          "Bitwise Operators – &, |, ^, ~, <<, >>",
+          "Assignment Operators – =, +=, -=, *=, /=, //=, **=, %=",
+          "Identity Operators – is, is not",
+          "Membership Operators – in, not in",
+          "Operator Precedence and Associativity",
+          "Input and Output – print(), input()",
+          "print() formatting – sep, end, f-strings, format()",
+          "Comments – single line (#) and multi-line (docstrings)",
+          "Python keywords and built-in functions overview"
+        ]
+      },
+      {
+        "moduleNo": 2,
+        "title": "Control Flow",
+        "duration": "1 Week",
+        "topics": [
+          "if statement",
+          "if-else statement",
+          "if-elif-else ladder",
+          "Nested conditionals",
+          "Ternary / Conditional expression (one-liner if-else)",
+          "while loop – syntax and use cases",
+          "for loop – iterating sequences",
+          "range() – start, stop, step",
+          "Iterating strings, lists, tuples, dicts with for",
+          "Nested loops",
+          "break statement – exiting loop early",
+          "continue statement – skipping iteration",
+          "pass statement – placeholder",
+          "else clause with loops (for-else, while-else)",
+          "Loop patterns – counting, summing, searching, accumulating",
+          "match-case statement (Python 3.10+ structural pattern matching)"
+        ]
+      },
+      {
+        "moduleNo": 3,
+        "title": "Strings – Deep Dive",
+        "duration": "1 Week",
+        "topics": [
+          "String creation – single, double, triple quotes",
+          "String immutability",
+          "String indexing – positive and negative",
+          "String slicing – [start:stop:step]",
+          "String concatenation and repetition",
+          "String methods – upper(), lower(), strip(), split(), join(), replace(), find(), count(), startswith(), endswith(), center(), zfill(), encode()",
+          "String formatting – % operator, .format(), f-strings (f'')",
+          "Escape sequences – \\n, \\t, \\\\, \\'",
+          "Raw strings – r''",
+          "String comparison",
+          "String membership – in, not in",
+          "Multiline strings",
+          "String to list and list to string conversions",
+          "String unpacking"
+        ]
+      },
+      {
+        "moduleNo": 4,
+        "title": "Data Structures",
+        "duration": "2 Weeks",
+        "topics": [
+          "Lists – creation, indexing, slicing",
+          "List methods – append(), extend(), insert(), remove(), pop(), clear(), sort(), reverse(), copy(), count(), index()",
+          "List as stack and queue",
+          "Nested lists – 2D lists, matrix operations",
+          "List Comprehensions – basic and conditional",
+          "Nested List Comprehensions",
+          "Tuples – creation, indexing, immutability",
+          "Tuple methods – count(), index()",
+          "Tuple packing and unpacking",
+          "Named Tuples – collections.namedtuple",
+          "Sets – creation, add(), remove(), discard()",
+          "Set operations – union, intersection, difference, symmetric difference",
+          "Set comprehensions",
+          "Frozen Sets",
+          "Dictionaries – key-value pairs, creation",
+          "Dictionary methods – get(), keys(), values(), items(), update(), pop(), setdefault()",
+          "Dictionary comprehensions",
+          "Nested dictionaries",
+          "collections module – Counter, defaultdict, OrderedDict, deque, ChainMap",
+          "Choosing the right data structure",
+          "Sorting – sorted(), key parameter, operator.itemgetter",
+          "Shallow copy vs Deep copy – copy module"
+        ]
+      },
+      {
+        "moduleNo": 5,
+        "title": "Functions & Functional Programming",
+        "duration": "2 Weeks",
+        "topics": [
+          "Defining and calling functions – def keyword",
+          "Function docstrings",
+          "Positional arguments",
+          "Keyword arguments",
+          "Default parameter values",
+          "*args – variable positional arguments",
+          "**kwargs – variable keyword arguments",
+          "Mixing positional, *args, keyword-only, **kwargs",
+          "Keyword-only arguments (after *)",
+          "Positional-only arguments (before /)",
+          "Return values – single and multiple (tuple)",
+          "Scope – Local, Enclosing, Global, Built-in (LEGB rule)",
+          "global keyword",
+          "nonlocal keyword",
+          "First-class functions – functions as objects",
+          "Higher-order functions – passing and returning functions",
+          "Lambda functions – anonymous functions",
+          "map() – applying function to iterable",
+          "filter() – filtering with a predicate",
+          "reduce() – from functools",
+          "zip() and enumerate()",
+          "sorted() with key function",
+          "Closures – inner functions and free variables",
+          "Recursion – base case, recursive case",
+          "Recursion examples – factorial, fibonacci, tower of Hanoi",
+          "Memoization – functools.lru_cache",
+          "Function annotations (type hints basics)",
+          "Partial functions – functools.partial"
+        ]
+      },
+      {
+        "moduleNo": 6,
+        "title": "Modules, Packages & Virtual Environments",
+        "duration": "1 Week",
+        "topics": [
+          "What is a module",
+          "import statement – import module",
+          "from module import name",
+          "import as – aliases",
+          "__name__ == '__main__' guard",
+          "Built-in modules – math, random, statistics, datetime, time, calendar",
+          "os module – file system operations, paths, environment variables",
+          "sys module – argv, path, exit",
+          "pathlib – modern path handling",
+          "shutil – high-level file operations",
+          "glob – pattern-based file searching",
+          "Creating custom modules and packages",
+          "__init__.py – package initialization",
+          "Relative imports",
+          "pip – installing, upgrading, uninstalling packages",
+          "requirements.txt – managing dependencies",
+          "Virtual environments – venv, creation, activation",
+          "pipenv and poetry (overview)",
+          "PyPI – Python Package Index overview"
+        ]
+      },
+      {
+        "moduleNo": 7,
+        "title": "File Handling",
+        "duration": "1 Week",
+        "topics": [
+          "Opening files – open(), file modes (r, w, a, x, b, t, +)",
+          "Reading files – read(), readline(), readlines()",
+          "Writing and appending to files",
+          "Context managers – with statement (best practice)",
+          "Working with binary files",
+          "File and directory operations – os, pathlib",
+          "CSV files – csv module, reader, writer, DictReader, DictWriter",
+          "JSON files – json module, load(), loads(), dump(), dumps()",
+          "Working with Excel files – openpyxl (intro)",
+          "Working with PDF files – PyPDF2 (intro)",
+          "Pickling – pickle module, serialize/deserialize objects",
+          "configparser – reading .ini / config files",
+          "Logging – logging module, levels, handlers, formatters"
+        ]
+      },
+      {
+        "moduleNo": 8,
+        "title": "Exception Handling",
+        "duration": "1 Week",
+        "topics": [
+          "What are exceptions vs syntax errors",
+          "Common built-in exceptions – ValueError, TypeError, IndexError, KeyError, FileNotFoundError, ZeroDivisionError, AttributeError, ImportError",
+          "try-except block",
+          "Catching multiple exceptions",
+          "except Exception as e – accessing error details",
+          "else clause in try-except",
+          "finally clause – always executes",
+          "Raising exceptions – raise keyword",
+          "Re-raising exceptions",
+          "Custom exceptions – creating exception classes",
+          "Exception chaining – raise ... from ...",
+          "Context managers and exceptions",
+          "Assertions – assert statement",
+          "Debugging basics – print debugging, pdb module"
+        ]
+      },
+      {
+        "moduleNo": 9,
+        "title": "Object-Oriented Programming (OOP)",
+        "duration": "3 Weeks",
+        "topics": [
+          "OOP concepts overview – Encapsulation, Abstraction, Inheritance, Polymorphism",
+          "Classes and Objects – class keyword",
+          "Constructor – __init__ method",
+          "Instance variables vs Class variables",
+          "Instance methods, Class methods (@classmethod), Static methods (@staticmethod)",
+          "self parameter – what it is and why it exists",
+          "Accessing and modifying attributes",
+          "Deleting attributes and objects – del",
+          "Properties – @property, getter, setter, deleter",
+          "Encapsulation – public, _protected, __private (name mangling)",
+          "Inheritance – single inheritance, inheriting attributes and methods",
+          "super() – calling parent class",
+          "Multiple Inheritance – Method Resolution Order (MRO), C3 linearization",
+          "Multilevel Inheritance",
+          "Hierarchical Inheritance",
+          "Mixin classes",
+          "Method Overriding",
+          "isinstance() and issubclass()",
+          "Abstract classes – abc module, ABC, abstractmethod",
+          "Interfaces via abstract classes",
+          "Polymorphism – duck typing, operator overloading",
+          "Magic / Dunder Methods – __str__, __repr__, __len__, __add__, __eq__, __lt__, __getitem__, __setitem__, __contains__, __iter__, __next__, __call__, __enter__, __exit__",
+          "Context Managers via classes (__enter__, __exit__)",
+          "Dataclasses – @dataclass decorator",
+          "Slots – __slots__ for memory optimization",
+          "Class decorators – @staticmethod, @classmethod, @property",
+          "Object cloning – __copy__, __deepcopy__",
+          "Design patterns intro – Singleton, Factory, Observer"
+        ]
+      },
+      {
+        "moduleNo": 10,
+        "title": "Advanced Python",
+        "duration": "2 Weeks",
+        "topics": [
+          "Iterators – __iter__, __next__, StopIteration",
+          "Generators – yield keyword, generator functions",
+          "Generator expressions",
+          "yield from – delegating generators",
+          "Decorators – function decorators, how they work",
+          "Decorator with arguments",
+          "Stacking multiple decorators",
+          "Class-based decorators",
+          "functools.wraps – preserving metadata",
+          "Built-in decorators – @property, @staticmethod, @classmethod",
+          "Context Managers – contextlib.contextmanager",
+          "Regular Expressions – re module",
+          "RegEx patterns – ., *, +, ?, [], {}, ^, $, \\d, \\w, \\s, groups",
+          "re functions – match(), search(), findall(), sub(), split(), compile()",
+          "Named groups in RegEx",
+          "Type Hints – typing module, List, Dict, Optional, Union, Tuple, Any",
+          "Python 3.10+ type hints – X | Y syntax",
+          "Structural Pattern Matching (match-case) – deep dive",
+          "Walrus operator := (assignment expressions)",
+          "f-string advanced – nested expressions, format spec",
+          "String interning and identity",
+          "Memory management – garbage collection, reference counting",
+          "Profiling – cProfile, timeit",
+          "Weak references – weakref module",
+          "__slots__ and memory optimization",
+          "Metaclasses – type, __new__, custom metaclass"
+        ]
+      },
+      
+      {
+        "moduleNo": 12,
+        "title": "Working with Databases",
+        "duration": "1 Week",
+        "topics": [
+          "SQL basics review – CREATE, INSERT, SELECT, UPDATE, DELETE",
+          "SQLite – sqlite3 module, built into Python",
+          "Connecting to SQLite, creating tables",
+          "Executing queries – execute(), executemany()",
+          "Fetching results – fetchone(), fetchall(), fetchmany()",
+          "Parameterized queries – preventing SQL injection",
+          "Context managers with databases",
+          "MySQL with Python – mysql-connector-python",
+          "PostgreSQL with Python – psycopg2 (intro)",
+          "SQLAlchemy ORM – models, sessions, queries (intro)",
+          "SQLite in real projects – CRUD application"
+        ]
+      },
+      {
+        "moduleNo": 13,
+        "title": "APIs & Web Scraping",
+        "duration": "1 Week",
+        "topics": [
+          "HTTP basics – GET, POST, PUT, DELETE, status codes",
+          "requests library – installation and usage",
+          "GET requests – requests.get(), response, JSON parsing",
+          "POST requests – sending data, headers, authentication",
+          "Working with REST APIs – OpenWeather, GitHub API",
+          "API Keys and environment variables",
+          "Error handling with API responses",
+          "requests.Session for persistent connections",
+          "Web Scraping – what it is, legality, robots.txt",
+          "BeautifulSoup4 – parsing HTML",
+          "BeautifulSoup – find(), find_all(), CSS selectors",
+          "Scraping tables, links, images",
+          "Handling pagination",
+          "Selenium – browser automation basics",
+          "Saving scraped data to CSV/JSON"
+        ]
+      },
+      {
+        "moduleNo": 15,
+        "title": "Testing in Python",
+        "duration": "1 Week",
+        "topics": [
+          "Why testing matters",
+          "unittest – TestCase, setUp, tearDown, assert methods",
+          "pytest – setup, writing test functions, fixtures",
+          "pytest markers and parameterize",
+          "Mocking – unittest.mock, MagicMock, patch",
+          "Test coverage – coverage.py",
+          "TDD – Test-Driven Development approach",
+          "Doctest – testing via docstrings",
+          "Integration testing basics"
+        ]
+      },
+      {
+        "moduleNo": 16,
+        "title": "Python Projects",
+        "duration": "2 Weeks",
+        "topics": [
+          "Project planning and structuring a Python project",
+          "Project 1 – Student Grade Management System (File + OOP)",
+          "Project 2 – Weather App CLI (requests + OpenWeather API)",
+          "Project 3 – Expense Tracker (SQLite + OOP + File export)",
+          "Project 4 – Web Scraper – News Headlines (BeautifulSoup)",
+          "Project 5 – Task Automation – File Organizer Script",
+          "Project 6 – Quiz App (OOP + File handling)",
+          "Project 7 – Contact Book CLI (SQLite CRUD)",
+          "Writing clean, documented, tested Python code",
+          "Publishing a package to PyPI (overview)",
+          "GitHub project setup – README, .gitignore, requirements.txt",
+          "Python coding interview prep – common problems and patterns"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    "Calculator App (CLI)",
+    "Student Grade Management System",
+    "Weather App CLI (OpenWeather API)",
+    "Expense Tracker (SQLite + OOP)",
+    "Web Scraper – News Headlines",
+    "File Organizer Automation Script",
+    "Quiz App (OOP + File handling)",
+    "Contact Book (SQLite CRUD)",
+    "Number Guessing Game",
+    "URL Shortener using API"
+  ],
+  "toolsAndTechnologies": [
+    "Python 3.x", "VS Code", "PyCharm", "Jupyter Notebook",
+    "pip", "venv", "SQLite", "MySQL",
+    "requests", "BeautifulSoup4", "Selenium",
+    "openpyxl", "Pillow", "pytest", "coverage.py",
+    "asyncio", "SQLAlchemy"
+  ],
+  "instructors": [
+    {
+      "name": "Hilal Ahmad",
+      "qualification": "BCA (Computer Science)",
+      "experience": "5+ Years",
+      "specialization": "Python, Automation, Backend Development"
+    }
+  ],
+  "certification": {
+    "certifiedBy": "Trendy (Affiliated with Politechnique)",
+    "certificateTitle": "Certificate in Python Programming",
+    "governmentRecognized": true,
+    "digitalCertificate": true,
+    "marksheet": true
+  },
+  "learningOutcomes": [
+    "Write clean, Pythonic, well-structured code",
+    "Apply OOP principles in real-world applications",
+    "Handle files, JSON, CSV, and databases confidently",
+    "Build automation scripts and tools",
+    "Work with REST APIs and web scraping",
+    "Use concurrency – threading, multiprocessing, asyncio",
+    "Write and run tests with pytest",
+    "Build a portfolio of 7+ Python projects"
+  ],
+  "careerOpportunities": [
+    "Python Developer", "Backend Developer", "Automation Engineer",
+    "Data Analyst (entry)", "Software Developer", "DevOps Engineer (entry)"
+  ],
+  "averageSalary": "₹2.5 LPA – ₹7 LPA",
+  "ratings": { "averageRating": 4.9, "totalReviews": 156 }
+    },
+    {
+      "id": "CPP004",
+      "slug": "cpp-programming",
+      "category": "Programming & Development",
+      "title": "C++ Programming",
+      "subtitle": "C++ Programming – From Basics to Object-Oriented Mastery",
+      "badge": "",
+      "description": "C++ is one of the most powerful programming languages, widely used in system software, game development, competitive programming, and embedded systems. This course gives you a solid foundation in C++ including data structures, algorithms, and OOP.",
+      "shortDescription": "Learn C++ programming – build a strong foundation in programming logic, OOP, and data structures.",
+      "thumbnail": "/images/dsa.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner to Intermediate",
+      "eligibility": {
+        "minimumQualification": "10th Pass",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge"],
+        "additionalNote": "Students preparing for BCA, B.Tech, or competitive programming can join"
+      },
+      "duration": {
+        "total": "3 Months",
+        "weeklyClasses": 5,
+        "hoursPerClass": 1.5,
+        "totalHours": 90,
+        "practicalHours": 60,
+        "theoryHours": 30
+      },
+      "batchInfo": {
+        "batchSize": "15 Students",
+        "batchTimings": ["Morning: 7:00 AM – 8:30 AM", "Afternoon: 12:00 PM – 1:30 PM"],
+        "startDates": ["1st of every month"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 8000,
+        "registrationFee": 300,
+        "admissionFee": 500,
+        "tuitionFee": 7200,
+        "examFee": 200,
+        "materialFee": 300,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 8000, "discount": "5% off (Pay ₹7,600)" },
+          { "plan": "2 Installments", "amount": "₹4,100 × 2", "discount": "No extra charge" }
+        ],
+        "scholarshipAvailable": true,
+        "scholarshipDetails": "Scholarship for students from government schools"
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Introduction to C++",
+            "duration": "1 Week",
+            "topics": [
+              "History and applications of C++",
+              "Setting up – Dev-C++ / Code::Blocks / VS Code",
+              "First C++ program – Hello World",
+              "Structure of a C++ program",
+              "Compilation and execution process",
+              "Namespaces and iostream"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Variables, Data Types & Operators",
+            "duration": "1 Week",
+            "topics": [
+              "Variables and identifiers",
+              "Data Types – int, float, double, char, bool, string",
+              "Constants – const and #define",
+              "Operators – Arithmetic, Relational, Logical, Bitwise",
+              "Type Conversion – Implicit and Explicit (Casting)"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Control Flow",
+            "duration": "1 Week",
+            "topics": [
+              "if, if-else, nested if",
+              "switch-case",
+              "for, while, do-while loops",
+              "break, continue, goto"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Functions",
+            "duration": "1 Week",
+            "topics": [
+              "Function declaration, definition, and calling",
+              "Pass by value and pass by reference",
+              "Default parameters",
+              "Function overloading",
+              "Inline functions",
+              "Recursion"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Arrays and Strings",
+            "duration": "1 Week",
+            "topics": [
+              "1D and 2D Arrays",
+              "Array operations – sorting, searching",
+              "C-style strings and string class",
+              "String functions – length, substr, find, compare",
+              "Multidimensional arrays"
+            ]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Pointers & Memory Management",
+            "duration": "1 Week",
+            "topics": [
+              "Pointers – declaration, initialization",
+              "Pointer arithmetic",
+              "Pointers and arrays",
+              "Pointers and functions",
+              "Dynamic memory – new and delete",
+              "Reference variables"
+            ]
+          },
+          {
+            "moduleNo": 7,
+            "title": "Object-Oriented Programming",
+            "duration": "3 Weeks",
+            "topics": [
+              "Classes and Objects",
+              "Access specifiers – public, private, protected",
+              "Constructors and Destructors",
+              "this pointer",
+              "Static members",
+              "Inheritance – Types and modes",
+              "Polymorphism – Function and Operator Overloading",
+              "Virtual functions and Abstraction",
+              "Abstract Classes and Interfaces",
+              "Friend functions and classes"
+            ]
+          },
+          {
+            "moduleNo": 8,
+            "title": "Data Structures & STL Basics",
+            "duration": "2 Weeks",
+            "topics": [
+              "Structures and Unions",
+              "Linked Lists (concept)",
+              "Stacks and Queues (concept)",
+              "STL – Vectors, Pairs, Sets, Maps",
+              "Iterators",
+              "Algorithm library – sort, find, binary_search"
+            ]
+          },
+          {
+            "moduleNo": 9,
+            "title": "File Handling & Projects",
+            "duration": "1 Week",
+            "topics": [
+              "File streams – ifstream, ofstream, fstream",
+              "Reading and writing to files",
+              "Error handling – exceptions",
+              "Mini Projects – Student Management, Library System"
+            ]
+          }
+        ]
+      },
+      "projects": [
+        "Calculator using Functions",
+        "Student Mark Sheet Generator",
+        "Library Management System",
+        "Bank Account Management System",
+        "Matrix Operations Program"
+      ],
+      "toolsAndTechnologies": ["Dev-C++", "Code::Blocks", "VS Code with C++ extension", "GCC Compiler"],
+      "instructor": {
+        "name": "Mr. [Instructor Name]",
+        "qualification": "B.Tech / MCA",
+        "experience": "4+ Years in C/C++ Teaching",
+        "specialization": "C, C++, Data Structures, Competitive Programming",
+        "profilePhoto": "/assets/images/instructors/cpp-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name",
+        "certificateTitle": "Certificate in C++ Programming",
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Write structured programs in C++",
+        "Apply OOP principles in real applications",
+        "Understand pointers and memory management",
+        "Use STL for efficient data handling",
+        "Crack college/university lab exams confidently"
+      ],
+      "careerOpportunities": [
+        "Junior C++ Developer", "Embedded Systems Programmer",
+        "Game Developer (entry)", "Competitive Programmer",
+        "University academic support"
+      ],
+      "averageSalary": "₹2 LPA – ₹5 LPA",
+      "ratings": { "averageRating": 4.6, "totalReviews": 73 }
+    },
+
+    {
+      "id": "BCC001",
+      "slug": "basic-computer-ms-office",
+      "category": "Basic Computer & Office Tools",
+      "title": "Basic Computer Course – MS Office",
+      "subtitle": "Essential Computer Skills & Microsoft Office Suite",
+      "badge": "Best for Beginners",
+      "description": "A beginner-friendly course that covers computer fundamentals and the complete Microsoft Office suite including Word, Excel, PowerPoint, and the Internet. Ideal for students, housewives, job seekers, and working professionals who want to improve their computer skills.",
+      "shortDescription": "Learn computer basics, MS Word, Excel, PowerPoint, and Internet – essential skills for any job.",
+      "thumbnail": "/images/msoffice.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner",
+      "eligibility": {
+        "minimumQualification": "5th Pass",
+        "ageLimit": "No age limit",
+        "prerequisites": [],
+        "additionalNote": "Absolutely no prior computer knowledge needed"
+      },
+      "duration": {
+        "total": "3 Months",
+        "weeklyClasses": 6,
+        "hoursPerClass": 1,
+        "totalHours": 72,
+        "practicalHours": 50,
+        "theoryHours": 22
+      },
+      "batchInfo": {
+        "batchSize": "20 Students",
+        "batchTimings": ["Morning: 8:00 AM – 9:00 AM", "Morning: 10:00 AM – 11:00 AM", "Evening: 5:00 PM – 6:00 PM"],
+        "startDates": ["Weekly batches available"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 4500,
+        "registrationFee": 200,
+        "admissionFee": 300,
+        "tuitionFee": 4000,
+        "examFee": 0,
+        "materialFee": 200,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 4500 },
+          { "plan": "2 Installments", "amount": "₹2,300 × 2" }
+        ],
+        "scholarshipAvailable": false
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Computer Fundamentals",
+            "duration": "2 Weeks",
+            "topics": [
+              "What is a Computer? History and types",
+              "Hardware – CPU, RAM, ROM, Motherboard, Input/Output devices",
+              "Software – System software vs Application software",
+              "Operating System – Windows 10/11 basics",
+              "Desktop, Icons, Taskbar, Start Menu",
+              "File and Folder management – Create, Cut, Copy, Paste, Delete, Rename",
+              "Keyboard shortcuts",
+              "Basic troubleshooting"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Microsoft Word",
+            "duration": "3 Weeks",
+            "topics": [
+              "Introduction to MS Word interface",
+              "Typing and text formatting – Font, Size, Bold, Italic, Underline, Color",
+              "Paragraph alignment, Line spacing, Indentation",
+              "Bullets and Numbering",
+              "Page Setup – Margins, Orientation, Page Size",
+              "Headers and Footers",
+              "Page Numbers",
+              "Tables – Create, format, merge cells",
+              "Insert images, shapes, and SmartArt",
+              "Spell check and Grammar check",
+              "Printing documents",
+              "Practical: CV/Resume creation, Letter drafting, Application writing"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Microsoft Excel",
+            "duration": "3 Weeks",
+            "topics": [
+              "Introduction to Excel – Rows, Columns, Cells",
+              "Data entry and editing",
+              "Basic formulas – SUM, AVERAGE, MAX, MIN, COUNT",
+              "Cell references – Relative and Absolute",
+              "Formatting – Number, Currency, Date formats",
+              "Sorting and Filtering",
+              "Charts – Bar, Pie, Line charts",
+              "Conditional Formatting basics",
+              "Practical: Mark sheet, Salary sheet, Budget tracker"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Microsoft PowerPoint",
+            "duration": "2 Weeks",
+            "topics": [
+              "Introduction to PowerPoint",
+              "Creating and saving a presentation",
+              "Adding and formatting slides",
+              "Themes and backgrounds",
+              "Inserting text, images, tables, charts",
+              "Slide transitions and animations",
+              "Slide Show – Presenting mode",
+              "Practical: Creating a project presentation"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Internet & Email",
+            "duration": "1 Week",
+            "topics": [
+              "What is the Internet?",
+              "Web browsing – Chrome / Edge",
+              "Search engines – Google tips",
+              "Email – Creating and managing Gmail account",
+              "Sending/receiving emails with attachments",
+              "Google Drive basics",
+              "Online forms and portals usage",
+              "Internet safety and digital literacy"
+            ]
+          }
+        ]
+      },
+      "projects": [
+        "Professional Resume in MS Word",
+        "Application/Letter Writing",
+        "Student Mark Sheet in Excel",
+        "Monthly Budget Tracker in Excel",
+        "Project Presentation in PowerPoint"
+      ],
+      "toolsAndTechnologies": ["Windows 10/11", "MS Word", "MS Excel", "MS PowerPoint", "Google Chrome", "Gmail"],
+      "instructor": {
+        "name": "Mr./Ms. [Instructor Name]",
+        "qualification": "BCA / Graduate with Computer Diploma",
+        "experience": "3+ Years in Computer Training",
+        "specialization": "MS Office, Basic Computing",
+        "profilePhoto": "/assets/images/instructors/basic-computer-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name",
+        "certificateTitle": "Certificate in Basic Computer & MS Office",
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Operate a computer confidently",
+        "Create professional documents in MS Word",
+        "Manage data and calculations in Excel",
+        "Prepare presentations in PowerPoint",
+        "Use email and the internet effectively"
+      ],
+      "careerOpportunities": [
+        "Data Entry Operator", "Office Assistant", "Receptionist",
+        "Back Office Executive", "Government job readiness"
+      ],
+      "averageSalary": "₹1.2 LPA – ₹2.5 LPA",
+      "ratings": { "averageRating": 4.5, "totalReviews": 210 }
+    },
+
+    {
+      "id": "TGS005",
+      "slug": "tally-gst",
+      "category": "Accounts & Finance",
+      "title": "Tally with GST",
+      "subtitle": "Complete Tally Prime & GST Accounting Course",
+      "badge": "Job Guaranteed*",
+      "description": "A comprehensive accounting course using Tally Prime with full GST implementation. Perfect for commerce students, accountants, and business owners who want to master Indian accounting software and GST filing.",
+      "shortDescription": "Learn Tally Prime, accounting, GST billing, and e-filing – the most demanded skill in commerce.",
+      "thumbnail": "/images/tally.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner to Intermediate",
+      "eligibility": {
+        "minimumQualification": "10th Pass (12th Commerce preferred)",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge"],
+        "additionalNote": "Helpful for commerce students, job seekers, small business owners"
+      },
+      "duration": {
+        "total": "3 Months",
+        "weeklyClasses": 5,
+        "hoursPerClass": 1.5,
+        "totalHours": 90,
+        "practicalHours": 70,
+        "theoryHours": 20
+      },
+      "batchInfo": {
+        "batchSize": "15 Students",
+        "batchTimings": ["Morning: 9:00 AM – 10:30 AM", "Evening: 5:30 PM – 7:00 PM"],
+        "startDates": ["1st of every month"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 6000,
+        "registrationFee": 200,
+        "admissionFee": 300,
+        "tuitionFee": 5500,
+        "examFee": 0,
+        "materialFee": 200,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 6000 },
+          { "plan": "2 Installments", "amount": "₹3,100 × 2" }
+        ],
+        "scholarshipAvailable": false
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Accounting Fundamentals",
+            "duration": "1 Week",
+            "topics": [
+              "Basics of accounting – Meaning and types",
+              "Accounting concepts and conventions",
+              "Double Entry System",
+              "Journal, Ledger, Trial Balance",
+              "Trading Account, Profit & Loss Account",
+              "Balance Sheet basics"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Introduction to Tally Prime",
+            "duration": "1 Week",
+            "topics": [
+              "Installing and setting up Tally Prime",
+              "Tally interface overview",
+              "Creating a Company in Tally",
+              "Ledger Creation and Groups",
+              "Vouchers – Payment, Receipt, Contra, Journal"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Inventory Management",
+            "duration": "1 Week",
+            "topics": [
+              "Stock Group, Stock Category, Stock Item creation",
+              "Units of Measure",
+              "Purchase and Sales Vouchers with inventory",
+              "Stock Reports – Stock Summary, Movement",
+              "Godown Management"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "GST – Goods and Services Tax",
+            "duration": "2 Weeks",
+            "topics": [
+              "Introduction to GST – CGST, SGST, IGST, UTGST",
+              "GST Registration – Turnover limits",
+              "HSN and SAC codes",
+              "GST Invoice creation in Tally",
+              "GST on Purchase and Sales",
+              "Input Tax Credit (ITC)",
+              "GST Returns – GSTR-1, GSTR-3B",
+              "E-way Bill basics",
+              "Composition Scheme",
+              "GST Reports in Tally"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Payroll in Tally",
+            "duration": "1 Week",
+            "topics": [
+              "Employee Master creation",
+              "Salary structure – Basic, HRA, DA, PF, ESI",
+              "Payroll Vouchers",
+              "Payroll Reports – Salary Register, Pay Slip"
+            ]
+          },
+          {
+            "moduleNo": 6,
+            "title": "TDS & Banking in Tally",
+            "duration": "1 Week",
+            "topics": [
+              "TDS basics and applicability",
+              "TDS configuration in Tally",
+              "Bank Reconciliation Statement (BRS)",
+              "Cheque Management in Tally"
+            ]
+          },
+          {
+            "moduleNo": 7,
+            "title": "Reports & Finalization",
+            "duration": "1 Week",
+            "topics": [
+              "Balance Sheet in Tally",
+              "Profit & Loss Statement",
+              "Cash Flow Statement",
+              "Day Book, Purchase Register, Sales Register",
+              "Data Backup and Restore",
+              "Audit Trail in Tally Prime",
+              "Exporting reports to Excel/PDF"
+            ]
+          }
+        ]
+      },
+      "projects": [
+        "Complete accounting of a Trading Company",
+        "Manufacturing Company Accounts with Inventory",
+        "GST billing and return simulation",
+        "Monthly Payroll Processing"
+      ],
+      "toolsAndTechnologies": ["Tally Prime", "Microsoft Excel", "GST Portal (overview)"],
+      "instructor": {
+        "name": "Mr./Ms. [Instructor Name]",
+        "qualification": "B.Com / M.Com, Tally Certified Professional",
+        "experience": "5+ Years in Accounts & Tally Training",
+        "specialization": "GST, Tally Prime, Financial Accounting",
+        "profilePhoto": "/assets/images/instructors/tally-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name + Tally Education Pvt. Ltd. (if affiliated)",
+        "certificateTitle": "Certificate in Tally Prime with GST",
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Maintain complete books of accounts in Tally Prime",
+        "Create and manage GST invoices",
+        "File GST returns accurately",
+        "Process payroll in Tally",
+        "Generate financial reports"
+      ],
+      "careerOpportunities": [
+        "Accounts Assistant", "GST Executive", "Tally Operator",
+        "Junior Accountant", "Store/Inventory Manager",
+        "Tax Consultant (entry level)"
+      ],
+      "averageSalary": "₹1.5 LPA – ₹4 LPA",
+      "ratings": { "averageRating": 4.7, "totalReviews": 185 }
+    },
+
+    {
+      "id": "ES006",
+      "slug": "english-speaking",
+      "category": "Communication & Language",
+      "title": "English Speaking",
+      "subtitle": "Spoken English & Personality Development Course",
+      "badge": "Confidence Builder",
+      "description": "A practical spoken English course focused on building confidence to speak fluently in daily life, interviews, and professional settings. Covers grammar, vocabulary, pronunciation, and communication skills with real-life practice sessions.",
+      "shortDescription": "Speak English confidently – improve fluency, pronunciation, grammar, and interview communication.",
+      "thumbnail": "/images/engspk.png",
+      "language": "Hindi to English",
+      "mode": ["Offline"],
+      "level": "Beginner to Intermediate",
+      "eligibility": {
+        "minimumQualification": "8th Pass",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Hindi reading and writing ability"],
+        "additionalNote": "Ideal for students, job seekers, housewives, and working professionals"
+      },
+      "duration": {
+        "total": "3 Months",
+        "weeklyClasses": 6,
+        "hoursPerClass": 1,
+        "totalHours": 72,
+        "practicalHours": 55,
+        "theoryHours": 17
+      },
+      "batchInfo": {
+        "batchSize": "15–20 Students",
+        "batchTimings": ["Morning: 7:00 AM – 8:00 AM", "Evening: 6:00 PM – 7:00 PM"],
+        "startDates": ["Bi-weekly batches"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 4000,
+        "registrationFee": 200,
+        "tuitionFee": 3800,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 4000 },
+          { "plan": "2 Installments", "amount": "₹2,100 × 2" }
+        ],
+        "scholarshipAvailable": false
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Foundation Grammar",
+            "duration": "2 Weeks",
+            "topics": [
+              "Parts of Speech – Noun, Pronoun, Verb, Adjective, Adverb",
+              "Articles – a, an, the",
+              "Tenses – Present, Past, Future (all forms)",
+              "Sentence structure – Subject, Verb, Object",
+              "Basic sentence formation",
+              "Common grammar mistakes and corrections"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Vocabulary Building",
+            "duration": "2 Weeks",
+            "topics": [
+              "Daily use words and phrases",
+              "Synonyms and Antonyms",
+              "Idioms and Phrases",
+              "Phrasal Verbs",
+              "Word building – Prefix and Suffix",
+              "Vocabulary for office, travel, and daily life",
+              "New word-a-day practice"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Pronunciation & Phonetics",
+            "duration": "1 Week",
+            "topics": [
+              "Sounds of English – Vowels and Consonants",
+              "Stress and Intonation",
+              "Common pronunciation mistakes by Hindi speakers",
+              "Silent letters and tricky words",
+              "Phonetics practice"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Spoken English Practice",
+            "duration": "3 Weeks",
+            "topics": [
+              "Introductions and greetings",
+              "Daily conversation practice",
+              "Shopping, travel, restaurant conversations",
+              "Expressing opinions and ideas",
+              "Asking and answering questions",
+              "Group discussion topics",
+              "Debate practice",
+              "Role-play activities"
+            ]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Professional Communication",
+            "duration": "2 Weeks",
+            "topics": [
+              "Interview preparation – Self-introduction",
+              "Answering common interview questions",
+              "Email writing in English",
+              "Telephonic conversation etiquette",
+              "Presentation skills in English",
+              "Formal vs Informal language"
+            ]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Personality Development",
+            "duration": "2 Weeks",
+            "topics": [
+              "Body language and posture",
+              "Active listening skills",
+              "Overcoming fear of speaking",
+              "Public speaking basics",
+              "Time management and goal setting",
+              "Positive attitude and confidence building",
+              "Grooming and first impressions"
+            ]
+          }
+        ]
+      },
+      "specialActivities": [
+        "Daily 5-minute speaking rounds",
+        "Weekend mock interviews",
+        "Group discussions on current topics",
+        "Movie and podcast listening sessions",
+        "Extempore speech practice"
+      ],
+      "instructor": {
+        "name": "Ms./Mr. [Instructor Name]",
+        "qualification": "MA (English), B.Ed",
+        "experience": "5+ Years in Spoken English Training",
+        "specialization": "Spoken English, Personality Development, Communication Skills",
+        "profilePhoto": "/assets/images/instructors/english-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name",
+        "certificateTitle": "Certificate in Spoken English & Personality Development",
+        "digitalCertificate": true,
+        "marksheet": false
+      },
+      "learningOutcomes": [
+        "Speak fluent English in daily and professional settings",
+        "Write emails and letters in proper English",
+        "Crack job interviews confidently",
+        "Overcome the fear of speaking in public",
+        "Improve overall personality and communication"
+      ],
+      "careerOpportunities": [
+        "Customer Service Executive", "BPO/Call Centre",
+        "Receptionist", "Teacher/Tutor",
+        "Government interview readiness"
+      ],
+      "ratings": { "averageRating": 4.8, "totalReviews": 162 }
+    },
+
+    {
+      "id": "ST007",
+      "slug": "shorthand-typing",
+      "category": "Secretarial & Office Skills",
+      "title": "Shorthand & Typing",
+      "subtitle": "Stenography (Hindi/English) & Computer Typing",
+      "badge": "Govt. Job Ready",
+      "description": "Master shorthand stenography and high-speed typing – essential skills for government jobs including court reporters, personal assistants, and secretarial roles. Covers both Hindi and English shorthand and computer keyboard typing.",
+      "shortDescription": "Learn Pitman shorthand and high-speed typing for government and secretarial jobs.",
+      "thumbnail": "/images/typing.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner",
+      "eligibility": {
+        "minimumQualification": "10th Pass",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic reading and writing ability"],
+        "additionalNote": "Ideal for candidates preparing for SSC, High Court, and State Government jobs"
+      },
+      "duration": {
+        "total": "6 Months",
+        "weeklyClasses": 6,
+        "hoursPerClass": 1.5,
+        "totalHours": 216,
+        "practicalHours": 180,
+        "theoryHours": 36,
+        "note": "Daily practice is essential for skill development"
+      },
+      "batchInfo": {
+        "batchSize": "15 Students",
+        "batchTimings": ["Morning: 6:30 AM – 8:00 AM", "Evening: 5:00 PM – 6:30 PM"],
+        "startDates": ["1st of every month"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 7000,
+        "registrationFee": 200,
+        "tuitionFee": 6800,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 7000 },
+          { "plan": "3 Installments", "amount": "₹2,400 × 3" }
+        ],
+        "scholarshipAvailable": false
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Computer Typing – English",
+            "duration": "2 Months",
+            "topics": [
+              "Keyboard orientation and correct finger placement",
+              "Home row, Top row, Bottom row keys",
+              "Typing practice – alphabets and numbers",
+              "Building speed from 0 to 35 WPM",
+              "Accuracy improvement techniques",
+              "Typing test practice – Government exam pattern",
+              "Target Speed: 35 WPM with 90%+ accuracy"
+            ]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Computer Typing – Hindi (Kruti/Mangal)",
+            "duration": "2 Months",
+            "topics": [
+              "Hindi keyboard layout – Kruti Dev and Mangal (Unicode)",
+              "Key mapping and Matra practice",
+              "Hindi text typing practice",
+              "Building speed from 0 to 30 WPM in Hindi",
+              "Government typing test formats",
+              "Target Speed: 30 WPM with 85%+ accuracy"
+            ]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Shorthand – English (Pitman)",
+            "duration": "3 Months",
+            "topics": [
+              "Introduction to Pitman Shorthand",
+              "Consonants and their shorthand symbols",
+              "Vowels placement in shorthand",
+              "Joining strokes and curves",
+              "Short forms and phraseography",
+              "Dictation practice – 40 WPM, 60 WPM, 80 WPM",
+              "Transcription into English",
+              "Government dictation speed tests"
+            ]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Shorthand – Hindi",
+            "duration": "3 Months",
+            "topics": [
+              "Introduction to Hindi Shorthand",
+              "Symbols for Hindi consonants and vowels",
+              "Short forms in Hindi shorthand",
+              "Dictation at 60–80 WPM in Hindi",
+              "Transcription into readable Hindi",
+              "Practice with newspaper and official text"
+            ]
+          }
+        ]
+      },
+      "speedTargets": {
+        "englishTyping": "35 WPM",
+        "hindiTyping": "30 WPM",
+        "englishShorthand": "80–100 WPM",
+        "hindiShorthand": "80 WPM"
+      },
+      "instructor": {
+        "name": "Mr. [Instructor Name]",
+        "qualification": "Diploma in Stenography, Shorthand Certified",
+        "experience": "7+ Years in Shorthand and Typing Training",
+        "specialization": "Pitman Shorthand, High-speed Typing, Government Exam Prep",
+        "profilePhoto": "/assets/images/instructors/shorthand-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name",
+        "certificateTitle": "Certificate in Shorthand & Typing",
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Type at high speed in both English and Hindi",
+        "Take dictation in Pitman shorthand at 80+ WPM",
+        "Transcribe shorthand notes accurately",
+        "Pass government typing tests (SSC, Court, State exams)"
+      ],
+      "careerOpportunities": [
+        "Stenographer (Central/State Govt.)", "Court Reporter",
+        "Personal Secretary / PA", "Data Entry Operator",
+        "Clerk in Government Departments"
+      ],
+      "ratings": { "averageRating": 4.6, "totalReviews": 94 }
+    },
+
+    {
+      "id": "DSM008",
+      "slug": "dsm",
+      "category": "Computer Applications",
+      "title": "DSM – Diploma in Software Management",
+      "subtitle": "Comprehensive Diploma in Computer Applications & Software",
+      "badge": "",
+      "description": "A one-year diploma program combining hardware fundamentals, software applications, programming, and project work. DSM is a recognized diploma that prepares students for technical and administrative roles in IT companies.",
+      "shortDescription": "One-year diploma covering computer applications, programming, and software management.",
+      "thumbnail": "/images/dca.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner to Intermediate",
+      "eligibility": {
+        "minimumQualification": "10th Pass",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge helpful but not mandatory"],
+        "additionalNote": "Recognized diploma for government and private sector jobs"
+      },
+      "duration": {
+        "total": "1 Year",
+        "totalHours": 300,
+        "weeklyClasses": 5,
+        "hoursPerClass": 1.5,
+        "practicalHours": 180,
+        "theoryHours": 120
+      },
+      "batchInfo": {
+        "batchSize": "20 Students",
+        "batchTimings": ["Morning: 9:00 AM – 10:30 AM", "Evening: 4:30 PM – 6:00 PM"],
+        "startDates": ["1st January", "1st July"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 12000,
+        "registrationFee": 500,
+        "admissionFee": 1000,
+        "tuitionFee": 10500,
+        "examFee": 500,
+        "materialFee": 500,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 12000, "discount": "5% off" },
+          { "plan": "2 Semesters", "amount": "₹6,200 × 2" },
+          { "plan": "Monthly", "amount": "₹1,100 × 12" }
+        ],
+        "scholarshipAvailable": true,
+        "scholarshipDetails": "Merit scholarship of ₹1000"
+      },
+      "syllabus": {
+        "semester1": [
+          "Computer Fundamentals & Hardware",
+          "Windows OS and File Management",
+          "MS Office – Word, Excel, PowerPoint",
+          "Internet & Email Communication",
+          "Typing – English (25 WPM target)"
+        ],
+        "semester2": [
+          "Programming in C (Basics)",
+          "Database Management Basics",
+          "Desktop Publishing – CorelDraw / PageMaker",
+          "Tally ERP Basics",
+          "Project Work"
+        ],
+        "detailedModules": [
+          {
+            "moduleNo": 1,
+            "title": "Computer Fundamentals & Hardware",
+            "topics": ["Computer organization", "Input/Output devices", "Memory types", "Hardware assembling basics", "Operating system types"]
+          },
+          {
+            "moduleNo": 2,
+            "title": "MS Office Suite",
+            "topics": ["MS Word – documents and formatting", "MS Excel – formulas and charts", "MS PowerPoint – presentations", "MS Access – basic database"]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Programming Basics – C Language",
+            "topics": ["C syntax and programs", "Control structures", "Functions and arrays", "Introduction to C++"]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Desktop Publishing",
+            "topics": ["CorelDraw basics – designing", "Page layouts, flyers, visiting cards", "Photo editing basics"]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Accounts & Tally",
+            "topics": ["Basic accounting concepts", "Tally Prime – company creation and vouchers", "Reports generation"]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Project Work",
+            "topics": ["Mini project on any topic", "Project presentation", "Viva voce"]
+          }
+        ]
+      },
+      "instructor": {
+        "name": "Multiple Faculty",
+        "note": "Subject-wise specialist instructors"
+      },
+      "certification": {
+        "certifiedBy": "State/National Recognized Body + Institute",
+        "certificateTitle": "Diploma in Software Management (DSM)",
+        "governmentRecognized": true,
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Comprehensive knowledge of computer operations",
+        "Proficiency in MS Office and Tally",
+        "Basic programming in C",
+        "Design skills using DTP tools",
+        "Job readiness in IT and admin roles"
+      ],
+      "careerOpportunities": [
+        "Computer Operator", "Data Entry Operator", "DTP Operator",
+        "Office Assistant", "Junior Programmer", "Tally Operator"
+      ],
+      "ratings": { "averageRating": 4.4, "totalReviews": 67 }
+    },
+
+    {
+      "id": "CCC009",
+      "slug": "ccc-course",
+      "category": "Government Recognized Courses",
+      "title": "CCC – Course on Computer Concepts",
+      "subtitle": "NIELIT CCC – Nationally Recognized Computer Certificate",
+      "badge": "Govt. Recognized",
+      "description": "CCC (Course on Computer Concepts) is a certification by NIELIT (National Institute of Electronics & Information Technology), Government of India. It is mandatory for many government jobs and provides foundational computer literacy.",
+      "shortDescription": "NIELIT's nationally recognized certificate – mandatory for many government jobs in India.",
+      "thumbnail": "/images/ccc.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner",
+      "eligibility": {
+        "minimumQualification": "No formal qualification required",
+        "ageLimit": "No age limit",
+        "prerequisites": [],
+        "additionalNote": "Mandatory for many Rajasthan, UP, MP, and Central Government posts"
+      },
+      "duration": {
+        "total": "80 Hours (approx. 3 Months)",
+        "weeklyClasses": 5,
+        "hoursPerClass": 1,
+        "totalHours": 80,
+        "theory": 25,
+        "practical": 50,
+        "tutorial": 5
+      },
+      "batchInfo": {
+        "batchSize": "25 Students",
+        "batchTimings": ["Morning: 8:00 AM – 9:00 AM", "Evening: 6:00 PM – 7:00 PM"],
+        "startDates": ["Batches available every 15 days"],
+        "daysPerWeek": "Monday to Saturday",
+        "examFrequency": "Monthly online exam by NIELIT"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 3500,
+        "NIELITExamFee": 590,
+        "tuitionFee": 2910,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 3500 }
+        ],
+        "note": "NIELIT exam fee ₹590 is paid directly to NIELIT portal"
+      },
+      "syllabus": {
+        "officialSyllabus": "As per NIELIT CCC syllabus",
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Introduction to Computer",
+            "topics": ["Characteristics and uses of computers", "Hardware and Software", "Input/Output devices", "Memory and Storage devices", "Types of computers"]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Introduction to GUI OS",
+            "topics": ["Windows basics", "Desktop management", "File and Folder management", "Windows accessories – Notepad, Calculator, Paint"]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Microsoft Office / LibreOffice",
+            "topics": ["Word Processing – creating and formatting documents", "Spreadsheet – formulas, charts, data entry", "Presentation software – slides and transitions"]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Computer Communication and Internet",
+            "topics": ["Computer networks – LAN, WAN, MAN", "Internet basics and WWW", "Email, Chat, Video Conferencing", "Web browsing and search engines", "Social media awareness"]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Application of Presentations",
+            "topics": ["Creating effective presentations", "Slides, transitions, and animations", "Printing presentations"]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Digital Financial Services",
+            "topics": ["Digital payment – UPI, BHIM, Paytm", "Internet Banking basics", "e-Commerce and online shopping", "Cyber security and safe online practices"]
+          }
+        ]
+      },
+      "examPattern": {
+        "mode": "Online (NIELIT portal)",
+        "duration": "90 Minutes",
+        "totalQuestions": 100,
+        "questionType": "Multiple Choice Questions (MCQ)",
+        "markingScheme": "1 mark per question, no negative marking",
+        "passingMarks": 50,
+        "gradingSystem": {
+          "S": "85–100 (Outstanding)",
+          "A": "75–84 (Excellent)",
+          "B": "65–74 (Very Good)",
+          "C": "55–64 (Good)",
+          "D": "50–54 (Average)"
+        }
+      },
+      "instructor": {
+        "name": "Mr./Ms. [Instructor Name]",
+        "qualification": "BCA / Graduate with NIELIT Facilitation Authorization",
+        "experience": "4+ Years in NIELIT Course Training",
+        "profilePhoto": "/assets/images/instructors/ccc-instructor.jpg"
+      },
+      "certification": {
+        "certifiedBy": "NIELIT – Government of India",
+        "certificateTitle": "CCC – Course on Computer Concepts Certificate",
+        "governmentRecognized": true,
+        "digitalCertificate": true,
+        "marksheet": true,
+        "certificateAvailable": "From NIELIT official website after result"
+      },
+      "learningOutcomes": [
+        "Operate computers with confidence",
+        "Use Microsoft Office/LibreOffice for documents and spreadsheets",
+        "Use Internet and Email for communication",
+        "Perform basic digital financial transactions",
+        "Pass the NIELIT CCC online examination"
+      ],
+      "careerOpportunities": [
+        "Mandatory for many state and central government jobs",
+        "Data Entry Operator", "Government Clerk posts",
+        "Computer literacy certificate for general use"
+      ],
+      "ratings": { "averageRating": 4.5, "totalReviews": 320 }
+    },
+
+    {
+      "id": "BCC010",
+      "slug": "bcc",
+      "category": "Government Recognized Courses",
+      "title": "BCC – Basic Computer Course",
+      "subtitle": "NIELIT BCC – Entry-Level Government Recognized Certificate",
+      "badge": "Govt. Recognized",
+      "description": "BCC (Basic Computer Course) by NIELIT is an entry-level nationally recognized computer certificate that provides basic digital literacy. It is the stepping stone before CCC and is accepted in various government schemes and rural employment programs.",
+      "shortDescription": "NIELIT's entry-level government certificate for basic digital literacy – ideal for beginners.",
+      "thumbnail": "/images/dca.png",
+      "language": "Hindi & English",
+      "mode": ["Offline"],
+      "level": "Beginner",
+      "eligibility": {
+        "minimumQualification": "No formal qualification required",
+        "ageLimit": "No age limit",
+        "prerequisites": [],
+        "additionalNote": "Ideal for rural communities, homemakers, and absolute beginners"
+      },
+      "duration": {
+        "total": "36 Hours (approx. 1.5 Months)",
+        "weeklyClasses": 5,
+        "hoursPerClass": 1,
+        "totalHours": 36,
+        "theory": 10,
+        "practical": 24,
+        "tutorial": 2
+      },
+      "batchInfo": {
+        "batchSize": "25 Students",
+        "batchTimings": ["Morning: 7:00 AM – 8:00 AM", "Afternoon: 12:00 PM – 1:00 PM"],
+        "startDates": ["Weekly batches"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 1800,
+        "NIELITExamFee": 360,
+        "tuitionFee": 1440,
+        "note": "Very affordable – targeted at grassroots digital literacy"
+      },
+      "syllabus": {
+        "officialSyllabus": "As per NIELIT BCC syllabus",
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Computer Basics",
+            "topics": ["What is a computer", "Parts of computer", "Switching on/off", "Mouse and Keyboard practice"]
+          },
+          {
+            "moduleNo": 2,
+            "title": "Windows & File Management",
+            "topics": ["Windows Desktop", "Creating files and folders", "Copy, paste, delete", "Basic settings"]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Word Processing",
+            "topics": ["Opening and creating Word documents", "Typing and basic formatting", "Saving and printing documents"]
+          },
+          {
+            "moduleNo": 4,
+            "title": "Internet Basics",
+            "topics": ["What is Internet", "Opening browser and websites", "Email basics – Gmail", "Online forms usage"]
+          }
+        ]
+      },
+      "examPattern": {
+        "mode": "Online (NIELIT)",
+        "duration": "60 Minutes",
+        "totalQuestions": 50,
+        "questionType": "MCQ",
+        "passingMarks": 25
+      },
+      "instructor": {
+        "name": "Mr./Ms. [Instructor Name]",
+        "qualification": "Graduate with NIELIT Authorization",
+        "experience": "2+ Years"
+      },
+      "certification": {
+        "certifiedBy": "NIELIT – Government of India",
+        "certificateTitle": "BCC – Basic Computer Course Certificate",
+        "governmentRecognized": true,
+        "digitalCertificate": true
+      },
+      "learningOutcomes": [
+        "Use a computer for the first time",
+        "Create simple documents",
+        "Browse the internet and use email",
+        "Get a government-recognized computer certificate"
+      ],
+      "careerOpportunities": [
+        "Digital literacy for rural employment schemes",
+        "Prerequisite for CCC course",
+        "Basic government job eligibility"
+      ],
+      "ratings": { "averageRating": 4.3, "totalReviews": 178 }
+    },
+
+    {
+      "id": "CIT011",
+      "slug": "cit",
+      "category": "Computer Applications",
+      "title": "CIT – Certificate in Information Technology",
+      "subtitle": "Comprehensive Certificate in IT Skills",
+      "badge": "Industry Ready",
+      "description": "CIT (Certificate in Information Technology) is a 6-month comprehensive certificate program covering computer fundamentals, office applications, internet, programming basics, and graphic design. It is widely recognized by employers for IT entry-level roles.",
+      "shortDescription": "6-month comprehensive IT certificate – computer skills, applications, design, and programming basics.",
+      "thumbnail": "/images/msoffice.png",
+      "language": "Hindi & English",
+      "mode": ["Offline", "Online"],
+      "level": "Beginner to Intermediate",
+      "eligibility": {
+        "minimumQualification": "10th Pass",
+        "ageLimit": "No age limit",
+        "prerequisites": ["Basic computer knowledge"],
+        "additionalNote": "Perfect for students who want a broader IT knowledge base"
+      },
+      "duration": {
+        "total": "6 Months",
+        "weeklyClasses": 5,
+        "hoursPerClass": 1.5,
+        "totalHours": 180,
+        "practicalHours": 130,
+        "theoryHours": 50
+      },
+      "batchInfo": {
+        "batchSize": "20 Students",
+        "batchTimings": ["Morning: 9:30 AM – 11:00 AM", "Evening: 5:00 PM – 6:30 PM"],
+        "startDates": ["1st of every month"],
+        "daysPerWeek": "Monday to Saturday"
+      },
+      "feeStructure": {
+        "currency": "INR",
+        "totalFee": 9000,
+        "registrationFee": 300,
+        "admissionFee": 500,
+        "tuitionFee": 8200,
+        "examFee": 300,
+        "materialFee": 200,
+        "installmentOptions": [
+          { "plan": "Full Payment", "amount": 9000, "discount": "5% off (Pay ₹8,550)" },
+          { "plan": "2 Installments", "amount": "₹4,600 × 2" },
+          { "plan": "3 Installments", "amount": "₹3,100 × 3" }
+        ],
+        "scholarshipAvailable": true,
+        "scholarshipDetails": "Scholarship for SC/ST/OBC students – up to 15% off"
+      },
+      "syllabus": {
+        "modules": [
+          {
+            "moduleNo": 1,
+            "title": "Computer Fundamentals",
+            "duration": "2 Weeks",
+            "topics": ["Computer architecture", "Hardware and software", "OS – Windows 10/11", "File management"]
+          },
+          {
+            "moduleNo": 2,
+            "title": "MS Office & Internet",
+            "duration": "3 Weeks",
+            "topics": ["MS Word – documents", "MS Excel – data and formulas", "MS PowerPoint – presentations", "Internet and Email", "Google Workspace basics"]
+          },
+          {
+            "moduleNo": 3,
+            "title": "Programming in C – Basics",
+            "duration": "3 Weeks",
+            "topics": ["C language basics", "Variables, operators, control flow", "Functions", "Arrays", "Basic programs"]
+          },
+          {
+            "moduleNo": 4,
+            "title": "HTML & Web Basics",
+            "duration": "2 Weeks",
+            "topics": ["HTML fundamentals", "Creating basic webpages", "CSS basics for styling", "Understanding URLs and browsers"]
+          },
+          {
+            "moduleNo": 5,
+            "title": "Database Basics",
+            "duration": "2 Weeks",
+            "topics": ["What is a database", "MS Access basics", "SQL – SELECT, INSERT, UPDATE, DELETE", "Creating tables and simple queries"]
+          },
+          {
+            "moduleNo": 6,
+            "title": "Desktop Publishing & Design",
+            "duration": "2 Weeks",
+            "topics": ["CorelDraw basics", "Creating visiting cards, banners, flyers", "Paint and basic photo editing", "Canva for graphic design"]
+          },
+          {
+            "moduleNo": 7,
+            "title": "Tally Basics",
+            "duration": "1 Week",
+            "topics": ["Tally Prime – introduction", "Company creation", "Basic ledgers and vouchers"]
+          },
+          {
+            "moduleNo": 8,
+            "title": "Cyber Security & Digital Awareness",
+            "duration": "1 Week",
+            "topics": ["Online safety and privacy", "Password management", "Cybercrime types and prevention", "Safe use of social media", "Digital India initiatives"]
+          },
+          {
+            "moduleNo": 9,
+            "title": "Project & Practical Exam Prep",
+            "duration": "2 Weeks",
+            "topics": ["Mini project – build a website or create a database", "Practical exam practice", "Viva preparation"]
+          }
+        ]
+      },
+      "examPattern": {
+        "theory": "Written exam – 100 marks",
+        "practical": "Practical exam – 100 marks",
+        "totalMarks": 200,
+        "passingCriteria": "50% in each paper",
+        "examMode": "In-center"
+      },
+      "instructor": {
+        "name": "Multiple Faculty",
+        "note": "Subject-wise specialists for each module"
+      },
+      "certification": {
+        "certifiedBy": "Institute Name + Affiliated Board/University",
+        "certificateTitle": "Certificate in Information Technology (CIT)",
+        "governmentRecognized": false,
+        "industryRecognized": true,
+        "digitalCertificate": true,
+        "marksheet": true
+      },
+      "learningOutcomes": [
+        "Operate computers proficiently",
+        "Create documents, spreadsheets, and presentations",
+        "Write basic C programs and HTML pages",
+        "Design basic graphics and DTP materials",
+        "Understand databases and basic SQL",
+        "Work safely and productively online"
+      ],
+      "careerOpportunities": [
+        "Computer Operator", "DTP Operator", "Data Entry Operator",
+        "Office Assistant", "Junior Web Designer",
+        "Graphic Design Assistant"
+      ],
+      "averageSalary": "₹1.5 LPA – ₹3.5 LPA",
+      "ratings": { "averageRating": 4.5, "totalReviews": 103 }
+    }
+  ],
+
+  "commonFacilities": {
+    "infrastructure": [
+      "Air-conditioned computer labs",
+      "Latest computers with high-speed internet",
+      "Projector-equipped classrooms",
+      "Study room and library",
+      "Separate washroom for boys and girls",
+      "CCTV surveillance for security"
+    ],
+    "studentSupport": [
+      "Doubt clearing sessions",
+      "Weekend revision classes",
+      "Study material provided",
+      "Mock tests and practice papers",
+      "Placement assistance",
+      "Career counseling",
+      "Online student portal access"
+    ],
+    "admissionProcess": [
+      "Visit the institute or call to inquire",
+      "Fill admission form",
+      "Submit required documents",
+      "Pay registration fee",
+      "Get batch allotted",
+      "Start classes"
+    ],
+    "requiredDocuments": [
+      "Passport size photos (2)",
+      "ID proof – Aadhaar card / Voter ID",
+      "Educational certificates (10th or above)",
+      "Address proof"
+    ]
+  }
+}
