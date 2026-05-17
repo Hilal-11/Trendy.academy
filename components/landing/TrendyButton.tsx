@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { useState, useRef, useCallback } from "react";
-
 type Particle = {
   id: number;
   x: number;
@@ -63,6 +63,7 @@ export default function TrendyButton({ buttonContent, buttonLink }: { buttonCont
   const btnRef = useRef<HTMLButtonElement>(null);
   const { particles, burst } = useParticles();
 
+
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
     const rect = btnRef.current!.getBoundingClientRect();
     const cx = rect.left + rect.width / 2;
@@ -89,6 +90,7 @@ export default function TrendyButton({ buttonContent, buttonLink }: { buttonCont
     burst(e.clientX - rect.left, e.clientY - rect.top);
     setPressed(true);
     setTimeout(() => setPressed(false), 150);
+    
   };
 
   const transform = [
@@ -194,6 +196,8 @@ export default function TrendyButton({ buttonContent, buttonLink }: { buttonCont
             WebkitFontSmoothing: "antialiased",
           }}
         >
+          <Link href={buttonLink || "/courses"} style={{ display: "inline-flex", alignItems: "center", gap: "10px" }}>
+  
 
           {/* Inner gloss */}
           <span
@@ -247,6 +251,7 @@ export default function TrendyButton({ buttonContent, buttonLink }: { buttonCont
               }}
             />
           ))}
+          </Link>
         </button>
       </div>
     </div>
