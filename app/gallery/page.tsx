@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Camera, ArrowRight, Filter } from "lucide-react";
-
+import Image from "next/image";
+import CTA from "@/components/landing/CTA";
 /* ─── STORY CHAPTERS ────────────────────────────────────── */
 
 const chapters = [
@@ -14,7 +15,8 @@ const chapters = [
     body: "In the summer of 2009, our founder rented a small room in Srinagar's old city with three second-hand computers and an unshakeable belief: that every student in Kashmir deserved world-class technology education. The first batch had 12 students. All 12 got jobs within the year.",
     quote: "We didn't start with resources. We started with resolve.",
     caption: "First batch · Old City Campus · Summer 2009",
-    imgLabel: "First Classroom / Founding Photo",
+        imgLabel: "/images/image5.jpeg",
+
     reverse: false,
   },
   {
@@ -25,7 +27,8 @@ const chapters = [
     body: "By 2013, word had spread. Students were travelling from Baramulla, Anantnag, and Jammu to enroll. The institute had outgrown its first home — twice. Our placement record caught national attention, and for the first time, MNCs came to us. The 500th alumnus crossed the stage that winter.",
     quote: "Our alumni didn't just get jobs — they built careers.",
     caption: "500 Alumni Milestone Celebration · December 2013",
-    imgLabel: "500 Alumni Milestone Event",
+        imgLabel: "/images/image10.jpeg",
+
     reverse: true,
   },
   {
@@ -36,7 +39,8 @@ const chapters = [
     body: "The new campus didn't just add square footage — it changed the energy entirely. Dedicated labs for networking, web development, and design gave students a space that matched their ambitions. The innovation hub became the institute's heartbeat: a place for late-night projects, weekend hackathons, and ideas too big for classrooms.",
     quote: "A space designed not for teaching, but for thinking.",
     caption: "New Campus Inauguration · March 2017",
-    imgLabel: "New Campus Building / Labs",
+        imgLabel: "/images/image6.jpeg",
+
     reverse: false,
   },
   {
@@ -47,7 +51,7 @@ const chapters = [
     body: "Some of our most important moments happened outside of scheduled classes. The annual hackathon — 48 hours, no sleep, no limits — has produced three startups, two patents, and countless friendships. Student clubs in cybersecurity, data science, and UI/UX design run entirely on student initiative. Faculty are guides here, not gatekeepers.",
     quote: "The best learning happened when no one was watching the clock.",
     caption: "Annual Hackathon 2020 · 48 Hours of Building",
-    imgLabel: "Hackathon / Student Event Photo",
+    imgLabel: "/images/image9.jpeg",
     reverse: true,
   },
   {
@@ -58,7 +62,8 @@ const chapters = [
     body: "Today our alumni work at Google, Infosys, TCS, Wipro, and dozens of homegrown startups across India and abroad. The placement cell doesn't just connect students with jobs — it prepares them for careers. Resume workshops, mock interviews, and a live job board give every graduate a running start the day they leave.",
     quote: "We measure success by where our students are five years after they leave.",
     caption: "Placement Drive · Infosys Partnership · 2022",
-    imgLabel: "Placement Ceremony / MNC Campus Visit",
+        imgLabel: "/images/image10.jpeg",
+
     reverse: false,
   },
   {
@@ -69,11 +74,31 @@ const chapters = [
     body: "The AI and Cloud Computing centre, launched in 2024, is our boldest chapter yet. As the industry shifts beneath everyone's feet, our commitment stays fixed: students will not just adapt to the future — they will shape it. With 2,500 alumni and counting, this is not the end of our story. It is still the beginning.",
     quote: "The best chapter is always the one being written right now.",
     caption: "AI & Cloud Centre Inauguration · January 2024",
-    imgLabel: "AI Lab / Cloud Computing Centre",
+    imgLabel: "/images/image1.jpeg",
     reverse: true,
   },
 ];
+const trendyImages = [
+  "/images/image1.jpeg",
+  "/images/image2.jpeg",
+  "/images/image3.png",
+  "/images/image4.jpeg",
+  "/images/image5.jpeg",
+  "/images/image6.jpeg",  
+  "/images/image7.jpeg",
+  "/images/image8.jpeg",
+  "/images/image9.jpeg",
+  "/images/image10.jpeg",
+  "/images/image11.jpeg",
+  "/images/image12.jpeg",  
+  "/images/image13.jpeg",
+  "/images/image14.jpeg",
+  "/images/image16.jpeg",
+  "/images/image17.jpeg",
+  "/images/image18.jpeg",
+  "/images/image19.jpeg",
 
+]
 /* ─── GRID GALLERY ──────────────────────────────────────── */
 
 const gridItems = [
@@ -142,11 +167,11 @@ function PhotoFrame({
       >
         {/* image area */}
         <div
-          className={`w-full bg-neutral-100 border-2 border-dashed border-neutral-300
+          className={`w-full bg-neutral-100 dark:bg-neutral-900 border-2 border-dashed border-neutral-300
             flex flex-col items-center justify-center gap-3
             ${tall ? "h-[320px] sm:h-[400px] lg:h-[460px]" : "h-[260px] sm:h-[320px] lg:h-[380px]"}`}
         >
-          <div className="w-12 h-12 rounded-full bg-neutral-200 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center">
             <Camera size={20} className="text-neutral-400" />
           </div>
           <span className="text-neutral-400 text-xs font-medium text-center px-4">{label}</span>
@@ -177,14 +202,14 @@ function Chapter({
   const { n, year, tag, title, body, quote, caption, imgLabel, reverse } = chapter;
 
   const contentEl = (
-    <div className="flex flex-col justify-center py-8 lg:py-16">
+    <div className="flex flex-col justify-center py-5 lg:py-8">
       {/* chapter label */}
       <div className="flex items-center gap-3 mb-6">
-        <span className="font-mono text-[11px] font-bold text-[#E8480A] tracking-widest uppercase">
+        <span className="font-sans text-[11px] font-bold text-[#E8480A] tracking-widest ">
           Chapter {n} · {year}
         </span>
-        <span className="h-px flex-1 bg-neutral-200 max-w-[48px]" />
-        <span className="text-[11px] text-neutral-400 tracking-widest uppercase">{tag}</span>
+        <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-800 max-w-[48px]" />
+        <span className="text-[11px] text-neutral-400 dark:text-neutral-500 tracking-widest ">{tag}</span>
       </div>
 
       {/* big chapter number — watermark */}
@@ -196,7 +221,7 @@ function Chapter({
           {n}
         </span>
         <h2
-          className="sora relative text-3xl sm:text-4xl lg:text-[2.6rem] font-bold leading-tight text-[#0A0F1A]"
+          className="sora relative text-3xl sm:text-4xl lg:text-[2.6rem] font-bold leading-tight"
           style={{ zIndex: 1 }}
         >
           {title}
@@ -209,7 +234,7 @@ function Chapter({
 
       {/* pull quote */}
       <blockquote className="border-l-2 border-[#E8480A] pl-5 mb-8">
-        <p className="sora text-[#0A0F1A] font-medium italic text-base leading-snug">
+        <p className="sora font-medium italic text-base leading-snug">
           "{quote}"
         </p>
       </blockquote>
@@ -226,11 +251,11 @@ function Chapter({
   const imageEl = (
     <div className="flex items-center justify-center py-8 lg:py-16">
       <div className="w-full max-w-[440px]">
-        <PhotoFrame
-          label={imgLabel}
-          caption={caption}
-          tilt={index % 2 === 0 ? -1.2 : 1.2}
-          tall
+        <Image className="w-full object-cover"
+          src={imgLabel}
+          alt="FAAAAAAK"
+          width={400}
+          height={200}
         />
       </div>
     </div>
@@ -258,9 +283,9 @@ function Chapter({
 
 function GridThumb({ label }: { label: string }) {
   return (
-    <div className="group relative overflow-hidden bg-neutral-100 border border-dashed border-neutral-300 rounded-xl aspect-square flex flex-col items-center justify-center gap-2 hover:border-[#E8480A]/50 transition-colors cursor-pointer">
-      <Camera size={18} className="text-neutral-300 group-hover:text-[#E8480A]/60 transition-colors" />
-      <span className="text-neutral-400 text-[11px] font-medium text-center px-3 leading-snug">{label}</span>
+    <div className="group relative overflow-hidden bg-neutral-100 dark:bg-neutral-900 border border-dashed border-neutral-300 rounded-xl aspect-square flex flex-col items-center justify-center gap-2 hover:border-[#E8480A]/50 transition-colors cursor-pointer">
+      {/* <Camera size={18} className="text-neutral-300 group-hover:text-[#E8480A]/60 transition-colors" /> */}
+      <Image className="w-full h-full object-cover" src={label} alt="Trendy.academy" width={300} height={200}></Image>
     </div>
   );
 }
@@ -276,19 +301,19 @@ export default function GalleryPage() {
       : gridItems.filter((g) => g.cat === activeFilter);
 
   return (
-    <main className="min-h-screen px-6">
+    <main className="min-h-screen px-6 pb-10">
 
       {/* ── HERO ──────────────────────────────────────────── */}
-      <section className="relative pt-20 pb-0 overflow-hidden">
+      <section className="relative pt-5 lg:pt-20 pb-10 overflow-hidden ">
         <div className="container mx-auto">
 
           {/* Top label row */}
           <div className="flex items-center gap-4 mb-8">
-            <span className="inline-flex items-center gap-2 text-[11px] tracking-widest uppercase text-neutral-400 font-medium">
+            <span className="inline-flex items-center gap-2 text-[11px] tracking-widest text-neutral-400 font-medium">
               <Camera size={13} /> Institute Gallery
             </span>
-            <span className="h-px flex-1 bg-neutral-200" />
-            <span className="text-[11px] text-neutral-400 tracking-widest uppercase">2009 – 2024</span>
+            <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-800" />
+            <span className="text-[11px] text-neutral-400 tracking-widest ">2009 – 2024</span>
           </div>
 
           {/* Headline */}
@@ -305,36 +330,15 @@ export default function GalleryPage() {
             </div>
             <a
               href="#grid"
-              className="self-end inline-flex items-center gap-2 bg-[#0A0F1A] text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-[#1a2035] transition shrink-0 mb-1"
+              className="self-end inline-flex items-center gap-2 bg-linear-to-r from-[#E8480A] to-[#F57C00] text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-[#1a2035] transition shrink-0 mb-1"
             >
               Browse All Photos <ArrowRight size={14} />
             </a>
           </div>
 
           {/* Hero image — full width */}
-          <div className="relative h-[320px] sm:h-[420px] lg:h-[500px] w-full rounded-3xl overflow-hidden bg-neutral-100 border-2 border-dashed border-neutral-300 flex flex-col items-center justify-center gap-3">
-            <div className="w-16 h-16 rounded-full bg-neutral-200 flex items-center justify-center">
-              <Camera size={28} className="text-neutral-400" />
-            </div>
-            <span className="text-neutral-400 font-medium">Panoramic Campus / Hero Image</span>
-            <span className="text-neutral-300 text-sm">Recommended: 1600 × 700px</span>
-            {/* chapter count overlay */}
-            <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-3 flex items-center gap-4 shadow-md">
-              <div className="text-center">
-                <div className="sora text-2xl font-bold text-[#0A0F1A]">6</div>
-                <div className="text-xs text-neutral-400">Chapters</div>
-              </div>
-              <div className="w-px h-8 bg-neutral-200" />
-              <div className="text-center">
-                <div className="sora text-2xl font-bold text-[#0A0F1A]">15+</div>
-                <div className="text-xs text-neutral-400">Years</div>
-              </div>
-              <div className="w-px h-8 bg-neutral-200" />
-              <div className="text-center">
-                <div className="sora text-2xl font-bold text-[#E8480A]">∞</div>
-                <div className="text-xs text-neutral-400">Memories</div>
-              </div>
-            </div>
+          <div className="relative h-[320px] sm:h-[420px] lg:h-[500px] w-full rounded-3xl overflow-hidden bg-neutral-100 dark:bg-neutral-900 border-2 border-dashed border-neutral-300 flex flex-col items-center justify-center gap-3">
+              <Image className="w-full h-full object-cover " src={"/images/trendyimage.png"} alt="" width={1000} height={600}/>
           </div>
         </div>
       </section>
@@ -357,11 +361,11 @@ export default function GalleryPage() {
               <Chapter chapter={ch} index={i} />
               {i < chapters.length - 1 && (
                 <div className="flex items-center gap-6 py-4 lg:py-6">
-                  <span className="h-px flex-1 bg-neutral-200" />
-                  <span className="text-[10px] font-mono tracking-widest text-neutral-300 uppercase">
+                  <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-800" />
+                  <span className="text-[10px] font-mono tracking-widest text-neutral-300 ">
                     {chapters[i + 1].year}
                   </span>
-                  <span className="h-px flex-1 bg-neutral-200" />
+                  <span className="h-px flex-1 bg-neutral-200 dark:bg-neutral-800" />
                 </div>
               )}
             </div>
@@ -376,7 +380,7 @@ export default function GalleryPage() {
           {/* Section header */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
             <div>
-              <div className="text-[#E8480A] text-[11px] font-bold tracking-widest uppercase mb-2">
+              <div className="text-[#E8480A] text-[11px] font-bold tracking-widest  mb-2">
                 Complete Collection
               </div>
               <h2 className="sora text-3xl sm:text-4xl font-bold">Every Moment,<br />Every Memory</h2>
@@ -384,7 +388,7 @@ export default function GalleryPage() {
 
             {/* Filter tabs */}
             <div className="flex flex-wrap items-center gap-2">
-              <Filter size={13} className="text-neutral-400" />
+              <Filter size={13} className="text-neutral-400 dark:text-neutral-500" />
               {FILTERS.map((f) => (
                 <button
                   key={f}
@@ -403,42 +407,29 @@ export default function GalleryPage() {
 
           {/* Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {filtered.map((item, i) => (
+            {trendyImages.map((item, i) => (
               <div
-                key={`${item.label}-${i}`}
+                key={i}
                 className="transition-all duration-300"
                 style={{ animationDelay: `${i * 30}ms` }}
               >
-                <GridThumb label={item.label} />
-                <p className="text-xs text-neutral-400 mt-1.5 px-1">{item.label}</p>
+                <GridThumb label={item} />
+                <p className="text-xs text-neutral-400 mt-1.5 px-1">Trendy.academy memories</p>
               </div>
             ))}
           </div>
 
           {filtered.length === 0 && (
-            <div className="text-center py-20 text-neutral-400">
+            <div className="text-center py-20 text-neutral-400 dark:text-neutral-500">
               No photos in this category yet.
             </div>
           )}
 
-          {/* Upload CTA */}
-          <div className="mt-12 bg-white border border-neutral-100 rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="sora font-bold text-xl mb-1">Have photos to share?</h3>
-              <p className="text-neutral-400 text-sm max-w-md">
-                Alumni and faculty can submit photos to be featured in our gallery.
-                Help us complete the story.
-              </p>
-            </div>
-            <a
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#E8480A] text-white text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition shrink-0"
-            >
-              Submit Photos <ArrowRight size={14} />
-            </a>
-          </div>
         </div>
       </section>
+      <div className="container mx-auto w-full lg:mt-16">
+        <CTA />
+      </div>
     </main>
   );
 }
