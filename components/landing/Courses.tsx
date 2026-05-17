@@ -2,11 +2,52 @@
 import React from 'react'
 import { motion } from 'motion/react'
 import TrendyButton from './TrendyButton'
+import Image from 'next/image';
+import Link from 'next/link';
+
+const coursesBentoList = [
+  {
+    id: 1,
+    courseTitle: "Data Analyst",
+    courseDescription: "Learn the skills needed to analyze data and make informed business decisions.",
+    courseImage: "/images/data-analyst.png"
+  },
+  {
+    id: 2,
+    courseTitle: "Web Development",
+    courseDescription: "Master the art of building modern, responsive websites and web applications.",
+    courseImage: "/images/webdev.png"
+  },
+  {
+    id: 3,
+    courseTitle: "Frontend Development",
+    courseDescription: "Learn how to create stunning user interfaces and interactive web experiences.",
+    courseImage: "/images/frontend.png"
+  },
+  {
+    id: 4,
+    courseTitle: "Python Programming",
+    courseDescription: "Get hands-on experience with Python, one of the most popular programming languages.",
+    courseImage: "/images/python.png"
+  },
+  {
+    id: 5,
+    courseTitle: "Tally ERP 9",
+    courseDescription: "Learn how to use Tally ERP 9 for accounting and financial management.",
+    courseImage: "/images/tally.png"
+  },
+  {
+    id: 6,
+    courseTitle: "C/C++ - DSA Foundation",
+    courseDescription: "Build a strong foundation in Data Structures and Algorithms using C/C++.",
+    courseImage: "/images/dsa.png"
+  },
+]
 
 function Courses() {
   return (
     <div className='w-full h-auto pb-10 mt-20'>
-      <div className="w-full mx-auto pb-8 relative overflow-hidden pt-10 rounded-t-lg py-10 px-2">
+      <div className="w-full mx-auto pb-8 relative overflow-hidden pt-10 rounded-t-lg py-10">
           {/* dot grid – light */}
           <div className="pointer-events-none absolute inset-0 z-0 dark:hidden"
             style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)`, backgroundSize: "40px 40px" }} />
@@ -53,11 +94,61 @@ function Courses() {
       </div>
       {/*  Bento */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full">
-        <div className='w-full h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg'></div>
-        <div className='w-full h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg'></div>
-        <div className='w-full h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg'></div>
-        <div className='hidden lg:flex w-full lg:col-span-2 h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg'></div>
-        <div className='hidden lg:flex w-full h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg'></div>
+        {
+          coursesBentoList.map((course) => (
+            <div key={course.id} className='relative w-full h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg overflow-hidden px-2 lg:px-8 lg:mask-b-from-30 lg:mask-b-from-50'>
+              <div>
+                <h2 className="text-lg lg:text-xl font-sans font-semibold text-neutral-800 dark:text-neutral-200 pt-5 tracking-tight">
+                  {course.courseTitle}
+                </h2>
+                <p className="text-sm lg:text-[15px] font-sans font-medium text-neutral-500 dark:text-neutral-400 mt-2 leading-relaxed">
+                  {course.courseDescription}
+                </p>
+                <div className='flex justify-end mt-0'>
+                  <Link href="/courses" className='bg-orange-500 hover:bg-orange-600 text-xs font-sans font-medium py-1 px-4 rounded-xl cursor-pointer text-white shadow-[0_2px_8px_rgba(232,72,10,0.35)] hover:shadow-[0_4px_18px_rgba(232,72,10,0.45)] transition-all duration-200'>
+                    Explore Course
+                  </Link>
+                </div>
+              </div>
+              <div className='[perspective:800px] [transform-style:preserve-3d]'>
+                <motion.div 
+                  initial={{
+                      rotateX: 0,
+                      translateZ: "0px",
+                      y: 60,
+                      opacity: 0
+                  }}
+                   style={{
+                        rotateX: 0,
+                        translateZ: "0px",
+                        y: 6,
+                        
+                    }}
+                    whileInView={{
+                        rotateX: 24,
+                        translateZ: "0px",
+                        y: 6,
+                        opacity: 1 ,
+                    }}
+                   whileHover={{
+                      rotateX: 0,
+                      translateZ: "0px",
+                      y: 0,
+                      scale: 1.05,
+                      opacity: 1 ,
+                   }}
+
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeInOut",
+                    }}
+                 className="flex w-full h-full items-start justify-center lg:px-4 relative ">
+                  <Image className="w-full h-full object-cover relative -bottom-5 rounded-lg" src={course.courseImage} alt="" width={4000} height={600}/>
+                </motion.div>
+              </div>
+            </div>
+          ))
+        }
       </div>
       <div className="flex justify-center mt-5">
        <TrendyButton buttonContent="Explore Courses" buttonLink="/courses" />
