@@ -7,7 +7,8 @@ import Link from "next/link"
 import { PiStudentFill } from "react-icons/pi";
 import { FAQ } from './FAQ';
 import CTA from './CTA';
-
+import Image from 'next/image';
+import ContactForm from "./ContactForm.tsx"
 
 const highlights = [
   "Recognized Certificate from Politechnique University",
@@ -23,13 +24,11 @@ function Hero() {
   
   return (
     <div className='w-full h-auto relative container mx-auto'>
-      <div className=' mx-auto grid lg:grid-cols-[60%_40%] gap-4 grid-cols-1 pt-10 lg:pt-20 relative'>
+      <div className='mx-auto grid lg:grid-cols-[60%_40%] gap-4 grid-cols-1 pt-10 lg:pt-20 relative'>
         <div className=''>
 
           {/* Badge */}
-          <div className='w-full mx-auto flex justify-start items-start'>
             <Badge aboutBadge="Introducing Trendy modern tech courses in AI era" />
-          </div>
 
           {/* Headings */}
           <div className='pt-5 lg:pr-5'>
@@ -58,7 +57,7 @@ function Hero() {
           <div className='flex flex-wrap justify-start items-center gap-3 lg:gap-4 pt-6'>
 
             {/* PRIMARY — Explore Courses */}
-            <button
+            <Link href="/courses"
               className={cn(
                 "group relative flex justify-between items-center gap-2 px-3",
                 "w-[190px] lg:w-[220px] h-[40px] lg:h-[46px]",
@@ -83,12 +82,11 @@ function Hero() {
               )}>
                 Explore Courses
               </span>
-            </button>
+            </Link>
 
             {/* SECONDARY — Chat with Trendy */}
             <Link
-              href="https://www.instagram.com/hilal_11_n"
-              target='_blank'
+              href="/about"
               className={cn(
                 "group relative flex justify-between items-center gap-2 px-3",
                 "w-[190px] lg:w-[220px] h-[40px] lg:h-[46px]",
@@ -120,19 +118,30 @@ function Hero() {
         </div>
 
         {/* Right column — untouched */}
-        <div className='w-full lg:h-140 relative flex items-center justify-center'>
-          <div>
-            <DotPatternDemo />
-          </div>
-          <div className="">
-            <Image src="/Images/demo.png" alt="Description" width={800} height={800} />
-          </div>
-        </div>
+       <div className="w-full lg:h-140 relative flex items-center justify-center">
+  {/* Image with radial mask — fades out to transparent on all edges */}
+  <div className="relative z-20">
+    <Image
+      src="/images/trendyimage.png"
+      alt="Hero Image"
+      width={800}
+      height={800}
+      className="w-full h-auto object-contain rounded-lg"
+      style={{
+        WebkitMaskImage:
+          "radial-gradient(ellipse 75% 75% at 50% 50%, black 40%, transparent 100%)",
+        maskImage:
+          "radial-gradient(ellipse 75% 75% at 50% 50%, black 40%, transparent 100%)",
+      }}
+    />
+  </div>
+</div>
       </div>
         <AboutTrendy />
         <Courses />
         <FAQ />
-        <div className='pb-20'>
+        <ContactForm />
+        <div className='pt-10 lg:pb-20'>
           <CTA />
         </div>
     </div>
@@ -156,51 +165,10 @@ export function DotPatternDemo() {
 
 
 
-import { OrbitingCircles } from "@/components/ui/orbiting-circles"
-import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
-import { TfiMicrosoftAlt } from "react-icons/tfi";
-import { GrAnalytics } from "react-icons/gr";
-import { FaPython } from "react-icons/fa";
-import { FaJsSquare } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiNumpy } from "react-icons/si";
 import { CheckCircle2 } from 'lucide-react';
-import Image from 'next/image';
 import AboutTrendy from './AboutTrendy';
 import Courses from './Courses';
 
 
 
-export function OrbitingCirclesDemo() {
-  return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
-      <OrbitingCircles iconSize={100} reverse radius={240}>
-        <SiNumpy className='text-5xl text-[#4DABCF]'/>
-        <TfiMicrosoftAlt className='text-5xl text-[#00A4EF]'/>
-        <PiMicrosoftExcelLogoFill className='text-5xl text-[#217346]'/>
-        <GrAnalytics className='text-5xl text-[#FF6B00]'/>
-        <FaPython className='text-5xl text-[#3776AB]'/>
-        <FaHtml5 className='text-5xl text-[#E34F26]'/>
-        <FaNodeJs className='text-5xl text-[#339933]'/>
-        <SiNumpy className='text-5xl text-[#4DABCF]'/>
-      </OrbitingCircles>
-      <OrbitingCircles iconSize={100}>
-        <SiNumpy className='text-4xl text-[#4DABCF]'/>
-        <TfiMicrosoftAlt className='text-4xl text-[#00A4EF]'/>
-        <PiMicrosoftExcelLogoFill className='text-4xl text-[#217346]'/>
-        <GrAnalytics className='text-4xl text-[#FF6B00]'/>
-        <FaPython className='text-4xl text-[#3776AB]'/>
-      </OrbitingCircles>
-      <OrbitingCircles iconSize={70} radius={100} reverse speed={2}>
-        <FaJsSquare className='text-3xl text-[#F7DF1E]'/>
-        <FaHtml5 className='text-3xl text-[#E34F26]'/>
-        <FaNodeJs className='text-3xl text-[#339933]'/>
-        <SiNumpy className='text-3xl text-[#4DABCF]'/>
-      </OrbitingCircles>
-      <OrbitingCircles radius={0}>
-        <span className='text-2xl font-bold'>Trendy</span>
-      </OrbitingCircles>
-    </div>
-  )
-}
+
