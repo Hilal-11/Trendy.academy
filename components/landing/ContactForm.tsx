@@ -80,7 +80,7 @@ const socials = [
 ];
 
 // ── sub-components ────────────────────────────────────────────────────────────
-function InfoRow({ icon: Icon, label, value, href }) {
+function InfoRow({ icon: Icon, label, value, href }: { icon: React.ElementType; label: string; value: string; href: string }) {
   return (
     <Link
       href={href}
@@ -103,7 +103,7 @@ function InfoRow({ icon: Icon, label, value, href }) {
   );
 }
 
-function HoursRow({ day, hours }) {
+function HoursRow({ day, hours }: { day: string; hours: string }) {
   return (
     <div className="flex items-center justify-between py-2 text-sm">
       <span className="font-medium text-foreground">{day}</span>
@@ -127,11 +127,11 @@ export default function ContactForm() {
   });
   const [sent, setSent] = useState(false);
 
-  function handleChange(e) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSent(true);
     setTimeout(() => setSent(false), 3000);
