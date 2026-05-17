@@ -10,7 +10,6 @@ import Link from 'next/link'
 import { IoSearchSharp } from 'react-icons/io5'
 import { RxCross2 } from 'react-icons/rx'
 import { MAIN_PAGE_SEARCHING_CONFIG } from '@/public/config/SearchingConfig'
-import NProgress from 'nprogress'
 
 
 // import { SearchingMain } from "../components/landing/MicroComponents/Searching"
@@ -46,10 +45,6 @@ export function SearchingMain() {
     }
   }, [open])
 
-  const handleLinkClick = () => {
-    NProgress.start()
-    setOpen(false)
-  }
     const handleKey = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowDown") {
       e.preventDefault()
@@ -70,7 +65,7 @@ export function SearchingMain() {
     <DialogTrigger asChild>
         <motion.button
           transition={{ type: "spring", stiffness: 400, damping: 20 }}
-          className="group flex items-center justify-between gap-1.5 bg-neutral-50 dark:bg-neutral-900 w-32 lg:w-44 px-1 h-8 rounded-sm shadow-sm border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors duration-200"
+          className="group flex items-center justify-between gap-1.5 bg-neutral-50 dark:bg-neutral-900 w-28 lg:w-44 px-1 h-8 rounded-sm shadow-sm border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors duration-200"
         >
           <div className="flex items-center gap-1">
             {/* <IoSearchSharp className="text-[15px] text-neutral-500 group-hover:text-neutral-700 dark:group-hover:text-neutral-300 transition-colors duration-200" /> */}
@@ -184,7 +179,7 @@ export function SearchingMain() {
                     transition={{ duration: 0.2, delay: i * 0.03 }}
                   >
                     <Link
-                      onClick={handleLinkClick}
+                      
                       prefetch={true}
                       href={suggesstion_to}
                       className="group/item flex items-center gap-3 w-full px-2 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800/80 transition-colors duration-150 relative overflow-hidden"
