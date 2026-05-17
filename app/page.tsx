@@ -3,7 +3,7 @@ import { ThemeToggle } from '@/components/ToggleTheme';
 import Hero from '@/components/landing/Hero';
 function Home() {
   return (
-    <div className="flex h-auto px-4">
+    <div className='relative w-full h-auto mx-auto px-4'>
       <Hero />
     </div>
   )
