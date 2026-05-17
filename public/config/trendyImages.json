@@ -1,0 +1,18 @@
+{
+  "templates": [
+    { "image": "/images/image1.jpeg", "to": "" },
+    { "image": "/images/image14.jpeg", "to": "" },
+    { "image": "/images/image16.jpeg", "to": "" },
+    { "image": "/images/image18.jpeg", "to": "" },
+    { "image": "/images/image5.jpeg", "to": "" },
+    { "image": "/images/image6.jpeg", "to": "" },
+    { "image": "/images/image7.jpeg", "to": "" },
+    { "image": "/images/image8.jpeg", "to": "" },
+    { "image": "/images/image9.jpeg", "to": "" },
+    { "image": "/images/image10.jpeg", "to": "" },
+    { "image": "/images/image11.jpeg", "to": "" },
+    { "image": "/images/image12.jpeg", "to": "" },
+    { "image": "/images/image13.jpeg", "to": "" },
+    { "image": "/images/image14.jpeg", "to": "" }
+  ]
+}
