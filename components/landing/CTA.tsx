@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const fadeUp = (delay = 0) => ({
@@ -152,9 +151,10 @@ export default function CTA() {
       </div>
 
       {/* Right orb column */}
-      <div className="relative flex-shrink-0" style={{ width: 280 }}>
         
-      </div>
+        <div className="relative mask-l-from-60% mask-r-from-60% top-90% flex justify-center items-center ">
+          <h1 className='text-center font-mono text-[5rem] md:text-[10rem] whitespace-nowrap lg:text-[10rem] font-bold text-orange-400 dark:text-orange-700 flex'>TRENDY</h1>
+        </div>
     </div>
   );
 }
