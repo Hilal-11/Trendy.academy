@@ -4,7 +4,6 @@ import { motion } from 'motion/react'
 import TrendyButton from './TrendyButton'
 import Image from 'next/image';
 import Link from 'next/link';
-
 const coursesBentoList = [
   {
     id: 1,
@@ -45,8 +44,9 @@ const coursesBentoList = [
 ]
 
 function Courses() {
+
   return (
-    <div className='w-full h-auto pb-10 mt-20'>
+    <div className='w-full h-auto pb-10 mt-8 lg:pt-20 border-t border-orange-600/50 dark:border-orange-700/50 relative overflow-hidden'>
       <div className="w-full mx-auto pb-8 relative overflow-hidden pt-10 rounded-t-lg py-10">
           {/* dot grid – light */}
           <div className="pointer-events-none absolute inset-0 z-0 dark:hidden"
@@ -97,6 +97,7 @@ function Courses() {
         {
           coursesBentoList.map((course) => (
             <div key={course.id} className='relative w-full h-80 border bg-neutral-100/20 dark:bg-neutral-900/20 rounded-lg overflow-hidden px-2 lg:px-8 lg:mask-b-from-30 lg:mask-b-from-50'>
+             <Link href="/courses">
               <div>
                 <h2 className="text-lg lg:text-xl font-sans font-semibold text-neutral-800 dark:text-neutral-200 pt-5 tracking-tight">
                   {course.courseTitle}
@@ -145,7 +146,7 @@ function Courses() {
                  className="flex w-full h-full items-start justify-center lg:px-4 relative ">
                   <Image className="w-full h-full object-cover relative -bottom-5 rounded-lg" src={course.courseImage} alt="" width={4000} height={600}/>
                 </motion.div>
-              </div>
+              </div></Link>
             </div>
           ))
         }

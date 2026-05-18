@@ -179,7 +179,7 @@ export function SearchingMain() {
                     transition={{ duration: 0.2, delay: i * 0.03 }}
                   >
                     <Link
-                      
+                      onClick={() => setOpen(!open)}
                       prefetch={true}
                       href={suggesstion_to}
                       className="group/item flex items-center gap-3 w-full px-2 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800/80 transition-colors duration-150 relative overflow-hidden"

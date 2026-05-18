@@ -3,10 +3,6 @@ import React from 'react'
 import { motion } from "motion/react"
 import Image from 'next/image'
 import TrendyButton from './TrendyButton'
-import { StripedPattern } from '@/components/magicui/striped-pattern';
-import { GoFileZip } from "react-icons/go";
-import { LuCodeXml } from "react-icons/lu";
-import { RxFigmaLogo } from "react-icons/rx";
 import { LuMessageCircleHeart } from "react-icons/lu";
 interface TemplatesCategories{
   id: number,
@@ -14,7 +10,7 @@ interface TemplatesCategories{
 }
 export default function TemplatesShowcaseBento() {
   return (
-    <div className='w-full h-full pt-28'>
+    <div className='w-full h-full mt-8 lg:pt-20 lg:border-0 border-t border-orange-600/50 dark:border-orange-700/50 relative overflow-hidden'>
         <div className="w-full mx-auto pb-8 relative overflow-hidden  rounded-t-lg py-10 px-2 ">
           {/* dot grid – light */}
           <div className="pointer-events-none absolute inset-0 z-0 dark:hidden"

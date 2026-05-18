@@ -304,9 +304,9 @@ export default function CoursePage({ params }: PageProps) {
             <span className='text-xs font-sans font-medium text-orange-600 px-2 py-1 rounded-full bg-neutral-300 border'>{course.badge}</span>
           </div>
           <div className='flex px-2 pt-2 justify-between items-center'>
-            <button className="px-6 py-2 rounded-lg border bg-orange-600 font-sans text-sm font-medium flex items-center justify-center gap-2">
+            <Link href="/admission" className="px-6 py-2 rounded-lg border bg-orange-600 font-sans text-sm font-medium flex items-center justify-center gap-2">
               Enroll Now
-            </button>
+            </Link>
             <span className='text-xl font-bold font-sans'>${course.feeStructure.totalFee}</span>
           </div>
           <div className='flex flex-wrap text-wrap px-3 pt-2 justify-between items-center'>
@@ -516,6 +516,7 @@ import { GENERAL_QUESTIONS } from '@/public/config/faqConfig'
 import { PlusIcon } from 'lucide-react'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { Accordion, AccordionContent, AccordionItem } from '@/components/ui/accordion'
+import Link from 'next/link';
 
 
 export const FAQ = () => {

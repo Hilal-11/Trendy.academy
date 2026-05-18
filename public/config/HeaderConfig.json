@@ -23,18 +23,9 @@
     }
   ],
    "dropdown_pages": [
-
-    {
-      "page": "Faculty",
-      "link": "/faculty"
-    },
     {
       "page": "Upcoming Courses",
       "link": "/upcoming-courses"
-    },
-    {
-      "page": "Testimonials",
-      "link": "/testimonials"
     },
     {
       "page": "Blog",

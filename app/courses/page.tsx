@@ -133,7 +133,7 @@ const handleOpen = (e: React.MouseEvent<HTMLElement>, courseId: string) => {
                         "hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]",
                         "transition-all duration-200"
                         )}>Check Course Details</Link>
-                    <Link href={`/courses/course/${item.id}/enroll`}
+                    <Link href={`/admission`}
                         className={cn(
                         "cursor-pointer font-sans font-medium text-[12px] lg:text-xs px-2 py-1 rounded-lg",
                         "border-t-[2px] border-l-[2px] border-r-[2px] border-neutral-950 dark:border-neutral-700",

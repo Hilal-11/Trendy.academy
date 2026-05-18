@@ -127,7 +127,7 @@ function Header() {
                               headerPagesConfig.header_pages.map((page , index) => (
                                 <div key={index} className="w-full hover:bg-neutral-200 hover:dark:bg-neutral-800 cursor-pointer rounded-sm py-1">
                                   <Link                                href={page.link}
-                                  
+                                    onClick={( ) => setIsMobileMenuOpen(!isMobileMenuOpen)}
                                     className="font-sans font-medium text-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex gap-2 items-center"
                                     prefetch={true}
                                   >
@@ -140,7 +140,7 @@ function Header() {
                               headerPagesConfig.dropdown_pages.map((page , index) => (
                                 <div key={index} className="w-full hover:bg-neutral-200 hover:dark:bg-neutral-800 cursor-pointer rounded-sm py-1">
                                   <Link                                href={page.link}
-                                  
+                                    onClick={( ) => setIsMobileMenuOpen(!isMobileMenuOpen)}
                                     className="font-sans font-medium text-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex gap-2 items-center"
                                     prefetch={true}
                                   >
