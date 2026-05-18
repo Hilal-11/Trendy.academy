@@ -79,26 +79,6 @@ function Footer() {
               }
             </div>
           </div>
-
-          <div className='w-full'>
-            <div>
-              <h1 className="font-sans text-neutral-700 dark:text-neutral-300 text-[18px] font-medium">{footerConfig[3].service_title}</h1>
-            </div>
-             <div className='pl-1 py-3'>
-              {
-                footerConfig[3].services?.map((service , index) => (
-                  <div key={index}>
-                    <motion.p 
-                    initial={{ scale: 1 }}
-                      transition={{ duration: 0.26, ease: "easeInOut" }}
-                      whileHover={{ scale: 1.03, }}
-                      whileTap={{ scale: 1.03 }}
-                      className='py-1 text-neutral-500 dark:text-neutral-500 text-sm font-sans font-medium hover:text-neutral-800 dark:hover:text-neutral-300' ><Link href={service.navigateTo}>{service.service}</Link></motion.p>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
           
           <div className='w-full'>
             <div>

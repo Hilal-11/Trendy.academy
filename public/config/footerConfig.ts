@@ -24,9 +24,12 @@ export const footerConfig: FooterConfigTypes[] = [
             { service: "About Us", navigateTo: "/about" },
             { service: "Courses", navigateTo: "/courses" },
             { service: "Admissions", navigateTo: "/admissions" },
-            { service: "Faculty", navigateTo: "/faculty" },
-            { service: "Software Services", navigateTo: "/software-services" },
             { service: "Contact Us", navigateTo: "/contact" },
+            { service: "Gallery", navigateTo: "/gallery" },
+            { service: "Blogs", navigateTo: "/blogs" },
+            { service: "Trendy Location", navigateTo: "/contact" },
+
+
         ]
     },
 
@@ -37,51 +40,34 @@ export const footerConfig: FooterConfigTypes[] = [
             { service: "All Courses", navigateTo: "/courses" },
             { service: "Upcoming Courses", navigateTo: "/upcoming-courses" },
             { service: "Admissions", navigateTo: "/admissions" },
-            { service: "Fee Structure", navigateTo: "/admissions#fee-structure" },
-            { service: "Scholarships", navigateTo: "/admissions#scholarships" },
-            { service: "Academic Calendar", navigateTo: "/admissions#calendar" },
-            { service: "Student Portal", navigateTo: "/student-portal" },
+            { service: "Fee Structure", navigateTo: "#" },
+            { service: "Scholarships", navigateTo: "#" },
+            { service: "Academic Calendar", navigateTo: "#" },
+            { service: "Student Portal", navigateTo: "#" },
         ]
     },
 
     {
-        id: "explore",
-        service_title: "Explore",
-        services: [
-            { service: "Blog", navigateTo: "/blog" },
-            { service: "Gallery", navigateTo: "/gallery" },
-            { service: "Testimonials", navigateTo: "/testimonials" },
-            { service: "Faculty", navigateTo: "/faculty" },
-            { service: "Placement Record", navigateTo: "/placements" },
-            { service: "Events", navigateTo: "/events" },
-            { service: "Campus Life", navigateTo: "/campus-life" },
-        ]
-    },
+    id: "Courses",
+    service_title: "Courses",
+    services: [
+        { service: "All Courses", navigateTo: "/courses" },
+        { service: "Basic Computer", navigateTo: "/courses" },
+        { service: "CCC Course", navigateTo: "/courses" },
+        { service: "Data Entry", navigateTo: "/courses" },
+        { service: "Web Development", navigateTo: "/courses" },
+        { service: "Frontend Development", navigateTo: "/courses" },
+        { service: "Data Analytics", navigateTo: "/courses" },
+        { service: "Python Programming", navigateTo: "/courses" },
+        { service: "JavaScript", navigateTo: "/courses" },
+        { service: "Programming", navigateTo: "/courses" },
+        { service: "MS Office", navigateTo: "/courses" },
+        { service: "Tally (Accounting)", navigateTo: "/courses" },
+        { service: "English Speaking", navigateTo: "/courses" },
+        { service: "Teacher Training (DCA/PGDCA)", navigateTo: "/courses" },
+    ]
+},
 
-    {
-        id: "software-services",
-        service_title: "Software Services",
-        services: [
-            { service: "Web Development", navigateTo: "/software-services#web" },
-            { service: "Mobile App Development", navigateTo: "/software-services#mobile" },
-            { service: "UI/UX Design", navigateTo: "/software-services#design" },
-            { service: "IT Consulting", navigateTo: "/software-services#consulting" },
-            { service: "Custom Software", navigateTo: "/software-services#custom" },
-            { service: "Request a Quote", navigateTo: "/software-services#quote" },
-        ]
-    },
-
-    {
-        id: "legal",
-        service_title: "Legal & Info",
-        services: [
-            { service: "Privacy Policy", navigateTo: "/privacy-policy" },
-            { service: "Terms & Conditions", navigateTo: "/terms" },
-            { service: "Refund Policy", navigateTo: "/refund-policy" },
-            { service: "Grievance Cell", navigateTo: "/grievance" },
-            { service: "Sitemap", navigateTo: "/sitemap" },
-        ]
-    },
 ];
 
 

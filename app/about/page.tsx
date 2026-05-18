@@ -5,7 +5,8 @@ import {
   Target, Cpu, Shield, Globe, Heart, Layers,
   Quote, ArrowRight, Zap, CheckCircle2,
 } from "lucide-react";
-import Link from "next/link"
+import Link from "next/link";
+import Image from "next/image";
 
 /* ─── DATA ─────────────────────────────────────────────── */
 
@@ -26,10 +27,10 @@ const values = [
 ];
 
 const faculty = [
-  { name: "Dr. Arjun Sharma", role: "Director & Founder",       tag: "20+ yrs · IT Education"    },
-  { name: "Ms. Priya Nair",   role: "Head of Academics",         tag: "Data Science & AI Expert"  },
-  { name: "Mr. Rahul Verma",  role: "Lead – Web Development",    tag: "Ex-Google Engineer"        },
-  { name: "Ms. Sana Malik",   role: "Placement Director",        tag: "15+ yrs · HR & Talent"     },
+  { name: "Dr. Arjun Sharma", role: "Director & Founder",       tag: "20+ yrs · IT Education",   img: "/images/image1.jpeg"  },
+  { name: "Ms. Priya Nair",   role: "Head of Academics",         tag: "Data Science & AI Expert",  img: "/images/image2.jpeg"  },
+  { name: "Mr. Rahul Verma",  role: "Lead – Web Development",    tag: "Ex-Google Engineer",         img: "/images/image3.png"   },
+  { name: "Ms. Sana Malik",   role: "Placement Director",        tag: "15+ yrs · HR & Talent",     img: "/images/image4.jpeg"  },
 ];
 
 const milestones = [
@@ -47,34 +48,19 @@ const highlights = [
   "Industry-led workshops every semester",
 ];
 
-/* ─── IMAGE PLACEHOLDER ─────────────────────────────────── */
+// Gallery strip: 5 images from your collection
+const galleryImages = [
+  { src: "/images/image5.jpeg",  label: "Campus"     },
+  { src: "/images/image6.jpeg",  label: "Lab Session" },
+  { src: "/images/image7.jpeg",  label: "Graduation"  },
+  { src: "/images/image8.jpeg",  label: "Hackathon"   },
+  { src: "/images/image9.jpeg",  label: "Seminar"     },
+];
 
-function Img({
-  className = "",
-  label = "Add Image",
-}: {
-  className?: string;
-  label?: string;
-}) {
-  return (
-    <div
-      className={`relative bg-neutral-100 dark:bg-neutral-950 border-1 border-dashed border-orange-700
-        flex flex-col items-center justify-center gap-2 overflow-hidden group ${className}`}
-    >
-      <div className="w-12 h-12 rounded-full bg-neutral-100 dark:bg-neutral-950 group-hover:bg-neutral-300 transition flex items-center justify-center">
-        <svg
-          width="22" height="22" viewBox="0 0 24 24"
-          fill="none" stroke="#a3a3a3" strokeWidth="1.5"
-          strokeLinecap="round" strokeLinejoin="round"
-        >
-          <rect x="3" y="3" width="18" height="18" rx="2" />
-          <circle cx="8.5" cy="8.5" r="1.5" />
-          <path d="m21 15-5-5L5 21" />
-        </svg>
-      </div>
-    </div>
-  );
-}
+// Bento grid images
+const HERO_IMG      = "/images/image10.jpeg";  // large hero right image
+const BENTO_MAIN    = "/images/image11.jpeg";  // large 2×2 bento cell
+const BENTO_LAB     = "/images/image12.jpeg";  // small bottom-right bento cell
 
 /* ─── PAGE ──────────────────────────────────────────────── */
 
@@ -128,9 +114,17 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Right */}
+          {/* Right — Hero image */}
           <div className="relative">
-            <Img className="h-[400px] sm:h-[440px] w-full rounded-2xl" label="Institute / Campus Photo" />
+            <div className="h-[400px] sm:h-[440px] w-full rounded-2xl overflow-hidden">
+              <Image
+                src={HERO_IMG}
+                alt="Institute campus"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
             {/* floating badge */}
             <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl flex items-center gap-3 border border-neutral-100">
               <div className="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shrink-0">
@@ -171,7 +165,9 @@ export default function AboutPage() {
 
           {/* Mobile / tablet: simple stack */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:hidden">
-            <Img className="h-64 w-full rounded-2xl sm:col-span-2" label="Campus / Students Photo" />
+            <div className="h-64 w-full rounded-2xl overflow-hidden sm:col-span-2">
+              <Image src={BENTO_MAIN} alt="Campus students" fill className="object-cover" />
+            </div>
             {/* Mission */}
             <div className="bg-[#0D1120] rounded-2xl p-6 flex flex-col justify-between min-h-[220px]">
               <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center">
@@ -209,8 +205,10 @@ export default function AboutPage() {
                 <p className="text-white/60 text-xs mt-3">— Director, AIIT</p>
               </div>
             </div>
-            {/* Small lab image */}
-            <Img className="h-[200px] w-full rounded-2xl" label="Lab / Classroom" />
+            {/* Lab image */}
+            <div className="h-[200px] w-full rounded-2xl overflow-hidden">
+              <Image src={BENTO_LAB} alt="Lab session" fill className="object-cover" />
+            </div>
           </div>
 
           {/* Desktop: true bento 4-col */}
@@ -222,8 +220,8 @@ export default function AboutPage() {
             }}
           >
             {/* Large image — 2×2 */}
-            <div style={{ gridColumn: "1 / 3", gridRow: "1 / 3" }}>
-              <Img className="h-full w-full rounded-2xl" label="Campus / Students Photo" />
+            <div style={{ gridColumn: "1 / 3", gridRow: "1 / 3" }} className="relative rounded-2xl overflow-hidden">
+              <Image src={BENTO_MAIN} alt="Campus students" fill className="object-cover" />
             </div>
 
             {/* Mission */}
@@ -276,20 +274,20 @@ export default function AboutPage() {
             </div>
 
             {/* Small lab image */}
-            <div style={{ gridColumn: "4 / 5", gridRow: "2 / 3" }}>
-              <Img className="h-full w-full rounded-2xl" label="Lab / Classroom" />
+            <div style={{ gridColumn: "4 / 5", gridRow: "2 / 3" }} className="relative rounded-2xl overflow-hidden">
+              <Image src={BENTO_LAB} alt="Lab classroom" fill className="object-cover" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── WHAT WE OFFER (mini highlight band) ─────────── */}
+      {/* ── WHAT WE OFFER ────────────────────────────────── */}
       <section className="px-5 sm:px-10 lg:px-20 pb-14">
         <div className="container mx-auto bg-neutral-100 dark:bg-neutral-900 border rounded-3xl p-8 sm:p-10 lg:p-12">
           <div className="grid md:grid-cols-[1fr_auto] gap-8 items-center mb-10">
             <div>
               <div className="text-orange-500 text-sm font-semibold uppercase tracking-widest mb-2">Who We Are</div>
-              <h2 className="sora text-3xl sm:text-4xl font-bold text-black dark:text-white ">
+              <h2 className="sora text-3xl sm:text-4xl font-bold text-black dark:text-white">
                 More Than an Institute.<br />A Launch Pad.
               </h2>
             </div>
@@ -329,7 +327,7 @@ export default function AboutPage() {
             {values.map(({ icon: Icon, title, body }) => (
               <div
                 key={title}
-                className="bg-white rounded-2xl p-6 border dark: border-neutral-800 border-neutral-100 dark:bg-neutral-950
+                className="bg-white rounded-2xl p-6 border border-neutral-800 border-neutral-100 dark:bg-neutral-950
                            hover:border-orange-500 hover:shadow-md transition-all group"
               >
                 <div className="w-11 h-11 rounded-xl bg-neutral-50 group-hover:bg-orange-50 flex items-center justify-center mb-4 transition-colors">
@@ -360,12 +358,16 @@ export default function AboutPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {faculty.map(({ name, role, tag }) => (
+            {faculty.map(({ name, role, tag, img }) => (
               <div key={name} className="bg-neutral-200 dark:bg-neutral-900 rounded-2xl border border-neutral-100 overflow-hidden group hover:shadow-lg transition-shadow">
-                <Img
-                  className="h-52 w-full rounded-none border-0 border-b-2 border-dashed border-neutral-200"
-                  label="Faculty Photo"
-                />
+                <div className="relative h-52 w-full">
+                  <Image
+                    src={img}
+                    alt={name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <div className="p-5">
                   <span className="inline-block bg-orange-50 text-orange-600 text-xs font-medium px-2.5 py-1 rounded-full mb-3">
                     {tag}
@@ -387,7 +389,7 @@ export default function AboutPage() {
             <h2 className="sora text-3xl sm:text-4xl font-bold">Milestones</h2>
           </div>
 
-          {/* Desktop: horizontal line + cards */}
+          {/* Desktop: horizontal */}
           <div className="hidden md:block relative">
             <div className="absolute left-0 right-0 top-[18px] h-px bg-neutral-200 dark:bg-neutral-900 z-0" />
             <div className="grid grid-cols-5 gap-4 relative z-10">
@@ -423,7 +425,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Mobile: vertical timeline */}
+          {/* Mobile: vertical */}
           <div className="md:hidden space-y-0">
             {milestones.map(({ year, title, body }, i) => {
               const isLast = i === milestones.length - 1;
@@ -450,7 +452,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── GALLERY STRIP (placeholders) ─────────────────── */}
+      {/* ── GALLERY STRIP ────────────────────────────────── */}
       <section className="px-5 sm:px-10 lg:px-20 pb-14">
         <div className="container mx-auto">
           <div className="flex items-end justify-between mb-6">
@@ -460,8 +462,21 @@ export default function AboutPage() {
             </a>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-            {["Campus", "Lab Session", "Graduation", "Hackathon", "Seminar"].map((label) => (
-              <Img key={label} className="h-36 sm:h-44 rounded-xl" label={label} />
+            {galleryImages.map(({ src, label }) => (
+              <div key={label} className="relative h-36 sm:h-44 rounded-xl overflow-hidden group">
+                <Image
+                  src={src}
+                  alt={label}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                {/* subtle label overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-end p-2">
+                  <span className="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {label}
+                  </span>
+                </div>
+              </div>
             ))}
           </div>
         </div>
