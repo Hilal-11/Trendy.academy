@@ -35,7 +35,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 7000,
+        "totalFee": 9000,
         "registrationFee": 500,
         "admissionFee": 500,
         "tuitionFee": 6000,
@@ -490,7 +490,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 7000,
+        "totalFee": 7500,
         "registrationFee": 500,
         "admissionFee": 500,
         "tuitionFee": 6000,
@@ -1068,7 +1068,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 15000,
+        "totalFee": 7500,
         "registrationFee": 500,
         "admissionFee": 500,
         "tuitionFee": 14000,
@@ -1267,7 +1267,7 @@
   },
   "feeStructure": {
     "currency": "INR",
-    "totalFee": 9000,
+    "totalFee": 5000,
     "registrationFee": 300,
     "admissionFee": 500,
     "tuitionFee": 8200,
@@ -1720,7 +1720,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 8000,
+        "totalFee": 5000,
         "registrationFee": 300,
         "admissionFee": 500,
         "tuitionFee": 7200,
@@ -2091,7 +2091,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 6000,
+        "totalFee": 4000,
         "registrationFee": 200,
         "admissionFee": 300,
         "tuitionFee": 5500,
@@ -2268,7 +2268,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 4000,
+        "totalFee": 5000,
         "registrationFee": 200,
         "tuitionFee": 3800,
         "installmentOptions": [
@@ -2417,7 +2417,7 @@
         "additionalNote": "Ideal for candidates preparing for SSC, High Court, and State Government jobs"
       },
       "duration": {
-        "total": "6 Months",
+        "total": "3 Months",
         "weeklyClasses": 6,
         "hoursPerClass": 1.5,
         "totalHours": 216,
@@ -2433,7 +2433,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 7000,
+        "totalFee": 3500,
         "registrationFee": 200,
         "tuitionFee": 6800,
         "installmentOptions": [
@@ -2569,7 +2569,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 12000,
+        "totalFee": 500,
         "registrationFee": 500,
         "admissionFee": 1000,
         "tuitionFee": 10500,
@@ -2913,7 +2913,7 @@
       },
       "feeStructure": {
         "currency": "INR",
-        "totalFee": 9000,
+        "totalFee": 5000,
         "registrationFee": 300,
         "admissionFee": 500,
         "tuitionFee": 8200,

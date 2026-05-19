@@ -271,7 +271,7 @@ const LOCATION_ITEMS: ISearchItem[] = [
 const SOCIAL_ITEMS: ISearchItem[] = [
   {
     suggesstion: "Instagram",
-    suggesstion_to: "https://instagram.com/your-handle", // ← replace
+    suggesstion_to: "https://www.instagram.com/trendy_institute_of_it", // ← replace
     Icon: FaInstagram,
     category: "social",
     keywords: ["instagram", "social", "follow", "photos", "reels"],
@@ -279,23 +279,15 @@ const SOCIAL_ITEMS: ISearchItem[] = [
   },
   {
     suggesstion: "Facebook",
-    suggesstion_to: "https://facebook.com/your-page", // ← replace
+    suggesstion_to: "https://www.facebook.com/share/1PQuM3QWJv/", // ← replace
     Icon: FaFacebookF,
     category: "social",
     keywords: ["facebook", "fb", "social", "page", "community"],
     external: true,
   },
   {
-    suggesstion: "YouTube",
-    suggesstion_to: "https://youtube.com/@your-channel", // ← replace
-    Icon: FaYoutube,
-    category: "social",
-    keywords: ["youtube", "video", "channel", "tutorials", "classes"],
-    external: true,
-  },
-  {
     suggesstion: "WhatsApp",
-    suggesstion_to: "https://wa.me/91XXXXXXXXXX", // ← replace with your number
+    suggesstion_to: "https://wa.me/+91 788 947 4591", // ← replace with your number
     Icon: FaWhatsapp,
     category: "social",
     keywords: ["whatsapp", "chat", "message", "contact", "enquiry"],
@@ -303,7 +295,7 @@ const SOCIAL_ITEMS: ISearchItem[] = [
   },
   {
     suggesstion: "LinkedIn",
-    suggesstion_to: "https://linkedin.com/company/your-page", // ← replace
+    suggesstion_to: "#", // ← replace
     Icon: FaLinkedinIn,
     category: "social",
     keywords: ["linkedin", "professional", "network", "jobs", "career"],
@@ -311,7 +303,7 @@ const SOCIAL_ITEMS: ISearchItem[] = [
   },
   {
     suggesstion: "Twitter / X",
-    suggesstion_to: "https://twitter.com/your-handle", // ← replace
+    suggesstion_to: "#", // ← replace
     Icon: FaTwitter,
     category: "social",
     keywords: ["twitter", "x", "tweet", "social", "updates"],

@@ -80,6 +80,18 @@ interface SocialLinks {
 
 export const socialLinks: SocialLinks[] = [
     {
+        id: 3,
+        social: "Instagram",
+        socialIcon: "",
+        link: "https://www.instagram.com/trendy_institute_of_it?igsh=N2hnODV1MW1ndXkz"
+    },
+    {
+        id: 4,
+        social: "Facebook",
+        socialIcon: "",
+        link: "https://www.facebook.com/share/1PQuM3QWJv/"
+    },
+    {
         id: 1,
         social: "Github",
         socialIcon: "",
@@ -88,18 +100,6 @@ export const socialLinks: SocialLinks[] = [
     {
         id: 2,
         social: "X",
-        socialIcon: "",
-        link: "https://github.com/hilal-11"
-    },
-    {
-        id: 3,
-        social: "Instagram",
-        socialIcon: "",
-        link: "https://github.com/hilal-11"
-    },
-    {
-        id: 4,
-        social: "Discord",
         socialIcon: "",
         link: "https://github.com/hilal-11"
     },
@@ -118,32 +118,21 @@ export const SOCIAL_LINKS:ISocialLinks[] = [
         id: 1, 
         Icon: FaGithub,
         social_name: 'Github',
-        social_link: 'https://github.com/Hilal-11'
+        social_link: 'https://www.facebook.com/share/1PQuM3QWJv/'
 
     },
-        {
-        id: 2, 
-        Icon: FaInstagram,
-        social_name: 'Leetcode',
-        social_link: 'https://leetcode.com/u/hilal-11/'
-    },
-    {
-        id: 3, 
-        Icon: FaLinkedin,
-        social_name: 'Linkedin',
-        social_link: 'https://www.linkedin.com/in/hilal-ab5466347/'
-    },
+       
     {
         id: 4, 
         Icon: RiTwitterXLine,
         social_name: 'X',
-        social_link: 'https://x.com/Hilal3884871845'
+        social_link: 'https://www.facebook.com/share/1PQuM3QWJv/'
     },
     {
         id: 5, 
         Icon: FaInstagram,
         social_name: 'Instagram',
-        social_link: 'https://www.instagram.com/local_host_404/'
+        social_link: 'https://www.instagram.com/trendy_institute_of_it?igsh=N2hnODV1MW1ndXkz'
     },
 
 
