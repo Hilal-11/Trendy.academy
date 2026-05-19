@@ -58,10 +58,10 @@ const techStack = [
 ]
 
 const socialLinks = [
-  { Icon: FaInstagram,  href: "#", label: "Instagram" },
-  { Icon: FaLinkedinIn, href: "#", label: "LinkedIn"  },
-  { Icon: FaFacebook,   href: "#", label: "Facebook"  },
-  { Icon: FaWhatsapp,   href: "#", label: "WhatsApp"  },
+  { Icon: FaInstagram,  href: "https://www.instagram.com/trendy_institute_of_it", label: "Instagram" },
+  { Icon: FaLinkedinIn, href: "https://www.facebook.com/share/1PQuM3QWJv/", label: "LinkedIn"  },
+  { Icon: FaFacebook,   href: "https://www.facebook.com/share/1PQuM3QWJv/", label: "Facebook"  },
+  { Icon: FaWhatsapp,   href: "https://wa.me/917889474591", label: "WhatsApp"  },
 ]
 
 const floatingBadges = [
@@ -186,8 +186,6 @@ export default function Hero() {
                 <Link
                   key={label}
                   href={href}
-                  target={href.startsWith("http") ? "_blank" : undefined}
-                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="
                     border dark:border-neutral-800 group relative flex items-center justify-center
                     w-8 h-8 rounded-lg
